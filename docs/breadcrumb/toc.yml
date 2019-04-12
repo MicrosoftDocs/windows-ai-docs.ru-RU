@@ -1,0 +1,18 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/
+    items:
+    - name: искусственный интеллект
+      tocHref: /windows/ai/
+      topicHref: /windows/ai/index
+ms.openlocfilehash: 51282dcf10daa6242911085a942c63ca5a05d345
+ms.sourcegitcommit: 5e212634a0617fc003bae2bf477feab3169e28f3
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59473751"

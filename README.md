@@ -1,15 +1,15 @@
-# Windows AI documentation
+# <a name="windows-ai-documentation"></a>Документация по Windows искусственного Интеллекта
 
-Welcome to the Windows AI documentation repository, the source of [https://docs.microsoft.com/windows/ai](https://docs.microsoft.com/windows/ai).
+Добро пожаловать в репозиторий документации Windows искусственного Интеллекта, источник [ https://docs.microsoft.com/windows/ai ](https://docs.microsoft.com/windows/ai).
 
-## Contribute to documentation
+## <a name="contribute-to-documentation"></a>Редактирование документации
 
-We welcome contributions from all members of the community!
+Мы рады вкладам из всех членов сообщества!
 
-To contribute to our documentation, you can visit the article on [https://docs.microsoft.com/windows/ai](https://docs.microsoft.com/windows/ai) and click the **Edit** link in the top right corner of the article, which goes to the GitHub source. Then, just use the GitHub UI to make your updates. Or, you are welcome to fork the repository and submit updates from your fork. See our general [contributor guide](https://docs.microsoft.com/contribute/) for more information.
+Для участия в разработке нашей документации, можно откройте статью на [ https://docs.microsoft.com/windows/ai ](https://docs.microsoft.com/windows/ai) и нажмите кнопку **изменить** ссылку в правом верхнем углу статьи, который проходит источник в репозитории GitHub. Затем просто используйте пользовательский Интерфейс GitHub, внести изменения. Или вилку репозитория и отправлять обновления из вилки. См. в разделе наши Общие [руководство для участников](https://docs.microsoft.com/contribute/) Дополнительные сведения.
 
-![Edit](docs/images/edit-button.png)
+![Измените](docs/images/edit-button.png)
 
-## Microsoft Open Source Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="microsoft-open-source-code-of-conduct"></a>Открытого кода Майкрософт поведения
+Этот проект распространяются [Microsoft Open источника поведения](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в разделе [код из поведения часто задаваемые вопросы о](https://opensource.microsoft.com/codeofconduct/faq/) или обратитесь в службу [ opencode@microsoft.com ](mailto:opencode@microsoft.com) с вопросы или комментарии.
