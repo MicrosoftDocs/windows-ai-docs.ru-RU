@@ -1,60 +1,138 @@
 ---
-author: rosanevallim
-title: Машинное обучение Windows
-description: Windows ML позволяет использовать обученные модели машинного обучения в приложениях Windows.
-ms.author: rovalli
-ms.date: 12/12/2018
-ms.topic: article
-keywords: windows 10, windows ai, windows ml, winml, windows machine learning
+layout: LandingPage
+author: eliotcowley
+title: ИИ Windows
+description: Преобразуйте свое приложение Windows с помощью возможностей ИИ.
+ms.author: elcowle
+ms.date: 4/17/2019
+ms.topic: landing-page
+keywords: windows 10, windows ai
 ms.localizationpriority: medium
-ms.custom: RS5
-ms.openlocfilehash: 011cf35c131b5f33891bb51722cb5f544d3e5193
-ms.sourcegitcommit: 5e212634a0617fc003bae2bf477feab3169e28f3
+ms.openlocfilehash: 9161d0494b64035385e46908a53aa81b8e107099
+ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59473731"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66175746"
 ---
-# <a name="windows-machine-learning"></a>Машинное обучение Windows
+# <a name="windows-ai"></a>ИИ Windows
 
-С помощью Windows ML вы сможете интегрировать обученные модели машинного обучения в приложения Windows.
-
-![Графическое изображение Windows ML](images/winml-graphic.png)
-
-## <a name="overview"></a>Обзор
-
-:::row:::
-    :::column:::
-    Windows ML позволяет использовать обученные модели машинного обучения в приложениях Windows (C#, C++ и JavaScript). Подсистема вывода Windows ML обеспечивает локальную оценку обученных моделей на устройствах с Windows. Это позволяет не беспокоиться о подключении, пропускной способности и конфиденциальности данных. Кроме того, за счет оптимизации оборудования для ЦП и GPU повышается производительность для быстрого получения результатов оценки.
-
-    Сведения о последних функциях и исправлениях в Windows ML см. в наших [заметках о выпуске](release-notes.md).
-    :::column-end:::
-    :::column:::
-        ![windows ml layers](images/overview-diagram.png)
-    :::column-end:::
-:::row-end:::
-
-В следующем видео представлен краткий обзор машинного обучения Windows.
+Преобразуйте свое приложение Windows с помощью возможностей искусственного интеллекта. Средства ИИ Windows позволят вам и вашей компании достичь высоких результатов с помощью интеллектуальных решений для выполнения сложных задач.
 
 <br/>
 
-> [!VIDEO https://www.youtube.com/embed/riGxT0Pd6IA]
+<div style="text-align:center">
+    <img src="images/windows-ai-photo.png" alt="AI on farm"/>
+</div>
 
-## <a name="develop"></a>Разработка
+<ul class="cardsK panelContent">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <a href="windows-ml/index.md">
+                                <img src="https://docs.microsoft.com/media/hubs/windows/windows-ai.svg"
+                                    alt="WinML graphic"
+                                    data-linktype="external"
+                                    class="x-hidden-focus"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>
+                            <a href="windows-ml/index.md">Машинное обучение Windows</a>
+                        </h3>
+                        <p>Узнайте, как интегрировать обученные модели машинного обучения в приложения Windows.</p>
+                        <br/>
+                        <ul>
+                            <li><a href="windows-ml/get-started-uwp.md">Руководство. Создание приложения UWP WinML (C#)</a></li>
+                            <li><a href="windows-ml/what-is-a-machine-learning-model.md">Что собой представляет модель машинного обучения</a></li>
+                            <li><a href="windows-ml/api-reference.md">Справочник по API WinML</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <a href="windows-vision-skills/index.md">
+                                <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-language.svg" alt="Windows Vision Skills graphic" data-linktype="external" class="x-hidden-focus"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>
+                            <a href="windows-vision-skills/index.md">Навыки компьютерного зрения Windows</a>
+                        </h3>
+                        <p>Устраняйте сложности реализации компьютерного зрения с помощью навыков.</p>
+                        <br/>
+                        <ul>
+                            <li><a href="windows-vision-skills/tutorial.md">Руководство. Создание собственного навыка компьютерного зрения (C#)</a></li>
+                            <li><a href="windows-vision-skills/tutorial1.md">Руководство. Создание приложения UWP навыков компьютерного зрения Windows (C#)</a></li>
+                            <li><a href="windows-vision-skills/important-api-concepts.md">Важные понятия, касающиеся API</a></li>
+                            <li><a href="windows-vision-skills/samples.md">Примеры навыков компьютерного зрения Windows</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <a href="https://docs.microsoft.com/windows/desktop/direct3d12/dml">
+                                <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-samples.svg" alt="DirectML graphic" data-linktype="external" class="x-hidden-focus"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>
+                            <a href="https://docs.microsoft.com/windows/desktop/direct3d12/dml">Непосредственное машинное обучение (DirectML)</a>
+                        </h3>
+                        <p>Реализуйте высокопроизводительные технологии машинного обучения с помощью низкоуровневых интерфейсов API типа DirectX.</p>
+                        <br/>
+                        <ul>
+                            <li><a href="https://docs.microsoft.com/windows/desktop/direct3d12/dml-intro">Введение в DirectML</a></li>
+                            <li><a href="https://docs.microsoft.com/windows/desktop/direct3d12/dml-binding">Привязывание в DirectML</a></li>
+                            <li><a href="https://docs.microsoft.com/windows/desktop/direct3d12/dml-min-app">Примеры приложений DirectML</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-![Процесс разработки в Windows ML](images/winml-flow.png)
+## <a name="which-solution-is-right-for-me"></a>Как найти подходящее решение?
 
-Чтобы создавать приложения с помощью Windows ML, вам потребуется:
+Корпорация Майкрософт предлагает несколько решений ИИ. Это означает, что вы не ограничены одним вариантом. Но как выбрать подходящий для приложения? Давайте разберемся.
 
-1. [Получить обученную модель ONNX](get-onnx-model.md) или преобразовать модели, обученные на других платформах ML, в ONNX с использованием [WinMLTools](convert-model-winmltools.md).
-1. Добавить файл модели ONNX в свое приложение.
-1. [Интегрировать модель](integrate-model.md) в код своего приложения.
-1. Запустить приложение на любом устройстве с Windows.
+### <a name="i-want-to-integrate-a-machine-learning-model-into-my-application-and-run-it-on-the-device-by-taking-full-advantage-of-hardware-acceleration"></a>Мне нужно интегрировать модель машинного обучения в свое приложение и запустить его на устройстве, используя все преимущества аппаратного ускорения
 
-Чтобы оценить Windows ML в действии, вы можете поработать с примерами приложений из репозитория [Windows-Machine-Learning](https://github.com/Microsoft/Windows-Machine-Learning/tree/master) на сайте GitHub. Дополнительные сведения об использовании Windows ML вы найдете в нашей документации.
+Для вас наилучший вариант — [машинное обучение Windows](windows-ml/index.md). Эти высокоуровневые интерфейсы API WinRT работают с приложениями Windows 10 (UWP, классические приложения) и выполняют оценку моделей непосредственно на устройстве. Вы можете даже использовать GPU устройства (при наличии), чтобы повысить производительность.
 
-## <a name="other-machine-learning-solutions-from-microsoft"></a>Другие решения машинного обучения от корпорации Майкрософт
+### <a name="i-want-to-integrate-computer-vision-into-my-application-and-take-advantage-of-platform-optimizations"></a>Я хочу интегрировать компьютерное зрение в свое приложение и воспользоваться преимуществами оптимизации платформы
 
-Майкрософт предлагает широкий набор решений, среди которых вы обязательно найдете подходящее. Эти решения запускаются в облаке, в локальной среде и на локальном устройстве. Дополнительные сведения см. в статье о [вариантах продуктов для машинного обучения от корпорации Майкрософт](https://docs.microsoft.com/azure/machine-learning/service/overview-more-machine-learning).
+Наилучший вариант в этом случае — [платформа навыков компьютерного зрения Windows](windows-vision-skills/index.md). Эта простая платформа позволяет создавать пользовательские приложения компьютерного зрения, использующие аппаратное ускорение на пограничных устройствах. Вы можете объединить готовые библиотеки для распространенных сценариев обработки изображений с моделями машинного обучения для выполнения специализированных задач.
 
-[!INCLUDE [help](includes/get-help.md)]
+### <a name="i-want-to-have-fuller-control-over-resource-utilization-during-model-execution-for-high-intensive-applications"></a>Мне нужно полностью контролировать использование ресурсов во время выполнения модели для ресурсоемких приложений
+
+Вам подойдет [DirectML](https://docs.microsoft.com/windows/desktop/direct3d12/dml). Эти интерфейсы API типа DirectX предоставляют программную парадигму, привычную для разработчиков игр на C++, и позволяют воспользоваться всеми преимуществами оборудования.
+
+### <a name="i-want-to-train-test-and-deploy-ml-models-with-a-framework-that-is-familiar-to-a-net-developer"></a>Мне нужно обучать, тестировать и развертывать модели машинного обучения на платформе, привычной для разработчиков .NET
+
+Опробуйте возможности [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet), платформы машинного обучения для разработчиков .NET.
+
+### <a name="i-want-to-leverage-the-power-of-the-azure-cloud-for-training-and-deploying-ml-models"></a>Я хочу использовать возможности облака Azure для обучения и развертывания моделей машинного обучения
+
+См. [полный список решений машинного обучения от Майкрософт](https://docs.microsoft.com/azure/architecture/data-guide/technology-choices/data-science-and-machine-learning). Здесь также указано множество продуктов и служб, работающих в Azure.
