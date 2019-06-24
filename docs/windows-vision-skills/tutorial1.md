@@ -9,7 +9,7 @@ keywords: Windows 10, искусственный интеллект windows, win
 ms.localizationpriority: medium
 ms.openlocfilehash: 6ff041e746ed9c78961692c6618b780b9b96f9c4
 ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/23/2019
 ms.locfileid: "66179906"
@@ -38,7 +38,7 @@ ms.locfileid: "66179906"
 
 Мы обсудим в строках кода, относящиеся к API Windows концепции навыков: 
 
-+ Создать экземпляр [ISkillDescriptor] [ ISkillDescriptor] производных
++ Создать экземпляр [ISkillDescriptor][ISkillDescriptor] производных
 
     ```csharp
     ...
@@ -83,7 +83,7 @@ ms.locfileid: "66179906"
     ...
     ```
 
-+ Создать экземпляр навык привязки с использованием объекта [ISKill] [ ISKill] экземпляра
++ Создать экземпляр навык привязки с использованием объекта [ISKill][ISKill] экземпляра
     ```csharp
     ...
     
@@ -98,7 +98,7 @@ ms.locfileid: "66179906"
     ...
     ```
 
-+ Получить ваши примитивов ввода (*VideoFrame*) и привязать к объект привязки, обратившись к соответствующему [ISkillFeature] [ ISkillFeature] индексированную при помощи его имя. Обратите внимание, что этот навык объявляет метод set удобства *SetInputImage*
++ Получить ваши примитивов ввода (*VideoFrame*) и привязать к объект привязки, обратившись к соответствующему [ISkillFeature][ISkillFeature] индексированную при помощи его имя. Обратите внимание, что этот навык объявляет метод set удобства *SetInputImage*
     ```csharp
     ...
 
