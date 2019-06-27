@@ -3,16 +3,16 @@ author: eliotcowley
 title: Привязка модели
 description: Узнайте, как привязать входные и выходные данные для передачи информации в действие и из модели элемента модели.
 ms.author: elcowle
-ms.date: 4/1/2019
+ms.date: 5/29/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: 633985cc20d5d2934079abbc9f64a1493217de13
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 32c99fa3cb46eaa3bb1f98ab128308eb37361651
+ms.sourcegitcommit: 4ad0fea02000c8f6dbb9a919fb6ce1f435d0e8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180846"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67027907"
 ---
 # <a name="bind-a-model"></a>Привязка модели
 
@@ -43,7 +43,7 @@ Tensors многомерных массивов, а наиболее распр�
 
 ### <a name="sequences"></a>Последовательности
 
-Последовательности являются векторами значений. Обычно указанных типов последовательности используется вектор вероятностей число с плавающей запятой, которые возвращают некоторые модели классификации, указывающее оценку точности для каждого прогноза. 
+Последовательности являются векторами значений. Обычно указанных типов последовательности используется вектор вероятностей число с плавающей запятой, которые возвращают некоторые модели классификации, указывающее оценку точности для каждого прогноза.
 
 ### <a name="maps"></a>Карты
 
@@ -60,6 +60,10 @@ MapFeatureDescriptor.ValueDescriptor.as<TensorFeatureDescriptor>().Shape.Size ==
 ```
 
 Значение функции фактическое карты будет `IMap<string, float>`.
+
+#### <a name="sequence-of-maps"></a>Последовательность из maps
+
+Последовательность из maps — просто вектор пар "ключ значение". Например, последовательность из maps строка float будут иметь тип `IVector<IMap<string, float>>`. Приведенные выше выходные данные прогнозов в своем классе dog `["Boston terrier", 90.0], ["Golden retriever", 7.4], ["Poodle", 2.6]` является примером последовательность из maps.
 
 ### <a name="images"></a>Изображений
 
@@ -125,15 +129,15 @@ MapFeatureDescriptor.ValueDescriptor.as<TensorFeatureDescriptor>().Shape.Size ==
 
 ```cs
 private void BindModel(
-    LearningModelSession session, 
-    VideoFrame inputFrame, 
-    string inputName) 
+    LearningModelSession session,
+    VideoFrame inputFrame,
+    string inputName)
 {
     // Create a binding object from the session
     LearningModelBinding binding = new LearningModelBinding(session);
 
     // Create an image tensor from a video frame
-    ImageFeatureValue image = 
+    ImageFeatureValue image =
         ImageFeatureValue.CreateFromVideoFrame(inputFrame);
 
     // Bind the image to the input
@@ -144,6 +148,6 @@ private void BindModel(
 ## <a name="see-also"></a>См. также
 
 * Предыдущих: [Создание сеанса](create-a-session.md)
-* Далее: [Вычислить входные данные модели](evaluate-model-inputs.md)
+* Далее: [Оценка входных данных модели](evaluate-model-inputs.md)
 
 [!INCLUDE [help](../includes/get-help.md)]

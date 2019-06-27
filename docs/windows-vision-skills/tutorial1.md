@@ -7,19 +7,19 @@ ms.date: 4/25/2019
 ms.topic: article
 keywords: Windows 10, искусственный интеллект windows, windows визуального распознавания навыки, универсальной платформы Windows
 ms.localizationpriority: medium
-ms.openlocfilehash: 6ff041e746ed9c78961692c6618b780b9b96f9c4
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
-ms.translationtype: HT
+ms.openlocfilehash: 75aa0082002dcc75277811f4d1d747d5e7ad64bb
+ms.sourcegitcommit: 4ad0fea02000c8f6dbb9a919fb6ce1f435d0e8d6
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179906"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67334155"
 ---
 # <a name="tutorial-create-a-windows-vision-skill-uwp-application"></a>Учебник. Создание приложения UWP навыков концепции Windows
 
 > [!NOTE]
-> Некоторая информация имеет отношение к предварительному выпуску продукта, который может быть значительно изменен перед коммерческим выпуском. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
+> Некоторые сведения относятся к предварительной версии продукта, в которую перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
 
-В предыдущем [руководстве](tutorial.md), мы узнали, как создание и упаковка навык концепции Windows. Теперь давайте узнаем, как интегрировать, в приложении универсальной платформы Windows (UWP). Можно скачать полный пример на [GitHub](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill) чтобы увидеть, что получится после завершения.
+В предыдущем [руководстве](tutorial.md), мы узнали, как создание и упаковка навык концепции Windows. Теперь давайте узнаем, как интегрировать, в приложении универсальной платформы Windows (UWP). Можно скачать полный пример на [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cs) чтобы увидеть, что получится после завершения.
 
 Также имеющие отношение к этому руководству, можно найти здесь Дополнительные сведения о загрузке *[VideoFrames](https://docs.microsoft.com/uwp/api/Windows.Media.VideoFrame)* из следующих источников:
 - [существующие *SoftwareBitmap*](https://docs.microsoft.com/uwp/api/windows.media.videoframe.createwithsoftwarebitmap#Windows_Media_VideoFrame_CreateWithSoftwareBitmap_Windows_Graphics_Imaging_SoftwareBitmap_)
@@ -34,7 +34,7 @@ ms.locfileid: "66179906"
 ---
 
 ## <a name="api-flow"></a>API потока
-Мы вернемся к потоку API, описанные в [основные понятия важные API](important-api-concepts.md#APIFlow) странице но сейчас с помощью конкретного набора классов в C#. Полный пример кода доступен на [GitHub](https://github.com/Microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/cs/FaceSentimentAnalysisTestApp/MainPage.xaml.cs). 
+Мы вернемся к потоку API, описанные в [основные понятия важные API](important-api-concepts.md#APIFlow) странице но сейчас с помощью конкретного набора классов в C#. Полный пример кода доступен на [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/cs/Apps/FaceSentimentAnalysisApp_UWP/MainPage.xaml.cs). 
 
 Мы обсудим в строках кода, относящиеся к API Windows концепции навыков: 
 

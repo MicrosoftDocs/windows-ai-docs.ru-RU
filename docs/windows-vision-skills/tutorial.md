@@ -7,17 +7,17 @@ ms.date: 5/10/2019
 ms.topic: article
 keywords: Windows 10, искусственный интеллект windows, windows визуального распознавания навыки
 ms.localizationpriority: medium
-ms.openlocfilehash: 6b02069ece8394f439dd2cdf8005b0fb9297645f
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: af0e6a9ee2fe80531a41a0f2722f1a8c8b9c723c
+ms.sourcegitcommit: 4ad0fea02000c8f6dbb9a919fb6ce1f435d0e8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179976"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67334115"
 ---
 # <a name="tutorial-create-your-own-windows-vision-skill-c"></a>Учебник. Создание собственных навыков концепции Windows (C#)
 
 > [!NOTE]
-> Некоторая информация имеет отношение к предварительному выпуску продукта, который может быть значительно изменен перед коммерческим выпуском. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
+> Некоторые сведения относятся к предварительной версии продукта, в которую перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
 
 Если вы уже имеется решение пользовательской службе визуального распознавания, этом руководстве показано, как перенос решения в навык концепции Windows путем расширения [Microsoft.AI.Skills.SkillInterfacePreview] [ SkillInterfacePreview] базовый API.
 
@@ -39,8 +39,8 @@ ms.locfileid: "66179976"
 
 Полный исходный код для C# и C++/WinRT версии этого примера доступен в репозитории GitHub пример:
 
-- [C#Пример навыков](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cs/FaceSentimentAnalyzer)
-- [C++/ Пример навыков WinRT](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/FaceSentimentAnalyzer)
+- [C#Пример навыков](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cs)
+- [C++/ Пример навыков WinRT](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp)
 
 Этот учебник поможет выполнить:
 
@@ -48,7 +48,7 @@ ms.locfileid: "66179976"
 2. [Создание файла nuspec](#CreateNuspec) для создания пакета NuGet
 3. [Запутывание и deobfuscating](#Obfuscation) файлы, чтобы скрыть их содержимого
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (или Visual Studio 2017 версии 15.7.4 или более поздней версии)
 - Windows 10, 1809 или более поздней версии
@@ -65,7 +65,7 @@ ms.locfileid: "66179976"
 
 Откройте в Visual Studio решение пользовательской службе визуального распознавания.
 
-### 1. ISkillDescriptor <a name="ISkillDescriptor"></a>
+### 1\. ISkillDescriptor <a name="ISkillDescriptor"></a>
 
 Создайте и Реализуйте класс дескриптора навык, унаследованные от [ISkillDescriptor] [ ISkillDescriptor] , предоставляет сведения о навыках, предоставляет список устройств, поддерживаемых выполнения (ЦП, GPU и т. д.) и выступает в роли объект фабрики для квалификации.
 
@@ -226,7 +226,7 @@ ms.locfileid: "66179976"
         }
         ```
 
-### 2. **ISkillBinding** <a name="ISkillBinding"></a>
+### 2\. **ISkillBinding** <a name="ISkillBinding"></a>
 
 Создайте и реализуйте навык привязки класс, наследуемый от [ISkillBinding] [ ISkillBinding] интерфейса, который содержит входные и выходные переменные полученные и созданные рабочими навыками.
 
@@ -575,7 +575,7 @@ ms.locfileid: "66179976"
 
 ([*Дополнительные сведения о пакетах NuGet здесь*](https://docs.microsoft.com/nuget/what-is-nuget))
 
-Чтобы создать пакет NuGet, необходимо написать *файлу nuspec* файла, как показано ниже [исходного файла в репозитории Git см. в разделе](https://github.com/Microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/build/SentimentAnalyzer_CS.nuspec). Этот файл состоит из двух основных разделов:
+Чтобы создать пакет NuGet, необходимо написать *файлу nuspec* файла, как показано ниже [исходного файла в репозитории Git см. в разделе](https://github.com/microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/build/Contoso.FaceSentimentAnalyzer_CS.nuspec). Этот файл состоит из двух основных разделов:
 
 - **Метаданные**: Эта часть содержит имя, описание, автора и владелец, лицензии и зависимости. Обратите внимание, что в нашем случае мы зависят от [Microsoft.AI.Skills.SkillInterfacePreview] [ SkillInterfacePreview] пакет NuGet. Этот пакет NuGet также содержит ссылки на лицензии и запускает запрос на его утверждение перед приемом данных.
 
@@ -621,13 +621,13 @@ ms.locfileid: "66179976"
 > .\nuget.exe pack <path to your .nuspec>
 ```
 
-Для проверки пакета локально, можно будет поместить это *.nupkg* файл в папке, которая будет служить NuGet, веб-канала в Visual Studio ([см. в разделе руководства, посвященные здесь](https://github.com/Microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/README.md#PrivateNuGetFeed)).
+Для проверки пакета локально, можно будет поместить это *.nupkg* файл в папке, которая будет служить NuGet, веб-канала в Visual Studio ([см. в разделе руководства, посвященные здесь](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/README.md#PrivateNuGetFeed)).
 
 Ура вы создали первый квалификации концепции Windows! Вы можете отправить свои навыки упакованные [NuGet.org](https://www.nuget.org/)!
 
 ## 3. И ещё.. запутывание и deobfuscating файлов ресурсов для скрытия интеллектуальной собственности<a name="Obfuscation"></a>
 
-Потребитель обезвреживания использование или доступ к ресурсам навыков (файлы модели, изображения, и т.д.), можно замаскировать файлы в качестве шага перед сборкой и deobfuscate файлов во время выполнения. [Пример, в нашем примере GitHub](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp) содержит реализацию вспомогательные классы, которые используют [Windows.Security.Cryptography](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography) для [запутывания](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Obfuscator) файлов во время компиляции и [deobfuscate](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Deobfuscator) их во время выполнения. Обратите внимание, что эта часть отображается только в C++/WinRT версию сохранить свои навыки пример C# более простой версии.  
+Потребитель обезвреживания использование или доступ к ресурсам навыков (файлы модели, изображения, и т.д.), можно замаскировать файлы в качестве шага перед сборкой и deobfuscate файлов во время выполнения. [Пример, в нашем примере GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/FaceSentimentAnalyzer) содержит реализацию вспомогательные классы, которые используют [Windows.Security.Cryptography](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography) для [запутывания](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/Obfuscator) файлов во время компиляции и [deobfuscate](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/Deobfuscator) их во время выполнения. Обратите внимание, что эта часть отображается только в C++/WinRT версию сохранить свои навыки пример C# более простой версии.  
 
 - Запутывания — это событие перед сборкой, можно настроить проект на выполнение постоянно или выполняются один раз и использовать выходные данные как ресурс напрямую. В этом примере мы используем выделенный скомпилированного средство (Obfuscator.exe). Необходимо убедиться, что сначала скомпилировать это средство прежде, чем ее можно вызвать как часть своего времени компиляции навыков событие перед сборкой. Обратите внимание, что так как выполняется на компьютере разработки во время компиляции, можно скомпилировать его один раз, используя любой целевой объект и поддерживаемые платформы (т. е. в этом случае *Debug/Win32*).
 
