@@ -2,9 +2,11 @@
 ## [Машинное обучение Windows](windows-ml/index.md)
 ### Учебники
 #### [Создание классического приложения WinML (C++)](windows-ml/get-started-desktop.md)
+#### [Создание классического приложения WinML (Python)](windows-ml/get-started-python.md)
 #### [Создание приложения UWP WinML (C#)](windows-ml/get-started-uwp.md)
 ### [Что собой представляет модель машинного обучения](windows-ml/what-is-a-machine-learning-model.md)
-### [Получение моделей ONNX](windows-ml/get-onnx-model.md)
+### [Модели ONNX](windows-ml/get-onnx-model.md)
+#### [Версии ONNX и сборки Windows](windows-ml/onnx-versions.md)
 #### [Обучение модели с использованием CNTK](windows-ml/train-model-vs-tools-ai.md)
 #### [Обучение модели с использованием PyTorch](windows-ml/train-model-pytorch.md)
 #### [Преобразование обученных моделей в ONNX](windows-ml/convert-model-winmltools.md)

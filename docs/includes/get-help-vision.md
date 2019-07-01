@@ -1,5 +1,5 @@
 > [!NOTE]
-> Используйте следующие ресурсы для получения справки по Windows концепции навыки:
+> Используйте следующие ресурсы для получения справки по навыкам компьютерного зрения в Windows:
 >
-> * Чтобы сообщить об ошибке, сообщите о проблеме на нашем [GitHub](https://github.com/Microsoft/Windows-Machine-Learning/issues).
-> * Отправить запрос на функцию, пожалуйста перейдите к [отклики от разработчиков Windows](https://wpdev.uservoice.com/).
+> * Сообщить об ошибке можно в [нашем репозитории GitHub](https://github.com/Microsoft/WindowsVisionSkillsPreview/issues).
+> * Чтобы отправить запрос на добавление функции, перейдите на сайт [Windows Developer Feedback](https://wpdev.uservoice.com/).

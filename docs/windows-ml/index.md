@@ -3,17 +3,17 @@ author: rosanevallim
 title: Машинное обучение Windows
 description: Windows ML позволяет использовать обученные модели машинного обучения в приложениях Windows.
 ms.author: rovalli
-ms.date: 4/17/2019
+ms.date: 6/5/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: c6ed47251d9d5372fcf0b998ab3a0a0ca7d9e25a
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 489dea907eba3d7b8eb9722f6a7934d31228206a
+ms.sourcegitcommit: 88c4ba40260771589c84409e11c9bb19528ebbaf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179795"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033870"
 ---
 # <a name="windows-machine-learning"></a>Машинное обучение Windows
 
@@ -23,7 +23,7 @@ ms.locfileid: "66179795"
 
 ## <a name="overview"></a>Обзор
 
-С помощью Windows ML разработчики могут использовать обученные модели машинного обучения в приложениях для Windows, написанных на C#, C++ или JavaScript, либо локально на устройстве с Windows 10 или компьютере с Windows Server 2019. Включить обученные модели машинного обучения в код приложения просто. Достаточно нескольких действий:
+Благодаря Windows ML разработчики могут использовать обученные модели машинного обучения в приложениях для Windows, написанных на C#, C++, JavaScript или Python, либо локально на устройстве с Windows 10 или компьютере с Windows Server 2019. Включить обученные модели машинного обучения в код приложения просто. Достаточно нескольких действий:
 
 ![Среда обучения, добавление ссылки на модель, приложение, Windows ML](../images/winml-flow.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "66179795"
     При запуске приложения среда выполнения Windows ML (которая содержит подсистему зависимостей модели ONNX) оценивает обученную модель на устройстве с Windows 10 (или Windows Server 2019, если код предназначен для развертывания сервера). Windows ML абстрагирует оборудование, что позволяет разработчикам использовать множество процессоров &mdash; ЦП, GPU и, в будущем, ускорители ИИ. Аппаратное ускорение Windows ML основано на [DirectML](https://docs.microsoft.com/windows/desktop/direct3d12/dml), высокопроизводительном низкоуровневом API из семейства DirectX, предназначенном для выполнения зависимостей машинного обучения.
     :::column-end:::
     :::column:::
-        ![windows ml layers](../images/overview-diagram.png)
+        ![windows ml layers](../images/overview-diagram.svg)
     :::column-end:::
 :::row-end:::
 
