@@ -37,6 +37,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/ai/breadcrumb/toc.json",
+      "disable_contribution_on_translation_quality": ["MT"],
       "extendBreadcrumb": true,
       "ms.prod": "machine-learning"
     },
