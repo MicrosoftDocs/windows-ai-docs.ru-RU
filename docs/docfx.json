@@ -40,11 +40,7 @@
       "extendBreadcrumb": true,
       "ms.prod": "machine-learning"
     },
-    "fileMetadata": {
-		   "open_to_public_contributors": {
-		        "/*.md":  true
-        }
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "windows-ai-docs",
     "markdownEngineName": "markdig"
