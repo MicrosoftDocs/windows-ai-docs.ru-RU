@@ -54,7 +54,7 @@ ms.locfileid: "67334155"
     ...
     ```
 
-+ Запрос доступных выполнения устройств с помощью [ISKillDescriptor] [ ISKillDescriptor] экземпляра
++ Запрос доступных выполнения устройств с помощью [ISKillDescriptor][ISKillDescriptor] экземпляра
     ```csharp
     ...
     
@@ -68,7 +68,7 @@ ms.locfileid: "67334155"
     ...
     ```
 
-+ Создать экземпляр навыков с помощью [ISKillDescriptor] [ ISKillDescriptor] экземпляра и требуемыми [ISkillExecutionDevice][ISkillExecutionDevice]
++ Создать экземпляр навыков с помощью [ISKillDescriptor][ISKillDescriptor] экземпляра и требуемыми [ISkillExecutionDevice][ISkillExecutionDevice]
     ```csharp
     ...
     
