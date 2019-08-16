@@ -67,9 +67,9 @@ ms.locfileid: "67334115"
 
 ### 1\. ISkillDescriptor <a name="ISkillDescriptor"></a>
 
-Создайте и Реализуйте класс дескриптора навык, унаследованные от [ISkillDescriptor] [ ISkillDescriptor] , предоставляет сведения о навыках, предоставляет список устройств, поддерживаемых выполнения (ЦП, GPU и т. д.) и выступает в роли объект фабрики для квалификации.
+Создайте и Реализуйте класс дескриптора навык, унаследованные от [ISkillDescriptor][ISkillDescriptor] , предоставляет сведения о навыках, предоставляет список устройств, поддерживаемых выполнения (ЦП, GPU и т. д.) и выступает в роли объект фабрики для квалификации.
 
-1. Импорт [Microsoft.AI.Skills.SkillInterfacePreview] [ SkillInterfacePreview] пространства имен и являются производными от класса [ISkillDescriptor] [ ISkillDescriptor] интерфейс.
+1. Импорт [Microsoft.AI.Skills.SkillInterfacePreview] [ SkillInterfacePreview] пространства имен и являются производными от класса [ISkillDescriptor][ISkillDescriptor] интерфейс.
 
     ```csharp
     ...
@@ -228,9 +228,9 @@ ms.locfileid: "67334115"
 
 ### 2\. **ISkillBinding** <a name="ISkillBinding"></a>
 
-Создайте и реализуйте навык привязки класс, наследуемый от [ISkillBinding] [ ISkillBinding] интерфейса, который содержит входные и выходные переменные полученные и созданные рабочими навыками.
+Создайте и реализуйте навык привязки класс, наследуемый от [ISkillBinding][ISkillBinding] интерфейса, который содержит входные и выходные переменные полученные и созданные рабочими навыками.
 
-1. Импорт [Microsoft.AI.Skills.SkillInterfacePreview] [ SkillInterfacePreview] пространства имен и являются производными от класса [ISkillBinding] [ ISkillBinding] интерфейс и его тип коллекции.
+1. Импорт [Microsoft.AI.Skills.SkillInterfacePreview][SkillInterfacePreview] пространства имен и являются производными от класса [ISkillBinding][ISkillBinding] интерфейс и его тип коллекции.
 
     ```csharp
     ...
@@ -245,7 +245,7 @@ ms.locfileid: "67334115"
 
 2. Сначала создайте две переменные-члены:
 
-    - Один является вспомогательным классом [VisionSkillBindingHelper] [ VisionSkillBindingHelper] условии в базовый интерфейс для хранения входного изображения функция с именем «InputImage».
+    - Один является вспомогательным классом [VisionSkillBindingHelper][VisionSkillBindingHelper] условии в базовый интерфейс для хранения входного изображения функция с именем «InputImage».
 
     ```csharp
     private VisionSkillBindingHelper m_bindingHelper = null;
