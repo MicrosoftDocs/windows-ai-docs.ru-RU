@@ -1,46 +1,45 @@
 ---
-author: eliotcowley
-title: Создание классического приложения vision навыков (C++)
-description: Сведения о создании Windows классического приложения (не UWP), использующий навыки концепции Windows.
-ms.author: elcowle
-ms.date: 4/25/2019
+author: QuinnRadich
+title: Использование опыта работы с Windows из классического приложения (C++)
+description: Узнайте, как подготавливать и использовать навыки работы с Windows в настольном приложении (не UWP).
+ms.author: lobourre
+ms.date: 8/26/2019
 ms.topic: article
-keywords: Windows 10, искусственный интеллект windows, windows визуального распознавания навыков, рабочего стола
+keywords: Windows 10, Windows AI, навыки работы с концепцией Windows, Настольный компьютер
 ms.localizationpriority: medium
-ms.openlocfilehash: d61417a200902979ed8cfa5d9f37ab5b1b078e15
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: a40d4ad18dda21ea73f9bf0e8e9144180fb5aee3
+ms.sourcegitcommit: 900b428a26955f6366f3c03128dc225f52ffd3bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179886"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70065730"
 ---
-# <a name="tutorial-create-a-vision-skill-desktop-application-c"></a>Учебник. Создание классического приложения vision навыков (C++)
+# <a name="tutorial-create-a-vision-skill-desktop-application-c"></a>Учебник. Создание классического приложения для навыков работыC++с видением ()
 
 > [!NOTE]
-> Некоторая информация имеет отношение к предварительному выпуску продукта, который может быть значительно изменен перед коммерческим выпуском. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
+> Некоторые сведения относятся к предварительной версии продукта, в которую перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
 
 > [!NOTE]
-> Если вы создаете навыка, необходимо использовать в приложении не UWP, таких как классического приложения Win32 или .NET Core.
-Вам потребуется изменить свои навыки, убедитесь, что навык учитывает среды.
+> Если вы создаете навык для концепции Windows, который должен использоваться в приложении, не относящемся к UWP (т. е. в классическом приложении Win32 или .NET Core), необходимо убедиться в том, что навык осведомлен о среде выполнения.
 
-В этом руководстве вы узнаете, как:
+В этом учебнике вы научитесь:
 
-- Изменение пакета навыков будут учитывать контейнера.
-- Укажите манифест и файлами заголовков.
+- Измените пакет навыков, чтобы он знал о среде выполнения. В частности, навыку необходимо знать, работает ли он в контейнере приложения UWP.
+- Укажите файлы манифеста и заголовка, необходимые для работы навыка в приложении, не относящемся к UWP.
 
 ---
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (или Visual Studio 2017 версии 15.7.4 или более поздней версии)
-- Windows 10, 1809 или более поздней версии
-- [Пакет SDK для Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk), 1809 или более поздней версии
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (или Visual Studio 2017, версия 15.7.4 или более поздняя)
+- Windows 10 версии 1809 или более поздней.
+- [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), версия 1809 или более поздняя
 
 ---
 
-1. Убедитесь, что навык виду контейнер универсальной платформы Windows:
+1. Убедитесь в том, что в среде выполнения для навыка учитывается UWP-Container:
 
-- Обнаружение среды контейнеров приложений из навыков:
+- Обнаружение среды выполнения контейнера приложения UWP в рамках навыка:
 
 Пример кода:
 
@@ -70,64 +69,82 @@ bool IsUWPContainer()
 }
 ```
 
-- Если навыков вызывается из контейнера приложения универсальной платформы Windows или UWP упакованные контейнера доступ к файлам ограничивается пути пакета приложения. Таким образом любой файл модели или зависимости должны быть упаковываются и загружаются из путей к контейнеру.
-Тем не менее если навык вызывается из среде не являющиеся контейнерами, например регулярных cpp или .net core настольном приложении win32, функция среды контейнеров приложений будет недоступна. Вместо этого большинство обращений к диску, будут доступны в соответствии с разрешениями рабочего стола приложения, которое использует свои навыки. Может быть хорошей практикой для сохранения файлов модели и другие ресурсы в одном расположении в расположение dll навыков
+- Если навык вызывается из контейнера приложения UWP или из упакованного контейнера UWP, доступ к файлу ограничен путями пакета приложения. Таким образом, все файлы или зависимости модели должны быть упакованы и загружены из путей к контейнеру.
+
+Однако если навык вызывается из среды, отличной от контейнера, такой как Win32 C++ или .NET Core 3,0, то среда контейнера приложения UWP недоступна. Вместо этого большая часть доступа к диску будет доступна в соответствии с разрешениями классического приложения, использующего этот навык. Поэтому рекомендуется размещать файлы моделей и другие ресурсы в том же расположении, где находится библиотека навыков (*DLL*).
 
 Пример кода:
 
 ```csharp
 winrt::Windows::Storage::StorageFile modelFile = nullptr;
+
+// if running from within a UWP app container, access resources using a URI relative to its path
 if (IsUWPContainer())
 {
     auto modelFile = Windows::Storage::StorageFile::GetFileFromApplicationUriAsync(Windows::Foundation::Uri(L"ms-appx:///Contoso.FaceSentimentAnalyzer/" + WINML_MODEL_FILENAME)).get();
 }
+// If running from a regular app process such as a Desktop app, access resources using the full system path
 else
 {
     WCHAR DllPath[MAX_PATH] = { 0 };
     GetModuleFileName(NULL, DllPath, _countof(DllPath));
+    // Get path of current DLL
     auto file = Windows::Storage::StorageFile::GetFileFromPathAsync(DllPath).get();
+    // Use the path of the parent directory to access other resources bundled with the DLL
     auto folder = file.GetParentAsync().get();
     modelFile = folder.GetFileAsync(WINML_MODEL_FILENAME).get();
 ```
 
-1. Укажите (пакетов в Nuget) файлы заголовков (.h) и файлы с расширением MANIFEST для удобства использования Win32 cpp или .net core разработчиков приложений.
+2. Предоставьте файлы заголовков (. h) и *manifest* -файлы (пакет в NuGet) для простоты использования разработчиками приложений Win32 или .NET Core 3,0.
 
-1. Файлы заголовков для C++ приложений
+    2.1. Создание файлов заголовков ( *. h*) для C++ приложений.
+В Visual Studio выберите свой проект. Затем:
+    - Компонент C++ WinRT: Выберите проект-> Свойства — > файле выходных данных > MIDL->
+    - Компонент C# WinRT: Поскольку нет возможности создавать файлы заголовков в C# проекте, необходимо сначала преобразовать созданные файлы метаданных ( *. winmd*) в файлы определения интерфейса (*IDL*), а затем преобразовать их в файлы заголовков ( *. h*). Это можно сделать с помощью командной строки разработчика Visual Studio:
+      - Создание *IDL* -файла из файла *WinMD* с помощью [winmdidl. exe](https://docs.microsoft.com/cpp/cppcx/wrl/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata?view=vs-2019)
+      ```
+      > winmdidl <filename.winmd> /utf8 /metadata_dir:<path-to-sdk-unionmetadata> /metadata_dir: <path-to-additional-winmds> /outdir:<output-path>
+      ```
+      - Создание *h* из *IDL* -файла с помощью [midlrt. exe](https://docs.microsoft.com/windows/win32/midl/midlrt-and-windows-runtime-components)
+      ```
+      > midlrt <filename.idl> /metadata_dir  <path-to-sdk-unionmetadata> /ns_prefix
+      ```
 
-- Компонент WINRT cpp = > Свойства проекта "->" MIDL "->" выходные данные "->" файл заголовка
-- WinRT C# компонент = > winmdidl средство для преобразования .winmd в .idl; и midlrt преобразуемый .idl в файлах заголовков.
-- Создайте .idl из. winmd winmdidl <filename.winmd> /utf8 /metadata_dir:<path-to-sdk-unionmetadata> /metadata_dir: <path-to-additional-winmds> /outdir:<output-path>
-- Всегда создайте .h из /ns_prefix /metadata_dir < путь к sdk-unionmetadata > .idl midlrt < filename.idl >.
+    2.2. Создайте файл манифеста, чтобы обеспечить параллельную регистрацию навыков в приложениях без упаковки. В этом файле перечислены классы среды выполнения, определенные в компоненте WinRT, чтобы их можно было зарегистрировать и загрузить во время выполнения. Мы предоставляем [удобные скрипты](https://github.com/microsoft/WindowsVisionSkillsPreview/blob/master/samples/Scripts/genSxSManifest.ps1) , которые могут создать манифест путем анализа файлов определения интерфейса (*IDL*). Чтобы получить комплексную демонстрацию, ознакомьтесь с [примерами навыков](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill) .
 
-    2. Для загрузки параллельно навыков в приложениях, не упакованных манифеста: я. Формат:
+
+    2.2.1. Формат манифеста параллельно:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0">
-    <assemblyIdentity
+    <assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0">
+        <assemblyIdentity
         type="win32"
-        name="manifest Identityname preferable same as dll name without extension and same as filename of this manifest"
+        name="manifest Identityname, preferably same as dll name without extension and same as filename of this manifest"
         version="1.0.0.0"/>
 
-<file name="name of dll of the skill component including extension">
+        <file name="dll name of the skill component, including extension">
 
-<activatableClass
-    name="runtimeclassname1"
-    threadingModel="both"
-    xmlns="urn:schemas-microsoft-com:winrt.v1" />
-<activatableClass
-    name="runtimeclassname2"
-    threadingModel="both"
-    xmlns="urn:schemas-microsoft-com:winrt.v1" />
+            <activatableClass
+            name="runtimeclassname1"
+            threadingModel="both"
+            xmlns="urn:schemas-microsoft-com:winrt.v1" />
 
-</file>
-</assembly>
+            <activatableClass
+            name="runtimeclassname2"
+            threadingModel="both"
+            xmlns="urn:schemas-microsoft-com:winrt.v1" />
+
+        </file>
+    </assembly>
 ```
 
-Формат манифеста на стороне приложения:
+2.3. В приложении добавьте файл манифеста, в котором упоминается только что созданный манифест навыков.
+
+2.3.1. Параметры проекта приложения для создания файла манифеста на стороне приложения и формат файла манифеста на стороне:
 <div style="text-align:center" markdown="1">
 
-![Схема манифеста для загрузки SxS компонентов WinRT](../images/vision-skills-manifest.png)
+![Схема манифеста для загрузки компонентов WinRT в SxS](../images/vision-skills-manifest.png)
 
 </div>
 
@@ -159,7 +176,6 @@ else
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Ура квалификации теперь готов для использования в приложении рабочего стола. Полный исходный код для примера, скоро будут доступны на сайте GitHub.
-Поэкспериментируйте с другими образцами [GitHub](https://github.com/Microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill) и расширить их так, как вам нравится.
+Радостных, теперь ваш навык готов к использованию в классическом приложении. Поиграйте с примерами навыков на [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples) и расширяйте их по своему усмотрению.
 
 [!INCLUDE [help](../includes/get-help-vision.md)]
