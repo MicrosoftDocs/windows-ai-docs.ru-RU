@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Структура MLOperatorAttributeNameValue
-description: Указывает имя и значения атрибута для пользовательского оператора.
-ms.author: elcowle
+title: Структура Млоператораттрибутенамевалуе
+description: Задает имя и значение (-ов) атрибута пользовательского оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, MLOperatorAttributeNameValue
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Млоператораттрибутенамевалуе
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,35 +13,35 @@ api_name:
 - MLOperatorAttributeNameValue
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: a363b06b4d24d92b6926f8a909e27cdef5ef6a95
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 04fd271cea818db29ff8f6402eb37dfb537d4ea3
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181466"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157953"
 ---
-# <a name="mloperatorattributenamevalue-struct"></a>Структура MLOperatorAttributeNameValue
+# <a name="mloperatorattributenamevalue-struct"></a>Структура Млоператораттрибутенамевалуе
 
-Указывает имя и значения атрибута для пользовательского оператора. Это используется при регистрации пользовательского оператора ядра и схемы пользовательского оператора.
+Задает имя и значение (-ов) атрибута пользовательского оператора. Используется при регистрации ядер пользовательских операторов и схемы настраиваемого оператора.
 
 ## <a name="fields"></a>Поля
 
 | Имя       | Тип                    | Описание |
 |------------|-------------------------|-------------|
-| числа с плавающей запятой     | **const число с плавающей запятой***            | значения точки, с плавающей запятой с 32-разрядной. Используется, когда поле типа **MLOperatorAttributeType::Float** или **MLOperatorAttributeType::FloatArray**. |
-| целые числа       | **const int64_t***          | 64-разрядного целого значения. Используется, когда поле типа **MLOperatorAttributeType::Int** или **MLOperatorAttributeType::IntArray**. |
-| name       | **const char***             | Завершающаяся нулем UTF-8 строка, представляющая имя атрибута в тип связанного оператора. |
-| Зарезервировано   | **const void***             |             |
-| Строки    | **const char\* const***      | Завершающаяся нулем UTF-8 строке журнала значения. Используется, когда поле типа **MLOperatorAttributeType::String** или **MLOperatorAttributeType::StringArray**. |
-| type       | [MLOperatorAttributeType](MLOperatorAttributeType.md) | Тип атрибута в тип связанного оператора. |
-| valueCount | **uint32_t**                | Число элементов в значении атрибута. Это должен быть 1, за исключением атрибутов, которые имеют тип массива. |
+| плавающей запятой     | **const float***            | 32-разрядные значения с плавающей запятой. Используется, если поле Type имеет значение **млоператораттрибутетипе:: float** или **Млоператораттрибутетипе:: флоатаррай**. |
+| ints       | **const int64_t***          | 64-разрядные целочисленные значения. Используется, если поле Type имеет значение **млоператораттрибутетипе:: int** или **Млоператораттрибутетипе:: интаррай**. |
+| name       | **const char***             | Строка UTF-8, заканчивающаяся нулем, представляющая имя атрибута в связанном типе оператора. |
+| процессу   | **Константа void***             |             |
+| Строка    | **const char\* const***      | Строковые значения в кодировке UTF-8, заканчивающиеся нулем. Используется, если поле Type имеет значение **млоператораттрибутетипе:: String** или **Млоператораттрибутетипе:: стрингаррай**. |
+| type       | [MLOperatorAttributeType](MLOperatorAttributeType.md) | Тип атрибута в связанном типе оператора. |
+| валуекаунт | **uint32_t**                | Число элементов в значении атрибута. Это должно быть 1, за исключением атрибутов, которые относятся к типам массивов. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

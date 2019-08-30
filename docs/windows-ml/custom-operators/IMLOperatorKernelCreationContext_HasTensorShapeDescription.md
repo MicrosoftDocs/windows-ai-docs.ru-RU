@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelCreationContext.HasTensorShapeDescription
-description: Возвращает значение true, если описание фигуры входных и выходных подключен к краям оператор может запрашиваться с помощью **GetTensorShapeDescription**.
-ms.author: elcowle
+title: Имлоператоркернелкреатионконтекст. Хастенсоршапедескриптион, метод
+description: Возвращает значение true, если описание входных и выходных фигур, подключенных к краям оператора, может быть запрошено с помощью **жеттенсоршапедескриптион**.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, HasTensorShapeDescription
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Хастенсоршапедескриптион
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorKernelCreationContext.HasTensorShapeDescription
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: ac854a1e6701055b99b3c79bfc8558887b20f279
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: bee295251bd04c0d7b6bda6bdd6d1f1e835f4543
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181696"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157534"
 ---
-# <a name="imloperatorkernelcreationcontexthastensorshapedescription-method"></a>Метод IMLOperatorKernelCreationContext.HasTensorShapeDescription
+# <a name="imloperatorkernelcreationcontexthastensorshapedescription-method"></a>Имлоператоркернелкреатионконтекст. Хастенсоршапедескриптион, метод
 
-Возвращает значение true, если описание фигуры входных и выходных подключен к краям оператор может запрашиваться с помощью [IMLOperatorKernelCreationContext::GetTensorShapeDescription](IMLOperatorKernelCreationContext_GetTensorShapeDescription.md). Это возвращает значение true, если оператор был зарегистрирован с помощью [MLOperatorKernelOptions::AllowDynamicInputShapes](MLOperatorKernelOptions.md) флаг.
+Возвращает значение true, если описание входных и выходных фигур, подключенных к краям оператора, может быть запрошено с помощью [имлоператоркернелкреатионконтекст:: жеттенсоршапедескриптион](IMLOperatorKernelCreationContext_GetTensorShapeDescription.md). Это возвращает значение true, если оператор не был зарегистрирован с помощью флага [млоператоркернелоптионс:: алловдинамиЦинпутшапес](MLOperatorKernelOptions.md) .
 
 ```cpp
 bool HasTensorShapeDescription()
@@ -34,8 +32,8 @@ bool HasTensorShapeDescription()
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

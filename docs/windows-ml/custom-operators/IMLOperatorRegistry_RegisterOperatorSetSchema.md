@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorRegistry.RegisterOperatorSetSchema
-description: Регистрирует набор схемы пользовательского оператора, включающего в себя набор оператор.
-ms.author: elcowle
+title: Имлоператоррегистри. Регистероператорсетсчема, метод
+description: Регистрирует набор пользовательских схем операторов, включающих набор операторов.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, RegisterOperatorSetSchema
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Регистероператорсетсчема
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorRegistry.RegisterOperatorSetSchema
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: bb7778112cbc54f4bf13150f4a132b17f3b68681
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: f8746ecd7c58b759f7c46115759f4f977c1578a8
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180696"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157625"
 ---
-# <a name="imloperatorregistryregisteroperatorsetschema-method"></a>Метод IMLOperatorRegistry.RegisterOperatorSetSchema
+# <a name="imloperatorregistryregisteroperatorsetschema-method"></a>Имлоператоррегистри. Регистероператорсетсчема, метод
 
-Регистрирует набор схемы пользовательского оператора, включающего в себя набор оператор. Задает оператор проектировании управления версиями ONNX. Вызывающие объекты должны предоставить схему для всех операторов, которые изменились между версией указанной базовой версии и версии, указанной в *operatorSetId*. Это предотвращает использование в модели, благодаря которым импорта новой версии набора оператор более старых версиях ядер. Inferrer типа должно быть указано, если [MLOperatorSchemaDescription](MLOperatorSchemaDescription.md) структура не может представлять, как определяются типы выходных данных. Для проверки модели, можно дополнительно указать inferrer фигуры.
+Регистрирует набор пользовательских схем операторов, включающих набор операторов. Наборы операторов соответствуют проекту управления версиями ONNX. Вызывающие объекты должны предоставить схему для всех операторов, которые изменились между указанной базовой версией и версией, указанной в *операторсетид*. Это предотвращает использование старых версий ядра в моделях, которые импортируют новую версию набора операторов. Если структура [млоператорсчемадескриптион](MLOperatorSchemaDescription.md) не может выразить, как определяются типы вывода, необходимо указать источник ссылок типа. Для включения проверки модели можно дополнительно предоставить ссылки на фигурные источники.
 
 ```cpp
 void RegisterOperatorSetSchema(
@@ -40,8 +38,8 @@ void RegisterOperatorSetSchema(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

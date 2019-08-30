@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelContext.AllocateTemporaryData
-description: Выделяет временных данных, который будет использоваться в качестве промежуточных памяти в течение всего вызова **IMLOperatorKernel::Compute**.
-ms.author: elcowle
+title: Имлоператоркернелконтекст. Аллокатетемпораридата, метод
+description: 'Выделяет временные данные, которые будут использоваться в качестве промежуточной памяти для длительности вызова **имлоператоркернел:: COMPUTE**.'
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, AllocateTemporaryData
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Аллокатетемпораридата
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,20 +13,20 @@ api_name:
 - IMLOperatorKernelContext.AllocateTemporaryData
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 0c1ffe8d50052e37e109f869346228031c35bb36
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: ccc7e98f928ab77d7265c647165774e9fb74312a
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180676"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157247"
 ---
-# <a name="imloperatorkernelcontextallocatetemporarydata-method"></a>Метод IMLOperatorKernelContext.AllocateTemporaryData
+# <a name="imloperatorkernelcontextallocatetemporarydata-method"></a>Имлоператоркернелконтекст. Аллокатетемпораридата, метод
 
-Выделяет временных данных, который будет использоваться в качестве промежуточных памяти в течение всего вызова [IMLOperatorKernel::Compute](IMLOperatorKernel_Compute.md). Это может пригодиться ядра, зарегистрированный при помощи [MLOperatorExecutionType::D3D12](MLOperatorExecutionType.md). Объект данных поддерживает [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) интерфейс, и является буфером GPU.
+Выделяет временные данные, которые будут использоваться в качестве промежуточной памяти для длительности вызова [имлоператоркернел:: COMPUTE](IMLOperatorKernel_Compute.md). Это может быть использовано для ядер, зарегистрированных с помощью [млоператорексекутионтипе::D 3d12](MLOperatorExecutionType.md). Объект данных поддерживает интерфейс [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) , а — буфер GPU.
 
 ```cpp
 void AllocateTemporaryData(
-    size_t size, 
+    size_t size,
     _COM_Outptr_ IUnknown** data)
 ```
 
@@ -36,8 +34,8 @@ void AllocateTemporaryData(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

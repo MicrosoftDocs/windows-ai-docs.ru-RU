@@ -1,50 +1,48 @@
 ---
-author: eliotcowley
 title: Средства и примеры
-description: Дополнительные сведения о различных средств и примеров, доступных для Windows машинного обучения.
-ms.author: elcowle
+description: Узнайте о различных средствах и примерах, доступных для Windows Машинное обучение.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows в машинном обучении, WinML, примеры, средства
+keywords: Windows 10, машинное обучение Windows, WinML, примеры, средства
 ms.localizationpriority: medium
-ms.openlocfilehash: d305184d493549c7d2f9ed126975f3310d4e1279
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 453d43796e559a69591d4c8290b3acc5fb66f302
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179956"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157970"
 ---
 # <a name="tools-and-samples"></a>Средства и примеры
 
-[GitHub-репозитории Windows-Machine-Learning](https://github.com/Microsoft/Windows-Machine-Learning) содержит примеры приложений, демонстрирующие способы использования машинного обучения Windows, а также средства для проверки моделей и устранение неполадок во время разработки.
+[Репозиторий машинного обучения на сайте GitHub](https://github.com/Microsoft/Windows-Machine-Learning) содержит примеры приложений, демонстрирующих использование машинное обучение Windows, а также средства, помогающие проверять модели и устранять проблемы во время разработки.
 
-## <a name="tools"></a>Инструменты
+## <a name="tools"></a>Сервис
 
-Следующие средства доступны на сайте GitHub.
+На сайте GitHub доступны следующие средства.
 
 | Имя | Описание |
 |------|-------------|
-| [Генератор кода WinML (mlgen)](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) | Расширение Visual Studio, которые помогут приступить к работе с помощью API-интерфейсы WinML в приложениях UWP путем создания код шаблона, при добавлении файла обученной ONNX в проект универсальной платформы Windows. Для [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) и [2019](https://marketplace.visualstudio.com/items?itemName=WinML.MLGenV2). См. в разделе [документации](mlgen.md) Дополнительные сведения.
-| [Панель мониторинга WinML (Предварительная версия)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLDashboard) | Средство для просмотра, редактирования, преобразование и проверку моделей машинного обучения для машинного Обучения Windows механизм вывода Графическим пользовательским интерфейсом. |
-| [WinMLRunner](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLRunner) | Средство командной строки, можно запустить .onnx или .pb моделей, где находятся входные и выходные переменные tensors или изображения. Это удобно, так как он позволяет запустить WinML API-интерфейсы для модели и см. в разделе, если оно попадет все проблемы, прежде чем пытаться интегрировать в приложения. |
-| [WinMLTools](https://pypi.org/project/winmltools/) | Пакет Python, который предоставляет преобразование моделей из разных наборов средств машинного Обучения в ONNX, а также средство квантования чтобы уменьшить объем памяти для модели. |
+| [Генератор кода WinML (млжен)](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) | Расширение Visual Studio, которое поможет приступить к работе с API WinML в приложениях UWP путем создания кода шаблона при добавлении обученного файла ONNX в проект UWP. Доступно для [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) и [2019](https://marketplace.visualstudio.com/items?itemName=WinML.MLGenV2). Дополнительные сведения см. в [документации](mlgen.md) .
+| [Панель мониторинга WinML (Предварительная версия)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLDashboard) | Инструмент на основе графического пользовательского интерфейса для просмотра, редактирования, преобразования и проверки моделей машинного обучения для механизма вывода Windows ML. |
+| [винмлруннер](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLRunner) | Программа командной строки, которая может выполнять onnx или Pb-модели, где входные и выходные переменные являются десятками или изображениями. Полезно, так как она позволяет запускать API WinML для модели и видеть, не возникли ли проблемы перед попыткой интегрировать ее в приложение. |
+| [винмлтулс](https://pypi.org/project/winmltools/) | Пакет Python, который обеспечивает преобразование модели из различных наборов средств ML в ONNX, а также средство дискретизация для уменьшения объема памяти, занимаемого моделью. |
 
 ## <a name="samples"></a>Примеры
 
-Следующие образцы приложений доступны на сайте GitHub.
+Следующие примеры приложений доступны на сайте GitHub.
 
 | Имя | Описание |
 |------|-------------|
-| [AdapterSelection (Win32 C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/AdapterSelection/AdapterSelection/cpp) | Классическое приложение, демонстрирующий Выбор адаптером конкретного устройства с помощью вашей модели. |
-| [Пример пользовательского оператора (Win32 C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomOperatorCPU/desktop/cpp) | Настольным приложением, которое определяет несколько пользовательских операторов ЦП. Один из них является оператором отладки, можно интегрировать в собственные рабочего процесса. |
-| [Пользовательские Tensorization (Win32 C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization) | Показано, как tensorize входные изображения с помощью API WinML на ЦП и GPU. |
-| [Custom Vision (UWP C#)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/custom-vision-onnx-windows-ml) | Показано, как для обучения модели ONNX в облаке, используя Custom Vision и интегрировать в приложение с WinML. |
-| [Emoji8 (UWP C#)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/Emoji8/UWP/cs) | Показано, как можно использовать для создания мощных интересную WinML обнаружение эмоций приложения. |
-| [Передачи в стиле FNS (UWP C#)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/FNSCandyStyleTransfer) | Использует модель передачи FNS сладости стиля для повторного применения стиля изображения или видео потоков. |
-| [MNIST (UWP C#/C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/MNIST) | Соответствует [руководства: Создание приложения универсальной платформы Windows машины обучения Windows (C#)](get-started-uwp.md). Запустить из основы и работы с учебником или готового проекта. |
-| [PlaneIdentifier (UWP C#, WPF C#)](https://github.com/Microsoft/Windows-AppConsult-Samples-UWP/tree/master/PlaneIdentifier) | Использует предварительно обученная модель машинного обучения, созданные с помощью Custom Vision службы в Azure, для определения того, если заданное изображение содержит определенного объекта: плоскость. |
-| [Обнаружение объектов SqueezeNet (Win32 C++, UWP C#/JavaScript)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/SqueezeNetObjectDetection) | Использует SqueezeNet, модель предварительно обучена машинное обучение для распознавания объектов преобладает в изображении, выбранного пользователем из файла. |
-| [Обнаружение объектов SqueezeNet (Azure IoT Edge в Windows, C#)](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/EdgeModules/SqueezeNetObjectDetection/cs) | Это пример модуля, в котором показано, как для формирования выводов машинного Обучения Windows в модуль Edge Интернета вещей Azure, под управлением Windows. Образы предоставляемые подключенной камеры, inferenced применительно к модели SqueezeNet и отправляется в центр Интернета вещей. |
-| [winml_tracker (ROS C++)](https://github.com/ms-iot/winml_tracker) | Узел ROS (робота операционная система), который использует WinML для отслеживания пользователей (или другие объекты) в camera кадры. |
+| [Адаптерселектион (Win32 C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/AdapterSelection/AdapterSelection/cpp) | Классическое приложение, которое показывает, как выбрать конкретный адаптер устройства для выполнения модели. |
+| [Пример настраиваемого оператора ( C++Win32)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomOperatorCPU/desktop/cpp) | Классическое приложение, определяющее несколько пользовательских операторов ЦП. Один из них — оператор отладки, который можно интегрировать в собственный рабочий процесс. |
+| [Пользовательские Тенсоризатион (Win32 C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization) | Показывает, как тенсоризе входной образ с помощью интерфейсов API WinML как для ЦП, так и для GPU. |
+| [Пользовательское визуальное распознавание (UWP C#)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/custom-vision-onnx-windows-ml) | Показывает, как обучить модель ONNX в облаке с помощью Пользовательское визуальное распознавание и интегрировать ее в приложение с WinML. |
+| [Emoji8 (UWP C#)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/Emoji8/UWP/cs) | Здесь показано, как можно использовать WinML для получения привлекательного распознавания эмоций приложения. |
+| [Перенос стилей ФНС (UWP C#)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/FNSCandyStyleTransfer) | Использует модель перемещения в стиле ФНС для повторного создания изображений или видеопотоков. |
+| [MNIST (UWP C#/C++)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/MNIST) | [Соответствует учебнику: Создайте приложение Windows Машинное обучение UWP (C#).](get-started-uwp.md) Начните с пошаговой работы с учебником или запустите завершенный проект. |
+| [Планеидентифиер (UWP C#, WPF C#)](https://github.com/Microsoft/Windows-AppConsult-Samples-UWP/tree/master/PlaneIdentifier) | Использует предварительно обученную модель машинного обучения, созданную с помощью службы Пользовательское визуальное распознавание в Azure, чтобы определить, содержит ли данный образ определенный объект: плоскость. |
+| [Обнаружение объектов Скуизенет (Win32 C++, UWP C#/жаваскрипт)](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/SqueezeNetObjectDetection) | Использует Скуизенет, предварительно обученную модель машинного обучения для обнаружения предварительного объекта в изображении, выбранном пользователем из файла. |
+| [Обнаружение объектов Скуизенет (Azure IoT Edge в Windows, C#)](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/EdgeModules/SqueezeNetObjectDetection/cs) | Это пример модуля, демонстрирующий запуск Windows ML в Azure IoT Edgeном модуле, работающем под управлением Windows. Изображения предоставляются подключенной камерой, выводятся в соответствии с моделью Скуизенет и отправляются в центр Интернета вещей. |
+| [winml_tracker (рос C++)](https://github.com/ms-iot/winml_tracker) | Узел рос (робот операционной системы), который использует WinML для мониторинга людей (или других объектов) в кадрах камеры. |
 
 [!INCLUDE [help](../includes/get-help.md)]

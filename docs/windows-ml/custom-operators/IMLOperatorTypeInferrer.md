@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Интерфейс IMLOperatorTypeInferrer
-description: Реализованный тип inferrers определить типы оператора выходных краев.
-ms.author: elcowle
+title: Интерфейс Имлоператортипеинферрер
+description: Реализуется по типам источников ссылок для определения типов краев выходных данных оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IMLOperatorTypeInferrer
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Имлоператортипеинферрер
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,29 +13,29 @@ api_name:
 - IMLOperatorTypeInferrer
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: dd979f3a40b5b9f921a14a3a8acf70386591e4ee
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 5c72857c03c2d55fe0c194a8903199f76512135d
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182116"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156205"
 ---
-# <a name="imloperatortypeinferrer-interface"></a>Интерфейс IMLOperatorTypeInferrer
+# <a name="imloperatortypeinferrer-interface"></a>Интерфейс Имлоператортипеинферрер
 
-Реализованный тип inferrers определить типы оператора выходных краев. Inferrers тип должен быть указан при регистрации схемы пользовательские операторы, если [MLOperatorSchemaDescription](MLOperatorSchemaDescription.md) структура не может представлять, как определяются типы выходных данных&mdash;например, когда атрибут оператор определяет тип данных одного из выходных данных этого оператора.
+Реализуется по типам источников ссылок для определения типов краев выходных данных оператора. При регистрации схемы пользовательских операторов необходимо указать источники ссылок на типы, если структура [млоператорсчемадескриптион](MLOperatorSchemaDescription.md) не может выразить, как определяются&mdash;типы вывода, например, когда атрибут определяет данные. тип одного из выходных данных этого оператора.
 
 ## <a name="methods"></a>Методы
 
 | Имя | Описание |
 |------|-------------|
-| [InferOutputTypes](IMLOperatorTypeInferrer_InferOutputTypes.md) | Вызывается, чтобы вывести типы границ выходные данные оператора. |
+| [InferOutputTypes](IMLOperatorTypeInferrer_InferOutputTypes.md) | Вызывается для определения типов краев выходных данных оператора. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

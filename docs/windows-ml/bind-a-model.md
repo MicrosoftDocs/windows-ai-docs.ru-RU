@@ -1,57 +1,55 @@
 ---
-author: eliotcowley
 title: Привязка модели
-description: Узнайте, как привязать входные и выходные данные для передачи информации в действие и из модели элемента модели.
-ms.author: elcowle
+description: Узнайте, как привязать входные и выходные данные модели для передачи информации в модель и из нее.
 ms.date: 5/29/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: 32c99fa3cb46eaa3bb1f98ab128308eb37361651
-ms.sourcegitcommit: 4ad0fea02000c8f6dbb9a919fb6ce1f435d0e8d6
+ms.openlocfilehash: abffa39c066abb49bf74d528722a29432c2543b2
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67027907"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156185"
 ---
 # <a name="bind-a-model"></a>Привязка модели
 
-Модель машинного обучения имеет входные и выходные данные функций, которые передачи информации в действие и из модели.
+Модель машинного обучения имеет функции ввода и вывода, которые передают информацию в модель и из нее.
 
-После загрузки моделей в виде [LearningModel](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel), можно использовать [LearningModel.InputFeatures](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel.inputfeatures) и [LearningModel.OutputFeatures](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel.outputfeatures) для получения [ ILearningModelFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.ilearningmodelfeaturedescriptor) объектов. Эти списка модели ожидаемое ввода и вывода типов компонентов.
+После загрузки модели в качестве [леарнингмодел](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel)можно использовать [леарнингмодел. инпутфеатурес](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel.inputfeatures) и [леарнингмодел. аутпутфеатурес](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodel.outputfeatures) для получения объектов [илеарнингмоделфеатуредескриптор](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.ilearningmodelfeaturedescriptor) . В них перечислены ожидаемые типы входных и выходных данных модели.
 
-Использовании [LearningModelBinding](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding) для привязки значений к функции, ссылающиеся на **ILearningModelFeatureDescriptor** по его [имя](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.ilearningmodelfeaturedescriptor.name) свойство.
+Для привязки значений к компоненту используется [леарнингмоделбиндинг](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding) , ссылающийся на **илеарнингмоделфеатуредескриптор** по свойству [Name](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.ilearningmodelfeaturedescriptor.name) .
 
-Следующее видео дается краткий обзор привязки функций моделей машинного обучения.
+В следующем видео приводится краткий обзор функций привязки моделей машинного обучения.
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/WD5bNZwz2A8]
 
-## <a name="types-of-features"></a>Типы компонентов
+## <a name="types-of-features"></a>Типы функций
 
-Машинное Обучение Windows поддерживает все типы ONNX компонентов, которые перечислены в [LearningModelFeatureKind](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelfeaturekind). Это связано с класса различных функциональных дескрипторов:
+Windows ML поддерживает все типы компонентов ONNX, перечисленные в [леарнингмоделфеатурекинд](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelfeaturekind). Они сопоставлены с различными классами дескрипторов компонентов:
 
 * **Тензорные**: [TensorFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorfeaturedescriptor)
 * **Последовательность**: [SequenceFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.sequencefeaturedescriptor)
-* **Карта**: [MapFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.mapfeaturedescriptor)
+* **Схема**: [MapFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.mapfeaturedescriptor)
 * **Образ**. [ImageFeatureDescriptor](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.imagefeaturedescriptor)
 
-### <a name="tensors"></a>Tensors
+### <a name="tensors"></a>Десятки
 
-Tensors многомерных массивов, а наиболее распространенных тензорные тензорные из 32-разрядных значения с плавающей запятой. Измерения tensors — построчный, с помощью эффективно блоков данных, представляющий каждого измерения. Общий размер тензорные — это совокупность размеров каждого измерения.
+Десятки — многомерные массивы, а наиболее распространенный тензорные — тензорные с плавающей запятой 32-бит. Измерениями десятков являются главные строки, с тесно упакованными непрерывными данными, представляющими каждое измерение. Общий размер тензорные — это произведение размеров каждого измерения.
 
-### <a name="sequences"></a>Последовательности
+### <a name="sequences"></a>Пакет
 
-Последовательности являются векторами значений. Обычно указанных типов последовательности используется вектор вероятностей число с плавающей запятой, которые возвращают некоторые модели классификации, указывающее оценку точности для каждого прогноза.
+Последовательности — это векторы значений. Типичное использование типов последовательности — это вектор вероятностей с плавающей запятой, которые некоторые модели классификации возвращают для указания оценки точности для каждого прогноза.
 
 ### <a name="maps"></a>Карты
 
-Карты являются пар ключ/значение сведений. Модели классификации часто возвращают карту строка или число с плавающей запятой, которая описывает вероятность число с плавающей запятой для каждого имени с метками классификации. Например, может быть выходные данные модели, которая пытается прогнозировать в своем классе dog изображения `["Boston terrier", 90.0], ["Golden retriever", 7.4], ["Poodle", 2.6]`.
+Карты — это пары "ключ — значение" информации. Модели классификации часто возвращают строку или таблицу с плавающей запятой, которая описывает вероятность с плавающей запятой для каждого имени классификации с меткой. Например, выходные данные модели, которые пытаются предсказать породу собаки в изображении, могут быть `["Boston terrier", 90.0], ["Golden retriever", 7.4], ["Poodle", 2.6]`.
 
 #### <a name="scalars"></a>Скаляры
 
-Большинство карты и последовательности будут иметь значения, которые являются скалярные значения. Они отображаются where **TensorFeatureDescriptor.Shape.Size** равно нулю (0). В этом случае карты или последовательность будет иметь скалярный тип. Чаще всего это связано `float`. Например строка, число с плавающей запятой карты будет следующим:
+Большинство карт и последовательностей будут иметь скалярные значения. Они показывают, где **тенсорфеатуредескриптор. Shape. size** равен нулю (0). В этом случае схема или последовательность будет иметь скалярный тип. Наиболее распространенным является `float`. Например, строка для отображения с плавающей запятой будет выглядеть следующим образом:
 
 ```cs
 MapFeatureDescriptor.KeyKind == TensorKind.String
@@ -59,73 +57,73 @@ MapFeatureDescriptor.ValueDescriptor.Kind == LearningModelFeatureKind.Tensor
 MapFeatureDescriptor.ValueDescriptor.as<TensorFeatureDescriptor>().Shape.Size == 0
 ```
 
-Значение функции фактическое карты будет `IMap<string, float>`.
+Фактическим значением функции Map будет `IMap<string, float>`.
 
-#### <a name="sequence-of-maps"></a>Последовательность из maps
+#### <a name="sequence-of-maps"></a>Последовательность карт
 
-Последовательность из maps — просто вектор пар "ключ значение". Например, последовательность из maps строка float будут иметь тип `IVector<IMap<string, float>>`. Приведенные выше выходные данные прогнозов в своем классе dog `["Boston terrier", 90.0], ["Golden retriever", 7.4], ["Poodle", 2.6]` является примером последовательность из maps.
+Последовательность сопоставлений — это просто вектор пар «ключ-значение». Например, последовательность сопоставлений строк с плавающей запятой будет иметь тип `IVector<IMap<string, float>>`. Приведенные выше выходные данные прогноза `["Boston terrier", 90.0], ["Golden retriever", 7.4], ["Poodle", 2.6]` породы собаки — это пример последовательности карт.
 
 ### <a name="images"></a>Изображений
 
-При работе с образами, необходимо знать о форматов изображений и tensorization.
+При работе с образами необходимо иметь в виду форматы изображений и тенсоризатион.
 
 #### <a name="image-formats"></a>Форматы изображений
 
-Модели обучаются с использованием образа обучающие данные и весовые коэффициенты сохраняются и специально созданные для этого обучающего набора. При передаче образа ввести в модель, его формат должен полностью соответствовать формату обучающие изображения.
+Модели обрабатываются с помощью обучающих данных по изображениям, а весовые коэффициенты сохраняются и подстраиваются для этого обучающего набора. При передаче входных данных изображения в модель ее формат должен соответствовать формату обучающих изображений.
 
-Во многих случаях модель описывает формат ожидаемое изображение; Можно использовать моделями ONNX [метаданных](https://github.com/onnx/onnx/blob/master/docs/MetadataProps.md) для описания форматов ожидаемое изображение.  
+Во многих случаях модель описывает ожидаемый формат изображения. Модели ONNX могут использовать [метаданные](https://github.com/onnx/onnx/blob/master/docs/MetadataProps.md) для описания ожидаемых форматов изображений.  
 
-Большинство моделей использовать следующие форматы, но это не универсальными для всех моделей:
+В большинстве моделей используются следующие форматы, но они не являются универсальными для всех моделей:
 
-* **Image.BitmapPixelFormat**: Bgr8
-* **Image.ColorSpaceGamma**: SRGB
-* **Image.NominalPixelRange**: NominalRange_0_255
+* **Image. битмаппикселформат**: Bgr8
+* **Image. колорспацегамма**: SRGB
+* **Image. номиналпикселранже**: NominalRange_0_255
 
-#### <a name="tensorization"></a>Tensorization
+#### <a name="tensorization"></a>тенсоризатион
 
-Образы, представлены в машинном Обучении Windows в формате тензорные. Tensorization — это процесс преобразования изображения в тензорные и происходит во время привязки.
+Образы представлены в формате тензорные в Windows ML. Тенсоризатион — это процесс преобразования изображения в тензорные и происходит во время привязки.
 
-Машинное Обучение Windows преобразует изображения в 4-мерные tensors из 32-разрядных значений с плавающей запятой в «NCHW тензорные формат»:
+Windows ML преобразует изображения в 4-мерных десятки 32-битных элементов с плавающей запятой в формате НЧВ тензорные:
 
-* **N**: Размер пакета (или несколько образов). Windows машинного Обучения в настоящее время поддерживает размер пакета N 1.
+* **N**: Размер пакета (или количество образов). В настоящее время Windows ML поддерживает размер пакета N из 1.
 * **C**: Число каналов (1 для Gray8, 3 для Bgr8).
-* **H**: Высота.
+* **З**: Равно.
 * **W**: Ширина.
 
-Каждого пикселя изображения — это число 8-разрядный цвет, который хранится в диапазоне от 0 до 255 и упакованные в 32-разрядное число с плавающей запятой.
+Каждый пиксель изображения — это 8-разрядное цветовое значение, хранящееся в диапазоне 0-255 и упакованное в 32-бит float.
 
-#### <a name="how-to-pass-images-into-the-model"></a>Способ передачи изображений в модель
+#### <a name="how-to-pass-images-into-the-model"></a>Передача изображений в модель
 
-Существует два способа, можно передать изображения в модели:
+В модели можно передавать изображения двумя способами:
 
 * [ImageFeatureValue](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.imagefeaturevalue)
 
-    Мы рекомендуем использовать **ImageFeatureValue** связывания изображения как входные и выходные данные, так как она отвечает за преобразование и tensorization, поэтому изображения соответствует формату требуемому модели. Типы формата, поддерживаемых в настоящее время модели, **Gray8**, **Rgb8**, и **Bgr8**, поддерживаемых в настоящее время пикселей диапазон — от 0 до 255.
+    Мы рекомендуем использовать **имажефеатуревалуе** для привязки изображений в качестве входных и выходных данных, так как он выполняет как преобразование, так и тенсоризатион, поэтому изображения соответствуют требуемому формату изображения модели. В настоящее время поддерживаются следующие типы форматов модели: **Gray8**, **Rgb8**и **Bgr8**, а в настоящее время поддерживаемый диапазон пикселей — 0-255.
 
-    Можно создать **ImageFeatureValue** с помощью статического метода [ImageFeatureValue.CreateFromVideoFrame](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.imagefeaturevalue.createfromvideoframe).
+    Вы можете создать **имажефеатуревалуе** с помощью статического метода [имажефеатуревалуе. креатефромвидеофраме](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.imagefeaturevalue.createfromvideoframe).
 
-    Чтобы узнать, какой формат модели, WinML использует следующий порядок логики и приоритет:
+    Чтобы узнать, какой формат требуется для модели, WinML использует следующую логику и порядок очередности:
 
-    1. [Привязка (String, Object, IPropertySet)](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding.bind#Windows_AI_MachineLearning_LearningModelBinding_Bind_System_String_System_Object_Windows_Foundation_Collections_IPropertySet_) Переопределите все параметры изображения.
-    2. Метаданные модели будет установлен и используется, если он доступен.
-    3. Если отсутствуют метаданные модели, и вызывающий объект предоставленные свойства, среда выполнения будет пытаться внести наилучшее соответствие. Если тензорные выглядит как NCHW (4-мерные float32, N == 1), среда выполнения считает, либо **Gray8** или **Bgr8** в зависимости от числа каналов.
+    1. [BIND (строка, объект, ипропертисет)](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding.bind#Windows_AI_MachineLearning_LearningModelBinding_Bind_System_String_System_Object_Windows_Foundation_Collections_IPropertySet_) переопределяет все параметры изображения.
+    2. Метаданные модели будут проверяться и использоваться, если они доступны.
+    3. Если метаданные модели не предоставлены и не предоставлены свойства вызывающей стороны, среда выполнения попытается выбрать лучшее соответствие. Если тензорные выглядит как НЧВ (4-мерный float32, N = = 1), среда выполнения предполагает либо **Gray8** , либо **Bgr8** в зависимости от числа каналов.
 
-    Существует несколько необязательные свойства, которые можно передать в [привязки (String, Object, IPropertySet)](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding.bind#Windows_AI_MachineLearning_LearningModelBinding_Bind_System_String_System_Object_Windows_Foundation_Collections_IPropertySet_):
+    Существует несколько необязательных свойств, которые можно передать в [BIND (строка, объект, ипропертисет)](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelbinding.bind#Windows_AI_MachineLearning_LearningModelBinding_Bind_System_String_System_Object_Windows_Foundation_Collections_IPropertySet_):
 
-    * [BitmapBounds](https://docs.microsoft.com/uwp/api/windows.graphics.imaging.bitmapbounds): Если указано, это границы обрезки для применения перед отправкой образа в модель.
-    * [BitmapPixelFormat](https://docs.microsoft.com/uwp/api/windows.graphics.imaging.bitmappixelformat): Если указано, это формат пикселей, который будет использоваться в качестве формата пикселей модели во время преобразования изображения.
+    * [Битмапбаундс](https://docs.microsoft.com/uwp/api/windows.graphics.imaging.bitmapbounds): Если они заданы, это границы обрезки, которые необходимо применить перед отправкой изображения в модель.
+    * [Битмаппикселформат](https://docs.microsoft.com/uwp/api/windows.graphics.imaging.bitmappixelformat): Если указано, это формат пикселей, который будет использоваться в качестве формата пикселей модели во время преобразования изображения.
 
-    Для фигур изображений модели можно указать определенные фигуры, что он принимает (например, принимает SqueezeNet 224,224) или модели можно указать бесплатный измерения все фигуры изображения (многие StyleTransfer типа модели может занять переменной размера изображения). Вызывающий объект может использовать **BitmapBounds** выбрать, какие части изображения они бы хотели использовать. Если не указано, среда выполнения будет масштабирования изображения до размера модели (соблюдение пропорции) и затем центра обрезки.  
+    Для фигур изображений в модели можно указать определенную форму (например, Скуизенет принимает 224 224), или модель может задавать свободные измерения для любого изображения фигуры (многие модели Стилетрансфер-Type могут принимать изображения с переменным размером). Вызывающий объект может использовать **битмапбаундс** , чтобы выбрать раздел изображения, который они хотели бы использовать. Если значение не указано, среда выполнения масштабирует изображение до размера модели (в соответствии с пропорциями), а затем обрезать по центру.  
 
 * [TensorFloat](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorfloat)
 
-    Если машинного Обучения Windows не поддерживает формат цвета своей модели или пикселей, затем можно реализовать преобразования и tensorization. Вы создадите четырехмерный тензорные NCHW для 32-разрядных значения с плавающей запятой для входного значения. См. в разделе [пример пользовательской Tensorization](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization) пример того, как это сделать.
+    Если Windows ML не поддерживает цветовой формат модели или диапазон пикселей, можно реализовать преобразования и тенсоризатион. Вы создадите НЧВ трехмерный тензорные для 32-разрядного числа с плавающей запятой для входного значения. Пример того, как это сделать, см. в примере [Custom тенсоризатион](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization) .
 
-    Когда этот метод используется, все метаданные образа на модели учитывается.
+    При использовании этого метода все метаданные изображения в модели игнорируются.
 
 ## <a name="example"></a>Пример
 
-Приведенный ниже показано, как выполнить привязку к модели входных данных. В этом случае мы создадим привязку от *сеанса*, создание **ImageFeatureValue** из *inputFrame*и привязка входных изображений к модели, *inputName* .
+В следующем примере показано, как выполнить привязку к входным данным модели. В этом случае мы создаем привязку из *сеанса*, создаем **имажефеатуревалуе** из *инпутфраме*и связываем изображение с входными данными модели *inputName*.
 
 ```cs
 private void BindModel(
@@ -147,7 +145,7 @@ private void BindModel(
 
 ## <a name="see-also"></a>См. также
 
-* Предыдущих: [Создание сеанса](create-a-session.md)
+* Прошлом [Создание сеанса](create-a-session.md)
 * Далее: [Оценка входных данных модели](evaluate-model-inputs.md)
 
 [!INCLUDE [help](../includes/get-help.md)]

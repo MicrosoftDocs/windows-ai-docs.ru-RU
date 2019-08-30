@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorAttributes.GetAttribute
-description: Получает значение атрибута элемента, являющегося числового типа.
-ms.author: elcowle
+title: Имлоператораттрибутес. OutAttribute, метод
+description: Возвращает значение элемента атрибута, имеющего числовой тип.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetAttribute
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, OutAttribute
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorAttributes.GetAttribute
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 0f77c05681200303fede9bb2678d8188952d0d25
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 69c886c7b8b837cff01d12d369debf924a3d9160
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181046"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157077"
 ---
-# <a name="imloperatorattributesgetattribute-method"></a>Метод IMLOperatorAttributes.GetAttribute
+# <a name="imloperatorattributesgetattribute-method"></a>Имлоператораттрибутес. OutAttribute, метод
 
-Получает значение атрибута элемента, являющегося числового типа. Для атрибутов, которые являются массивом типов этот метод запрашивает отдельном элементе атрибута по указанному индексу.
+Возвращает значение элемента атрибута, имеющего числовой тип. Для атрибутов, которые относятся к типам массивов, этот метод запрашивает отдельный элемент в атрибуте по указанному индексу.
 
 ```cpp
 void GetAttribute(
@@ -39,8 +37,8 @@ void GetAttribute(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

@@ -1,18 +1,16 @@
 ---
-author: eliotcowley
 title: Навыки компьютерного зрения Windows
 description: Из этой статьи вы узнаете об интерфейсах API навыков компьютерного зрения Windows.
-ms.author: elcowle
 ms.date: 4/25/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning, windows vision skills
 ms.localizationpriority: medium
-ms.openlocfilehash: 7426688304b59fb429180a1a0046b6d4be1c06d5
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: b2e3a6b424f0f20097f3a66dac0a3d4d0a8631d9
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66179775"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156305"
 ---
 # <a name="windows-vision-skills-preview"></a>Навыки компьютерного зрения Windows (предварительная версия)
 

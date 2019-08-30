@@ -1,18 +1,16 @@
 ---
-author: QuinnRadich
 title: Примеры
 description: Ознакомьтесь с примерами, доступными в репозитории на сайте "навыки Windows".
-ms.author: quradic
 ms.date: 8/26/2019
 ms.topic: article
 keywords: Windows 10, Windows AI, навыки работы с концепцией Windows, примеры
 ms.localizationpriority: medium
-ms.openlocfilehash: d3215db9fddf927c8f843eaad96a3c0d24ded481
-ms.sourcegitcommit: 900b428a26955f6366f3c03128dc225f52ffd3bc
+ms.openlocfilehash: b43e421092a2c7f439c74631b81ffd16c28e8e54
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70065744"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156255"
 ---
 # <a name="samples"></a>Примеры
 

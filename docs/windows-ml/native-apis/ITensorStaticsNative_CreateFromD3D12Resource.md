@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод ITensorStaticsNative.CreateFromD3D12Resource
-description: Создает объект тензорные (TensorFloat, TensorInt32Bit) из ID3D12Resource, определяемое пользователем.
-ms.author: elcowle
+title: Итенсорстатикснативе. CreateFromD3D12Resource, метод
+description: Создает объект тензорные (Тенсорфлоат, TensorInt32Bit) из указанного пользователем ID3D12Resource.
 ms.date: 4/2/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, CreateFromD3D12Resource
+keywords: Windows 10, машинное обучение Windows, WinML, CreateFromD3D12Resource
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,22 +13,22 @@ api_name:
 - ITensorStaticsNative.CreateFromD3D12Resource
 api_location:
 - windows.ai.machinelearning.native.h
-ms.openlocfilehash: fcc8fbb9459a78cd550b7ddd5dbd72a7a9d105f7
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 251c45c0f444affc2c154de056e4916a5ba1ba93
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180076"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156419"
 ---
-# <a name="itensorstaticsnativecreatefromd3d12resource-method"></a>Метод ITensorStaticsNative.CreateFromD3D12Resource
+# <a name="itensorstaticsnativecreatefromd3d12resource-method"></a>Итенсорстатикснативе. CreateFromD3D12Resource, метод
 
-Создает объект тензорные ([TensorFloat](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorfloat), [TensorInt32Bit](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorint32bit)) из указанного [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource).
+Создает объект тензорные ([тенсорфлоат](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorfloat), [TensorInt32Bit](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.tensorint32bit)) из указанного пользователем [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource).
 
 ```cpp
 HRESULT CreateFromD3D12Resource(
-    ID3D12Resource *value, 
-    [size_is(shapeCount)] __int64 *shape, 
-    int shapeCount, 
+    ID3D12Resource *value,
+    [size_is(shapeCount)] __int64 *shape,
+    int shapeCount,
     [out] IUnknown ** result);
 ```
 
@@ -38,14 +36,14 @@ HRESULT CreateFromD3D12Resource(
 
 | Имя | Тип | Описание |
 |------|------|-------------|
-| value | [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)* | **ID3D12Resource** из которого требуется создать тензорные. |
-| Фигуры | **__int64**\* | Форма тензорные. |
-| shapeCount | **int** | Число измерений тензорные. |
-| результат | [IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)** | Итоговый тензорные. |
+| value | [ID3D12Resource](https://docs.microsoft.com/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)* | **ID3D12Resource** , из которого создается тензорные. |
+| сектор | **__int64**\* | Форма тензорные. |
+| шапекаунт | **int** | Число измерений тензорные. |
+| результат | [IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)** | Результирующий тензорные. |
 
 ## <a name="returns"></a>Возвращает
 
-**HRESULT** результат операции.
+**Значение HRESULT** Результат операции.
 
 ## <a name="examples"></a>Примеры
 
@@ -53,7 +51,7 @@ HRESULT CreateFromD3D12Resource(
 TensorFloat SoftwareBitmapToDX12Tensor(SoftwareBitmap softwareBitmap)
 {
     // ...
-    
+
     // GPU tensorize
     com_ptr<ITensorStaticsNative> tensorfactory = get_activation_factory<TensorFloat, ITensorStaticsNative>();
     com_ptr<::IUnknown> spUnkTensor;
@@ -68,14 +66,14 @@ TensorFloat SoftwareBitmapToDX12Tensor(SoftwareBitmap softwareBitmap)
 
 ## <a name="see-also"></a>См. также
 
-* [Пример пользовательского Tensorization](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization)
+* [Пользовательский пример Тенсоризатион](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization)
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | Windows.AI.machinelearning.Native.h |
+| **Заголовок** | Windows. AI. machinelearning. Native. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

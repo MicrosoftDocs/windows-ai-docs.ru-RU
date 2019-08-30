@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorAttributes.GetAttributeElementCount
-description: Возвращает количество элементов в атрибуте.
-ms.author: elcowle
+title: Имлоператораттрибутес. Жетаттрибутилементкаунт, метод
+description: Возвращает число элементов в атрибуте.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetAttributeElementCount
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетаттрибутилементкаунт
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorAttributes.GetAttributeElementCount
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 06ef30b8d2e9c21a081a97311471c62ab0211b25
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 49495e21eb79e04dae926bf03e67be3de0e396e3
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180656"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157048"
 ---
-# <a name="imloperatorattributesgetattributeelementcount-method"></a>Метод IMLOperatorAttributes.GetAttributeElementCount
+# <a name="imloperatorattributesgetattributeelementcount-method"></a>Имлоператораттрибутес. Жетаттрибутилементкаунт, метод
 
-Возвращает количество элементов в атрибуте. Это может пригодиться для определения, если он существует и определить число элементов атрибута типа массива.
+Возвращает число элементов в атрибуте. Это может использоваться для определения существования атрибута и для определения количества элементов в атрибуте типа массива.
 
 ```cpp
 void GetAttributeElementCount(
@@ -37,8 +35,8 @@ void GetAttributeElementCount(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

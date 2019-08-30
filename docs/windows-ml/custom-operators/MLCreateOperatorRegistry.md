@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Функция MLCreateOperatorRegistry
-description: Создает экземпляр класса **IMLOperatorRegistry** которого может использоваться для регистрации пользовательского оператора ядра и схемы пользовательского оператора.
-ms.author: elcowle
+title: Функция Млкреатеоператоррегистри
+description: Создает экземпляр **имлоператоррегистри** , который может использоваться для регистрации пользовательского оператора ядра и схемы пользовательского оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, MLCreateOperatorRegistry
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Млкреатеоператоррегистри
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - MLCreateOperatorRegistry
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: a94b68f559e4a959a0a39b196f26f49923326c30
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 7c758f30476bb306628c1e63b787a61b1301ef8d
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181486"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156083"
 ---
-# <a name="mlcreateoperatorregistry-function"></a>Функция MLCreateOperatorRegistry
+# <a name="mlcreateoperatorregistry-function"></a>Функция Млкреатеоператоррегистри
 
-Создает экземпляр класса [IMLOperatorRegistry](IMLOperatorRegistry.md) которого может использоваться для регистрации пользовательского оператора ядра и схемы пользовательского оператора.
+Создает экземпляр [имлоператоррегистри](IMLOperatorRegistry.md) , который может использоваться для регистрации пользовательского оператора ядра и схемы пользовательского оператора.
 
 ```cpp
 HRESULT MLCreateOperatorRegistry(
@@ -35,8 +33,8 @@ HRESULT MLCreateOperatorRegistry(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

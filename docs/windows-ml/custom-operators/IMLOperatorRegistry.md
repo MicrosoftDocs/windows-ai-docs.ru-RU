@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Интерфейс IMLOperatorRegistry
-description: Представляет экземпляр реестра для пользовательского оператора ядра и схемы.
-ms.author: elcowle
+title: Интерфейс Имлоператоррегистри
+description: Представляет экземпляр реестра для ядра и схемы пользовательского оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IMLOperatorRegistry
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Имлоператоррегистри
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,30 +13,30 @@ api_name:
 - IMLOperatorRegistry
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 7c1e9f1a026780bfae4fedfdae5244918f07e9bd
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: fc24c8e43a76b4258471dfed37c5b528699b69db
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181736"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157617"
 ---
-# <a name="imloperatorregistry-interface"></a>Интерфейс IMLOperatorRegistry
+# <a name="imloperatorregistry-interface"></a>Интерфейс Имлоператоррегистри
 
-Представляет экземпляр реестра для пользовательского оператора ядра и схемы. Пользовательские операторы могут использоваться с интерфейсами API Windows.AI.MachineLearning возвращаются экземпляры **IMLOperatorRegistry** через **ILearningModelOperatorProviderNative**.
+Представляет экземпляр реестра для ядра и схемы пользовательского оператора. Пользовательские операторы можно использовать с API-интерфейсами Windows. AI. MachineLearning, возвращая экземпляры **имлоператоррегистри** через **илеарнингмоделоператорпровидернативе**.
 
 ## <a name="methods"></a>Методы
 
 | Имя | Описание |
 |------|-------------|
-| [RegisterOperatorKernel](IMLOperatorRegistry_RegisterOperatorKernel.md) | Регистрирует ядра пользовательского оператора. |
-| [RegisterOperatorSetSchema](IMLOperatorRegistry_RegisterOperatorSetSchema.md) | Регистрирует набор схемы пользовательского оператора, включающего в себя набор оператор. |
+| [RegisterOperatorKernel](IMLOperatorRegistry_RegisterOperatorKernel.md) | Регистрирует ядро пользовательского оператора. |
+| [RegisterOperatorSetSchema](IMLOperatorRegistry_RegisterOperatorSetSchema.md) | Регистрирует набор пользовательских схем операторов, включающих набор операторов. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

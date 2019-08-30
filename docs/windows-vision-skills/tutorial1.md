@@ -1,104 +1,102 @@
 ---
-author: eliotcowley
-title: Создание компьютерного зрения навык приложения универсальной платформы Windows
-description: Интеграция навык концепции в приложение универсальной платформы Windows с помощью этого руководства.
-ms.author: elcowle
+title: Создание приложения UWP для навыков создания концепции
+description: Приучите этот учебник, чтобы интегрировать навык в приложение UWP.
 ms.date: 4/25/2019
 ms.topic: article
-keywords: Windows 10, искусственный интеллект windows, windows визуального распознавания навыки, универсальной платформы Windows
+keywords: Windows 10, Windows AI, навыки работы с концепцией Windows, UWP
 ms.localizationpriority: medium
-ms.openlocfilehash: 75aa0082002dcc75277811f4d1d747d5e7ad64bb
-ms.sourcegitcommit: 4ad0fea02000c8f6dbb9a919fb6ce1f435d0e8d6
+ms.openlocfilehash: d6e5b42ab86b1317d90555b72895df747daf9206
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67334155"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156958"
 ---
-# <a name="tutorial-create-a-windows-vision-skill-uwp-application"></a>Учебник. Создание приложения UWP навыков концепции Windows
+# <a name="tutorial-create-a-windows-vision-skill-uwp-application"></a>Учебник. Создание приложения UWP для навыков создания концепции Windows
 
 > [!NOTE]
 > Некоторые сведения относятся к предварительной версии продукта, в которую перед коммерческим выпуском могут быть внесены существенные изменения. Майкрософт не дает никаких гарантий, явных или подразумеваемых, в отношении предоставленной здесь информации.
 
-В предыдущем [руководстве](tutorial.md), мы узнали, как создание и упаковка навык концепции Windows. Теперь давайте узнаем, как интегрировать, в приложении универсальной платформы Windows (UWP). Можно скачать полный пример на [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cs) чтобы увидеть, что получится после завершения.
+В предыдущем [учебном курсе](tutorial.md)мы узнали, как создать и упаковать навык работы с Windows. Теперь давайте Научитесь интегрировать это приложение в универсальная платформа Windows (UWP). Вы можете скачать полный пример, доступный на сайте [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cs) , чтобы увидеть, как он выглядит после завершения.
 
 Также имеющие отношение к этому руководству, можно найти здесь Дополнительные сведения о загрузке *[VideoFrames](https://docs.microsoft.com/uwp/api/Windows.Media.VideoFrame)* из следующих источников:
-- [существующие *SoftwareBitmap*](https://docs.microsoft.com/uwp/api/windows.media.videoframe.createwithsoftwarebitmap#Windows_Media_VideoFrame_CreateWithSoftwareBitmap_Windows_Graphics_Imaging_SoftwareBitmap_)
+- [существующий *софтваребитмап* ](https://docs.microsoft.com/uwp/api/windows.media.videoframe.createwithsoftwarebitmap#Windows_Media_VideoFrame_CreateWithSoftwareBitmap_Windows_Graphics_Imaging_SoftwareBitmap_)
 - [файл изображения](https://docs.microsoft.com/windows/uwp/audio-video-camera/imaging#create-a-softwarebitmap-from-an-image-file-with-bitmapdecoder)
-- камеры с помощью [FrameReader](https://docs.microsoft.com/windows/uwp/audio-video-camera/process-media-frames-with-mediaframereader)
-- камера через Microsoft.Toolkit: [CameraPreview](https://docs.microsoft.com/windows/communitytoolkit/controls/camerapreview), [CameraHelper](https://docs.microsoft.com/windows/communitytoolkit/helpers/camerahelper)
+- Камера через [фрамереадер](https://docs.microsoft.com/windows/uwp/audio-video-camera/process-media-frames-with-mediaframereader)
+- Камера с помощью Microsoft. Toolkit: [Камерапревиев](https://docs.microsoft.com/windows/communitytoolkit/controls/camerapreview), [камерахелпер](https://docs.microsoft.com/windows/communitytoolkit/helpers/camerahelper)
 
 ---
-## <a name="prerequisites"></a>предварительные требования
+## <a name="prerequisites"></a>Предварительные требования
 
-- Завершение работы с предыдущим учебником на [Создание собственных навыков концепции Windows](tutorial.md)
+- Завершение работы с предыдущим руководством по [созданию собственного навыка представления Windows](tutorial.md)
 ---
 
-## <a name="api-flow"></a>API потока
-Мы вернемся к потоку API, описанные в [основные понятия важные API](important-api-concepts.md#APIFlow) странице но сейчас с помощью конкретного набора классов в C#. Полный пример кода доступен на [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/cs/Apps/FaceSentimentAnalysisApp_UWP/MainPage.xaml.cs). 
+## <a name="api-flow"></a>Поток API
+Мы вернемся к потоку API, описанному на странице [важные концепции API](important-api-concepts.md#APIFlow) , но теперь с конкретным набором классов C#в. Полный пример кода доступен на сайте [GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/blob/master/samples/SentimentAnalyzerCustomSkill/cs/Apps/FaceSentimentAnalysisApp_UWP/MainPage.xaml.cs).
 
-Мы обсудим в строках кода, относящиеся к API Windows концепции навыков: 
+Мы расскажем о строках кода, относящихся к API-интерфейсу концепции Windows:
 
-+ Создать экземпляр [ISkillDescriptor][ISkillDescriptor] производных
++ Создание экземпляра производного класса [искиллдескриптор][ISkillDescriptor]
 
     ```csharp
     ...
-    
+
     // member variable to hold the skill descriptor
     private FaceSentimentAnalyzerDescriptor m_skillDescriptor = null;
-    
+
     ...
-    
+
     // Instatiate skill descriptor to display details about the skill and populate UI
     m_skillDescriptor = new FaceSentimentAnalyzerDescriptor();
 
     ...
     ```
 
-+ Запрос доступных выполнения устройств с помощью [ISKillDescriptor][ISKillDescriptor] экземпляра
++ Запрос доступных устройств выполнения с помощью экземпляра [искиллдескриптор][ISKillDescriptor]
     ```csharp
     ...
-    
+
     // member variable to hold the available execution devices
     private IReadOnlyList<ISkillExecutionDevice> m_availableExecutionDevices = null;
-    
+
     ...
-    
+
     m_availableExecutionDevices = await m_skillDescriptor.GetSupportedExecutionDevicesAsync();
 
     ...
     ```
 
-+ Создать экземпляр навыков с помощью [ISKillDescriptor][ISKillDescriptor] экземпляра и требуемыми [ISkillExecutionDevice][ISkillExecutionDevice]
++ Создание экземпляра навыка с помощью экземпляра [искиллдескриптор][ISKillDescriptor] и требуемого [искиллексекутиондевице][ISkillExecutionDevice]
     ```csharp
     ...
-    
+
     // member variable to hold the skill
     private FaceSentimentAnalyzerSkill m_skill = null;
-    
+
     ...
-    
+
     // Initialize skill with the selected supported device
     m_skill = await m_skillDescriptor.CreateSkillAsync(m_availableExecutionDevices[UISkillExecutionDevices.SelectedIndex]) as FaceSentimentAnalyzerSkill;
 
     ...
     ```
 
-+ Создать экземпляр навык привязки с использованием объекта [ISKill][ISKill] экземпляра
++ Создание экземпляра объекта привязки навыков с помощью экземпляра [Kill][ISKill]
     ```csharp
     ...
-    
+
     // member variable to hold the skill binding
     private FaceSentimentAnalyzerBinding m_binding = null;
-    
+
     ...
-    
+
    // Instantiate a binding object that will hold the skill's input and output resource
    m_binding = await m_skill.CreateSkillBindingAsync() as FaceSentimentAnalyzerBinding;
 
     ...
     ```
 
-+ Получить ваши примитивов ввода (*VideoFrame*) и привязать к объект привязки, обратившись к соответствующему [ISkillFeature][ISkillFeature] индексированную при помощи его имя. Обратите внимание, что этот навык объявляет метод set удобства *SetInputImage*
++ Получите примитив ввода (*видеофраме*) и привяжите его к объекту привязки, обратившись к соответствующему [искиллфеатуре][ISkillFeature] , индексируемому по имени. Обратите внимание, что этот навык объявляет удобный метод Set *сетинпутимаже*
     ```csharp
     ...
 
@@ -112,20 +110,20 @@ ms.locfileid: "67334155"
 
     ...
     ```
-    Этот метод может быть пропущены и действует так же, как и поэтому Настройка непосредственно like значение:
+    Этот удобный метод можно обойти и использовать тот же результат, что и при задании значения непосредственно следующим образом:
 
     ```csharp
     // Update input image feature
     await m_binding["InputImage"].SetFeatureValueAsync(frame);
     ```
 
-+ Работа вашей квалификации через объект привязки
++ Запуск навыков по объекту привязки
     ```csharp
     // Evaluate the binding
     await m_skill.EvaluateAsync(m_binding);
     ```
 
-+ Получить свои примитивы выходные данные из объекта привязки. Обратите внимание, что этот навык объявляется свойство getter удобства *IsFaceFound*.
++ Извлеките выходные примитивы из объекта привязки. Обратите внимание, что этот навык объявляет удобное свойство метода получения с именем *исфацефаунд*.
     ```csharp
     // Retrieve results
     if (m_binding.IsFaceFound)
@@ -134,7 +132,7 @@ ms.locfileid: "67334155"
     }
     ```
 
-    Этот метод, как описано в предыдущем учебном курсе и Далее, имеет тот же эффект, как получить возможность выходных данных непосредственно из привязки и проверки его значения не нули.
+    Этот удобный метод, как описано в предыдущем руководстве и ниже, имеет тот же результат, что и получение выходного компонента непосредственно из привязки, и проверка его значений не равна нулю.
 
     ```csharp
     public bool FaceSentimentAnalyzerBinding.IsFaceFound

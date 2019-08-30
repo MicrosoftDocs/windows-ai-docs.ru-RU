@@ -1,41 +1,39 @@
 ---
-author: eliotcowley
 title: Оценка входных данных модели
-description: Узнайте, как выполнить оценку входные данные модели, чтобы получить прогнозы.
-ms.author: elcowle
+description: Узнайте, как выполнить оценку входных данных модели для получения прогнозов.
 ms.date: 4/1/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: a06a4b55745eaf9c1a0035cfa9249b757c525bf7
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 9f23b272f85f1bd3beb60bfea341c522941fa854
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181246"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156716"
 ---
 # <a name="evaluate-the-model-inputs"></a>Оценка входных данных модели
 
-После значения привязки к входные и выходные данные модели, все готово для оценки входные данные модели и получать ее прогнозы.
+После привязки значений к входным и выходным данным модели вы можете оценить входные данные модели и получить ее прогнозы.
 
-Для запуска модели, вызвать любую **Evaluate*** методы на вашей [LearningModelSession](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelsession). Можно использовать [LearningModelEvaluationResult](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelevaluationresult) для просмотра выходных данных функции.
+Чтобы запустить модель, вызовите любой из методов **Evaluate*** в [леарнингмоделсессион](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelsession). Вы можете использовать [леарнингмоделевалуатионресулт](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelevaluationresult) для просмотра выходных функций.
 
 ## <a name="example"></a>Пример
 
-В следующем примере мы выполнить оценку сеанса, передавая привязки и корреляции уникальный идентификатор. Затем мы проанализировать выходные данные, как список вероятностей, сопоставить его список меток для выполнения различных задач в нашей модели могли распознавать и записывать результаты на консоль:
+В следующем примере выполняется оценка сеанса, передача привязки и уникального идентификатора корреляции. Затем мы анализируем выходные данные в виде списка вероятностей, сопоставляюте их со списком меток для различных вещей, которые может распознать наша модель, и записывают результаты в консоль:
 
 ```cs
 // How many times an evaluation has been run
 private int runCount = 0;
 
 private void EvaluateModel(
-    LearningModelSession session, 
+    LearningModelSession session,
     LearningModelBinding binding,
     string outputName,
     List<string> labels)
 {
     // Process the frame with the model
-    var results = 
+    var results =
         await session.EvaluateAsync(binding, $"Run {++runCount}");
 
     // Retrieve the results of evaluation
@@ -78,16 +76,16 @@ private void EvaluateModel(
 
 ## <a name="device-removal"></a>Удаление устройства
 
-Если устройство становится недоступным, или если вы хотите использовать другое устройство, необходимо закрыть сеанс и создать новый сеанс.
+Если устройство становится недоступным или вы хотите использовать другое устройство, необходимо закрыть сеанс и создать новый сеанс.
 
-В некоторых случаях графических устройств может потребоваться быть выгружен или перезагружен, как описано в [Документация DirectX](https://docs.microsoft.com/windows/uwp/gaming/handling-device-lost-scenarios).
+В некоторых случаях может потребоваться выгрузить и перезагрузить графические устройства, как описано в [документации DirectX](https://docs.microsoft.com/windows/uwp/gaming/handling-device-lost-scenarios).
 
-При использовании машинного Обучения Windows, необходимо обнаружить этот случай и закрыть сеанс. Чтобы выполнить восстановление после удаления устройства или повторной инициализации, вы создадите новый сеанс, который запускает логику выбора устройств для повторного запуска.
+При использовании Windows ML необходимо обнаружить этот случай и закрыть сеанс. Чтобы выполнить восстановление после удаления или повторной инициализации устройства, необходимо создать новый сеанс, который запускает логику выбора устройства для повторного запуска.
 
-— Наиболее распространенный случай, где вы увидите эту ошибку во время [LearningModelSession.Evaluate](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelsession.evaluate). В случае удаления устройства или сбросе [LearningModelEvaluationResult.ErrorStatus](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelevaluationresult.errorstatus) будет [DXGI_ERROR_DEVICE_REMOVED](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-error) или [DXGI_ERROR_DEVICE_RESET](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-error).
+Наиболее распространенный случай, когда вы увидите эту ошибку во время [леарнингмоделсессион. Evaluate](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelsession.evaluate). В случае удаления или сброса устройства [леарнингмоделевалуатионресулт. еррорстатус](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodelevaluationresult.errorstatus) будет иметь значение [DXGI_ERROR_DEVICE_REMOVED](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-error) или [DXGI_ERROR_DEVICE_RESET](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-error).
 
 ## <a name="see-also"></a>См. также
 
-* Предыдущих: [Привязка модели](bind-a-model.md)
+* Прошлом [Привязка модели](bind-a-model.md)
 
 [!INCLUDE [help](../includes/get-help.md)]

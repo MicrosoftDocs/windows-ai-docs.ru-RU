@@ -1,18 +1,16 @@
 ---
-author: eliotcowley
 title: Обучение модели с помощью PyTorch и экспорт в ONNX
 description: Узнайте, как обучить модель ONNX с помощью PyTorch.
-ms.author: elcowle
 ms.date: 7/10/2019
 ms.topic: article
 keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, pytorch
 ms.localizationpriority: medium
-ms.openlocfilehash: 0937f0cd033e8c7bd5bcf1f7437e579a98609a7e
-ms.sourcegitcommit: 4906dca6e16d5c6fb40f41ca9c42f8c9615c829a
+ms.openlocfilehash: d2d20b20ab790247ad7746d0cf8f221f9276e823
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69887217"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156327"
 ---
 # <a name="train-a-model-with-pytorch-and-export-to-onnx"></a>Обучение модели с помощью PyTorch и экспорт в ONNX
 

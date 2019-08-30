@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorShapeInferenceContext.IsInputValid
-description: Возвращает значение true, если входными данными для оператора является допустимым.
-ms.author: elcowle
+title: Имлоператоршапеинференцеконтекст. Исинпутвалид, метод
+description: Возвращает значение true, если входные данные оператора являются допустимыми.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IsInputValid
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Исинпутвалид
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorShapeInferenceContext.IsInputValid
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 806ce743b662fc2b7ae85067edd6584af544fcab
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 4520b1d8a4621dc7d837cfa1e19c4fb170ebf6c3
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181826"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156979"
 ---
-# <a name="imloperatorshapeinferencecontextisinputvalid-method"></a>Метод IMLOperatorShapeInferenceContext.IsInputValid
+# <a name="imloperatorshapeinferencecontextisinputvalid-method"></a>Имлоператоршапеинференцеконтекст. Исинпутвалид, метод
 
-Возвращает значение true, если входными данными для оператора является допустимым. Эта функция всегда возвращает значение true, за исключением необязательных входных данных и недопустимый индексов.
+Возвращает значение true, если входные данные оператора являются допустимыми. Это всегда возвращает значение true, за исключением необязательных входов и недопустимых индексов.
 
 ```cpp
 bool IsInputValid(
@@ -35,8 +33,8 @@ bool IsInputValid(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

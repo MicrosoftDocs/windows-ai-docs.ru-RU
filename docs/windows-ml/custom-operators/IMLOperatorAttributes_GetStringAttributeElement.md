@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorAttributes.GetStringAttributeElement
-description: Получает значение элемента атрибута, который имеет строковый тип.
-ms.author: elcowle
+title: Имлоператораттрибутес. Жетстрингаттрибутилемент, метод
+description: Возвращает значение элемента атрибута, имеющего строковый тип.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetStringAttributeElement
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетстрингаттрибутилемент
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorAttributes.GetStringAttributeElement
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 1012fdb8dde7e30e65cfea0a1c2874032383c3b4
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 971312a00bb7d8995cf1c1fc1a19dafb20143854
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181066"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157107"
 ---
-# <a name="imloperatorattributesgetstringattributeelement-method"></a>Метод IMLOperatorAttributes.GetStringAttributeElement
+# <a name="imloperatorattributesgetstringattributeelement-method"></a>Имлоператораттрибутес. Жетстрингаттрибутилемент, метод
 
-Получает значение элемента атрибута, который имеет строковый тип. Для атрибутов, которые являются массивы строк этот метод запрашивает значение отдельного элемента внутри атрибута по указанному индексу. Строка представлена в формате UTF-8. Размер включает последний нулевой символ.
+Возвращает значение элемента атрибута, имеющего строковый тип. Для атрибутов, которые являются строковыми массивами, этот метод запрашивает значение отдельного элемента в атрибуте по указанному индексу. Строка имеет формат UTF-8. Размер включает завершающий символ null.
 
 ```cpp
 void GetStringAttributeElement(
@@ -38,8 +36,8 @@ void GetStringAttributeElement(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

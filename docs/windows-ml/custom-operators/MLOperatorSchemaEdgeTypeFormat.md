@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Перечисление MLOperatorSchemaEdgeTypeFormat
-description: Указывает способ, в какие типы входных и выходных данных описаны краев.
-ms.author: elcowle
+title: Перечисление Млоператорсчемаеджетипеформат
+description: Указывает способ описания типов входных и выходных границ.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, MLOperatorSchemaEdgeTypeFormat
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Млоператорсчемаеджетипеформат
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,30 +13,30 @@ api_name:
 - MLOperatorSchemaEdgeTypeFormat
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 736ce313193b722ac0d42b2c35c3aae0c45abc33
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 12afc60826f4a6f2ac4badbed4a876600544f81d
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181326"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157673"
 ---
-# <a name="mloperatorschemaedgetypeformat-enum"></a>Перечисление MLOperatorSchemaEdgeTypeFormat
+# <a name="mloperatorschemaedgetypeformat-enum"></a>Перечисление Млоператорсчемаеджетипеформат
 
-Указывает способ, в какие типы входных и выходных данных описаны краев. Это используется в [MLOperatorSchemaEdgeDescription](MLOperatorSchemaEdgeDescription.md) при определении схемы пользовательского оператора.
+Указывает способ описания типов входных и выходных границ. Он используется в [млоператорсчемаеджедескриптион](MLOperatorSchemaEdgeDescription.md) при определении пользовательской схемы оператора.
 
 ## <a name="fields"></a>Поля
 
 | Имя | Значение | Описание |
 |------|-------|-------------|
-| edgeDescription | 0 | Этот тип определен с помощью [MLOperatorEdgeDescription](MLOperatorEdgeDescription.md). |
-| Метка | 1 | Тип определяется строковый тип, созданный как в схеме оператор ONNX. |
+| еджедескриптион | 0 | Тип определяется с помощью [млоператореджедескриптион](MLOperatorEdgeDescription.md). |
+| Метка | 1 | Тип определяется строкой типа, созданной в схеме оператора ONNX. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

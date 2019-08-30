@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelContext.GetInputTensor
-description: Получает входной тензорные оператора по указанному индексу.
-ms.author: elcowle
+title: Имлоператоркернелконтекст. Жетинпуттенсор, метод
+description: Возвращает входной тензорные оператора по указанному индексу.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetInputTensor
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетинпуттенсор
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,20 +13,20 @@ api_name:
 - IMLOperatorKernelContext.GetInputTensor
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: b848390fb31231bd30bbe3beaa3020d97f729b68
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 8d35408495d4ee08ae42d11d77103bf64fb2bb3f
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180786"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157304"
 ---
-# <a name="imloperatorkernelcontextgetinputtensor-method"></a>Метод IMLOperatorKernelContext.GetInputTensor
+# <a name="imloperatorkernelcontextgetinputtensor-method"></a>Имлоператоркернелконтекст. Жетинпуттенсор, метод
 
-Получает входной тензорные оператора по указанному индексу. Это задает тензорные **nullptr** для необязательных набора входных данных, которые не существуют. Возвращает ошибку, если входные данные по указанному индексу не тензорные.
+Возвращает входной тензорные оператора по указанному индексу. Это устанавливает тензорные в значение **nullptr** для необязательных входных данных, которые не существуют. Возвращает ошибку, если входные данные по указанному индексу не являются тензорные.
 
 ```cpp
 void GetInputTensor(
-    uint32_t inputIndex, 
+    uint32_t inputIndex,
     _COM_Outptr_result_maybenull_ IMLOperatorTensor** tensor)
 ```
 
@@ -36,8 +34,8 @@ void GetInputTensor(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

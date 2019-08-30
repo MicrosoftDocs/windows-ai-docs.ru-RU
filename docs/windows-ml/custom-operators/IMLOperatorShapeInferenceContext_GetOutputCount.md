@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorShapeInferenceContext.GetOutputCount
-description: Получает количество выходов оператору.
-ms.author: elcowle
+title: Имлоператоршапеинференцеконтекст. Жетаутпуткаунт, метод
+description: Возвращает число выходов для оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetOutputCount
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетаутпуткаунт
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorShapeInferenceContext.GetOutputCount
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 0f3f709c0f23346173b46518c7ef4ac26f78565b
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: c6e6e556bb755a7110b2fb7beeacfa1705146ee1
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181686"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157760"
 ---
-# <a name="imloperatorshapeinferencecontextgetoutputcount-method"></a>Метод IMLOperatorShapeInferenceContext.GetOutputCount
+# <a name="imloperatorshapeinferencecontextgetoutputcount-method"></a>Имлоператоршапеинференцеконтекст. Жетаутпуткаунт, метод
 
-Получает количество выходов оператору.
+Возвращает число выходов для оператора.
 
 ```cpp
 uint32_t GetOutputCount()
@@ -34,8 +32,8 @@ uint32_t GetOutputCount()
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

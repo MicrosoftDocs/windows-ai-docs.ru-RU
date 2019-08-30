@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorTensorShapeDescription.HasOutputShapeDescription
-description: Возвращает значение true, если выходные данные фигуры может запрашиваться с помощью **GetOutputTensorDimensionCount** и **GetOutputTensorShape**.
-ms.author: elcowle
+title: Имлоператортенсоршапедескриптион. Хасаутпутшапедескриптион, метод
+description: Возвращает значение true, если выходные формы можно запрашивать с помощью **жетаутпуттенсордименсионкаунт** и **жетаутпуттенсоршапе**.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, HasOutputShapeDescription
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Хасаутпутшапедескриптион
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorTensorShapeDescription.HasOutputShapeDescription
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 927fc48cd6554d1d35292490892edb4534f90c82
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: d8d72c1d86efe4608299b8a356e8fee79c87cf7c
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181856"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157858"
 ---
-# <a name="imloperatortensorshapedescriptionhasoutputshapedescription-method"></a>Метод IMLOperatorTensorShapeDescription.HasOutputShapeDescription
+# <a name="imloperatortensorshapedescriptionhasoutputshapedescription-method"></a>Имлоператортенсоршапедескриптион. Хасаутпутшапедескриптион, метод
 
-Возвращает значение true, если выходные данные фигуры может запрашиваться с помощью [IMLOperatorTensorShapeDescription::GetOutputTensorDimensionCount](IMLOperatorTensorShapeDescription_GetOutputTensorDimensionCount.md) и [IMLOperatorTensorShapeDescription::GetOutputTensorShape](IMLOperatorTensorShapeDescription_GetOutputTensorShape.md). Это значение равно true, если ядро был зарегистрирован inferrer фигуры.
+Возвращает значение true, если выходные формы можно запрашивать с помощью [имлоператортенсоршапедескриптион:: жетаутпуттенсордименсионкаунт](IMLOperatorTensorShapeDescription_GetOutputTensorDimensionCount.md) и [Имлоператортенсоршапедескриптион:: GetOutputTensorShape](IMLOperatorTensorShapeDescription_GetOutputTensorShape.md). Это справедливо, если ядро зарегистрировано в источниках ссылок фигур.
 
 ```cpp
 bool HasOutputShapeDescription()
@@ -34,8 +32,8 @@ bool HasOutputShapeDescription()
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

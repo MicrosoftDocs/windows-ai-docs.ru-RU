@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorTypeInferenceContext.IsOutputValid
-description: Возвращает значение true, если выходные данные оператора является допустимым.
-ms.author: elcowle
+title: Имлоператортипеинференцеконтекст. Исаутпутвалид, метод
+description: Возвращает значение true, если выходные данные оператора являются допустимыми.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IsOutputValid
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Исаутпутвалид
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorTypeInferenceContext.IsOutputValid
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 0635371ebafba764100670ffd7a09c207104780a
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: c112e4f1ad3e09ae4a02f1cc7a5b38fa90413911
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180506"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156068"
 ---
-# <a name="imloperatortypeinferencecontextisoutputvalid-method"></a>Метод IMLOperatorTypeInferenceContext.IsOutputValid
+# <a name="imloperatortypeinferencecontextisoutputvalid-method"></a>Имлоператортипеинференцеконтекст. Исаутпутвалид, метод
 
-Возвращает значение true, если выходные данные оператора является допустимым. Эта функция всегда возвращает значение true, за исключением необязательные выходные данные.
+Возвращает значение true, если выходные данные оператора являются допустимыми. Это всегда возвращает значение true, за исключением необязательных выходов.
 
 ```cpp
 bool IsOutputValid(
@@ -35,8 +33,8 @@ bool IsOutputValid(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

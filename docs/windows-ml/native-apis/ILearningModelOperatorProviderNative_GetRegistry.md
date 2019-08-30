@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод ILearningModelOperatorProviderNative.GetRegistry
-description: Получает объект IMLOperatorRegistry, содержащий определения пользовательского оператора.
-ms.author: elcowle
+title: Илеарнингмоделоператорпровидернативе... Registry, метод
+description: Возвращает объект Имлоператоррегистри, содержащий определения пользовательских операторов.
 ms.date: 4/2/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, GetRegistry
+keywords: Windows 10, машинное обучение Windows, WinML, Registry
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - ILearningModelOperatorProviderNative.GetRegistry
 api_location:
 - windows.ai.machinelearning.native.h
-ms.openlocfilehash: 9207ae651cc7f8985b3c81f3971834c2c6b629ce
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: b82be2740d5c44ff343ec4c16380626abd0852b3
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180126"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156521"
 ---
-# <a name="ilearningmodeloperatorprovidernativegetregistry-method"></a>Метод ILearningModelOperatorProviderNative.GetRegistry
+# <a name="ilearningmodeloperatorprovidernativegetregistry-method"></a>Илеарнингмоделоператорпровидернативе... Registry, метод
 
-Получает [IMLOperatorRegistry](../custom-operators/IMLOperatorRegistry.md) объект, содержащий определения пользовательского оператора.
+Возвращает объект [имлоператоррегистри](../custom-operators/IMLOperatorRegistry.md) , содержащий определения пользовательских операторов.
 
 ```cpp
 void GetRegistry(
@@ -35,18 +33,18 @@ void GetRegistry(
 
 | Имя | Тип | Описание |
 |------|------|-------------|
-| ppOperatorRegistry | [IMLOperatorRegistry](../custom-operators/IMLOperatorRegistry.md)** | **IMLOperatorRegistry** объект, содержащий определения пользовательского оператора. |
+| ппоператоррегистри | [имлоператоррегистри](../custom-operators/IMLOperatorRegistry.md)** | Объект **имлоператоррегистри** , содержащий определения пользовательских операторов. |
 
 ## <a name="returns"></a>Возвращает
 
-**void** этот метод не возвращает значение.
+**void** Этот метод не возвращает значение.
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | Windows.AI.machinelearning.Native.h |
+| **Заголовок** | Windows. AI. machinelearning. Native. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

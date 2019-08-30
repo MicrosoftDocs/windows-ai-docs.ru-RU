@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод ITensorNative.GetBuffer
-description: Получает тензорные буфер в виде массива байтов.
-ms.author: elcowle
+title: Итенсорнативе. @ buffer, метод
+description: Возвращает буфер тензорные в виде массива байтов.
 ms.date: 4/2/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, GetBuffer
+keywords: Windows 10, машинное обучение Windows, WinML, буфер
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,20 +13,20 @@ api_name:
 - ITensorNative.GetBuffer
 api_location:
 - windows.ai.machinelearning.native.h
-ms.openlocfilehash: fa00f6300516da0dee20ce85a6bd7bfc3cb6ed07
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: f20f49ad4f16905ab53bccc3d3316d41f615b041
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180116"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156496"
 ---
-# <a name="itensornativegetbuffer-method"></a>Метод ITensorNative.GetBuffer
+# <a name="itensornativegetbuffer-method"></a>Итенсорнативе. @ buffer, метод
 
-Получает тензорные буфер в виде массива байтов.
+Возвращает буфер тензорные в виде массива байтов.
 
 ```cpp
 HRESULT GetBuffer(
-    [out, size_is(, *capacity)] BYTE **value, 
+    [out, size_is(, *capacity)] BYTE **value,
     [out] UINT32 *capacity);
 ```
 
@@ -36,12 +34,12 @@ HRESULT GetBuffer(
 
 | Имя | Тип | Описание |
 |------|------|-------------|
-| value | **БАЙТОВ**\*\* | Тензорные буфер. |
-| емкость | **UINT32**\* | Емкость буфера. |
+| value | **ДВУХБАЙТОВЫХ**\*\* | Буфер тензорные. |
+| ресурсов | **ЗНАЧЕНИЕМ**\* | Емкость буфера. |
 
 ## <a name="returns"></a>Возвращает
 
-**HRESULT** результат операции.
+**Значение HRESULT** Результат операции.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,14 +60,14 @@ TensorFloat SoftwareBitmapToSoftwareTensor(SoftwareBitmap softwareBitmap)
 
 ## <a name="see-also"></a>См. также
 
-* [Пример пользовательского Tensorization](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization)
+* [Пользовательский пример Тенсоризатион](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Samples/CustomTensorization)
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | Windows.AI.machinelearning.Native.h |
+| **Заголовок** | Windows. AI. machinelearning. Native. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelCreationContext.IsOutputValid
-description: Возвращает описание указанного входного края оператора.
-ms.author: elcowle
+title: Имлоператоркернелкреатионконтекст. Исаутпутвалид, метод
+description: Возвращает описание указанной входной границы оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetInputEdgeDescription
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетинпутеджедескриптион
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,20 +13,20 @@ api_name:
 - IMLOperatorKernelCreationContext.IsOutputValid
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 3bf1784d4cf4e34436568f47fb103def2a60ecf0
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: d6cba37f20e71fce7870ab38aec46d7af4d40a84
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180826"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157455"
 ---
-# <a name="imloperatorkernelcreationcontextgetinputedgedescription-method"></a>IMLOperatorKernelCreationContext.GetInputEdgeDescription method
+# <a name="imloperatorkernelcreationcontextgetinputedgedescription-method"></a>Имлоператоркернелкреатионконтекст. Жетинпутеджедескриптион, метод
 
-Возвращает описание указанного входного края оператора.
+Возвращает описание указанной входной границы оператора.
 
 ```cpp
 void GetInputEdgeDescription(
-    uint32_t inputIndex, 
+    uint32_t inputIndex,
     _Out_ MLOperatorEdgeDescription* edgeDescription)
 ```
 
@@ -36,8 +34,8 @@ void GetInputEdgeDescription(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

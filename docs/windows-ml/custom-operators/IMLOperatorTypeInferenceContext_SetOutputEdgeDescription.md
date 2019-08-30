@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorTypeInferenceContext.SetOutputEdgeDescription
-description: Задает выведенный тип ребро выходных данных.
-ms.author: elcowle
+title: Имлоператортипеинференцеконтекст. Сетаутпутеджедескриптион, метод
+description: Задает выводимый тип выходного края.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, SetOutputEdgeDescription
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Сетаутпутеджедескриптион
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,20 +13,20 @@ api_name:
 - IMLOperatorTypeInferenceContext.SetOutputEdgeDescription
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 84f928c3a2123119b621ca2e9da8ae5c4f5c4f5f
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: ca3248c16d449a0a21521e00883446f1fd70e47e
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180686"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157927"
 ---
-# <a name="imloperatortypeinferencecontextsetoutputedgedescription-method"></a>Метод IMLOperatorTypeInferenceContext.SetOutputEdgeDescription
+# <a name="imloperatortypeinferencecontextsetoutputedgedescription-method"></a>Имлоператортипеинференцеконтекст. Сетаутпутеджедескриптион, метод
 
-Задает выведенный тип ребро выходных данных.
+Задает выводимый тип выходного края.
 
 ```cpp
 void SetOutputEdgeDescription(
-    uint32_t outputIndex, 
+    uint32_t outputIndex,
     const MLOperatorEdgeDescription* edgeDescription)
 ```
 
@@ -36,8 +34,8 @@ void SetOutputEdgeDescription(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

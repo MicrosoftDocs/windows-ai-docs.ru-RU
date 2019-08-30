@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorTensor.GetTensorDataType
+title: Имлоператортенсор. Жеттенсордататипе, метод
 description: Возвращает тип данных тензорные.
-ms.author: elcowle
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetTensorDataType
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жеттенсордататипе
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,14 +13,14 @@ api_name:
 - IMLOperatorTensor.GetTensorDataType
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: b4b68129906c04e8ced2a6cc3a516d07cb3843a3
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 4b6e08cd66c903f0bd170a4555318cc131da92c7
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180316"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156875"
 ---
-# <a name="imloperatortensorgettensordatatype-method"></a>Метод IMLOperatorTensor.GetTensorDataType
+# <a name="imloperatortensorgettensordatatype-method"></a>Имлоператортенсор. Жеттенсордататипе, метод
 
 Возвращает тип данных тензорные.
 
@@ -34,8 +32,8 @@ MLOperatorTensorDataType GetTensorDataType()
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

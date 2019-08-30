@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelFactory.CreateKernel
-description: Создает экземпляр ядра связанный оператор, учитывая сведения об использовании оператора в модель, описанную в указанный объект контекста.
-ms.author: elcowle
+title: Имлоператоркернелфактори. Креатекернел, метод
+description: Создает экземпляр связанного оператора ядра, учитывая сведения об использовании оператора в модели, описанной в предоставленном объекте контекста.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, CreateKernel
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Креатекернел
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorKernelFactory.CreateKernel
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 8bf4b931267581e719d40e7166c59c8c813fe1ad
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: fa1b909903d803bdc2e4b22c7edc92f5a4c6a288
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180876"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157561"
 ---
-# <a name="imloperatorkernelfactorycreatekernel-method"></a>Метод IMLOperatorKernelFactory.CreateKernel
+# <a name="imloperatorkernelfactorycreatekernel-method"></a>Имлоператоркернелфактори. Креатекернел, метод
 
-Создает экземпляр ядра связанный оператор, учитывая сведения об использовании оператора в модель, описанную в указанный объект контекста.
+Создает экземпляр связанного оператора ядра, учитывая сведения об использовании оператора в модели, описанной в предоставленном объекте контекста.
 
 ```cpp
 void CreateKernel(
@@ -36,8 +34,8 @@ void CreateKernel(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

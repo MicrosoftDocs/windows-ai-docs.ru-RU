@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelCreationContext.GetInputCount
-description: Получает количество входных данных для оператора.
-ms.author: elcowle
+title: Имлоператоркернелкреатионконтекст. Жетинпуткаунт, метод
+description: Возвращает число входов для оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetInputCount
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетинпуткаунт
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorKernelCreationContext.GetInputCount
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: cd3676fac2973997c7af4263e6b76de0f47eb808
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 0e64a7edb38cb5b60f30297af0f9ff17d89c200a
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181546"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157370"
 ---
-# <a name="imloperatorkernelcreationcontextgetinputcount-method"></a>Метод IMLOperatorKernelCreationContext.GetInputCount
+# <a name="imloperatorkernelcreationcontextgetinputcount-method"></a>Имлоператоркернелкреатионконтекст. Жетинпуткаунт, метод
 
-Получает количество входных данных для оператора.
+Возвращает число входов для оператора.
 
 ```cpp
 uint32_t GetInputCount()
@@ -34,8 +32,8 @@ uint32_t GetInputCount()
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

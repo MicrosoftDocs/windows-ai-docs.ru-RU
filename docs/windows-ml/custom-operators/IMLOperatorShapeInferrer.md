@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Интерфейс IMLOperatorShapeInferrer
-description: Реализуется inferrers фигуры вывести фигур границ тензорные выходные данные оператора.
-ms.author: elcowle
+title: Интерфейс Имлоператоршапеинферрер
+description: Реализуется с помощью фигурных источников, чтобы вывести фигуры выходных тензорные границ оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IMLOperatorShapeInferrer
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Имлоператоршапеинферрер
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,29 +13,29 @@ api_name:
 - IMLOperatorShapeInferrer
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 41fefb1dfe04f99ec41ceae82cc247668b3f43c5
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 64917ecf3cf490ccb98db86bc670189acbb43c78
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180956"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157776"
 ---
-# <a name="imloperatorshapeinferrer-interface"></a>Интерфейс IMLOperatorShapeInferrer
+# <a name="imloperatorshapeinferrer-interface"></a>Интерфейс Имлоператоршапеинферрер
 
-Реализуется inferrers фигуры вывести фигур границ тензорные выходные данные оператора. Inferrers фигуры могут предоставляться при регистрации пользовательского оператора ядра для повышения производительности и включения ядра для запроса вида tensors его выходные данные при его создании и вычислить. Inferrers фигуры также могут предоставляться при регистрации пользовательского оператора схемы для улучшения проверки модели.
+Реализуется с помощью фигурных источников, чтобы вывести фигуры выходных тензорные границ оператора. Источники ссылок на фигуру могут быть предоставлены при регистрации ядер пользовательских операторов, чтобы повысить производительность и позволить ядру запрашивать форму выходных десятков при создании и вычислении. Источники ссылок фигур также могут быть предоставлены при регистрации пользовательской схемы оператора для улучшения проверки модели.
 
 ## <a name="methods"></a>Методы
 
 | Имя | Описание |
 |------|-------------|
-| [InferOutputShapes](IMLOperatorShapeInferrer_InferOutputShapes.md) | Вызывается, чтобы определить фигуры границ выходные данные оператора. |
+| [InferOutputShapes](IMLOperatorShapeInferrer_InferOutputShapes.md) | Вызывается для вывода форм краев выходных данных оператора. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

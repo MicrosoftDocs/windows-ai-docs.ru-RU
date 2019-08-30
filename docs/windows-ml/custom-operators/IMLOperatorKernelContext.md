@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Интерфейс IMLOperatorKernelContext
-description: Предоставляет сведения об использовании оператора, хотя вычисляются ядра.
-ms.author: elcowle
+title: Интерфейс Имлоператоркернелконтекст
+description: Предоставляет сведения об использовании оператора при вычислении ядра.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, IMLOperatorKernelContext
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Имлоператоркернелконтекст
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,33 +13,33 @@ api_name:
 - IMLOperatorKernelContext
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 3e6708a905d3ff9277fa80793329eb149fbafb2c
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: c1358ad70c4807c45a3ad6b130c770fe5bac82a5
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181176"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157209"
 ---
-# <a name="imloperatorkernelcontext-interface"></a>Интерфейс IMLOperatorKernelContext
+# <a name="imloperatorkernelcontext-interface"></a>Интерфейс Имлоператоркернелконтекст
 
-Предоставляет сведения об использовании оператора, хотя вычисляются ядра.
+Предоставляет сведения об использовании оператора при вычислении ядра.
 
 ## <a name="methods"></a>Методы
 
 | Имя | Описание |
 |------|-------------|
-| [AllocateTemporaryData](IMLOperatorKernelContext_AllocateTemporaryData.md) | Выделяет временных данных, который будет использоваться в качестве промежуточных памяти в течение всего вызова [IMLOperatorKernel::Compute](IMLOperatorKernel_Compute.md). |
-| [GetExecutionInterface](IMLOperatorKernelContext_GetExecutionInterface.md) | Возвращает объект, различаются, поддерживаемые интерфейсы на основе ядра типа. |
-| [GetInputTensor](IMLOperatorKernelContext_GetInputTensor.md) | Получает входной тензорные оператора по указанному индексу. |
-| [GetOutputTensor (uint32_t, IMLOperatorTensor **)](IMLOperatorKernelContext_GetOutputTensor.md#GetOutputTensor1) | Получает тензорные выходные данные оператора по указанному индексу. |
-| [GetOutputTensor (uint32_t, uint32_t, const uint32_t *, IMLOperatorTensor **)](IMLOperatorKernelContext_GetOutputTensor.md#GetOutputTensor2) | Получает тензорные выходные данные оператора по указанному индексу, а при объявлении его форму. |
+| [AllocateTemporaryData](IMLOperatorKernelContext_AllocateTemporaryData.md) | Выделяет временные данные, которые будут использоваться в качестве промежуточной памяти для длительности вызова [имлоператоркернел:: COMPUTE](IMLOperatorKernel_Compute.md). |
+| [GetExecutionInterface](IMLOperatorKernelContext_GetExecutionInterface.md) | Возвращает объект, Поддерживаемые интерфейсы которого различаются в зависимости от типа ядра. |
+| [GetInputTensor](IMLOperatorKernelContext_GetInputTensor.md) | Возвращает входной тензорные оператора по указанному индексу. |
+| [Жетаутпуттенсор (uint32_t, Имлоператортенсор * *)](IMLOperatorKernelContext_GetOutputTensor.md#GetOutputTensor1) | Возвращает выходной тензорные оператора по указанному индексу. |
+| [Жетаутпуттенсор (uint32_t, uint32_t, const uint32_t *, Имлоператортенсор * *)](IMLOperatorKernelContext_GetOutputTensor.md#GetOutputTensor2) | Возвращает выходной тензорные оператора по указанному индексу при объявлении его фигуры. |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

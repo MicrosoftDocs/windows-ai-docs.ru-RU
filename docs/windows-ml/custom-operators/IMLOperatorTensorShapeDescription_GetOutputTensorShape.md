@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorTensorShapeDescription.GetOutputTensorShape
-description: Получает размеры измерениях тензорные выходных данных оператора.
-ms.author: elcowle
+title: Имлоператортенсоршапедескриптион. Жетаутпуттенсоршапе, метод
+description: Возвращает размеры размеров тензорные выходных данных оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetOutputTensorShape
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетаутпуттенсоршапе
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,21 +13,21 @@ api_name:
 - IMLOperatorTensorShapeDescription.GetOutputTensorShape
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 56056d0eea93405d036d43ba4f8a8108ad67f0ba
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 5d7672315ef36203bfdd6985526c39057d23760b
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181516"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157827"
 ---
-# <a name="imloperatortensorshapedescriptiongetoutputtensorshape-method"></a>Метод IMLOperatorTensorShapeDescription.GetOutputTensorShape
+# <a name="imloperatortensorshapedescriptiongetoutputtensorshape-method"></a>Имлоператортенсоршапедескриптион. Жетаутпуттенсоршапе, метод
 
-Получает размеры измерениях тензорные выходных данных оператора. Возвращает ошибку, если выходные данные по указанному индексу не тензорные.
+Возвращает размеры размеров тензорные выходных данных оператора. Возвращает ошибку, если выходные данные по указанному индексу не являются тензорные.
 
 ```cpp
 GetOutputTensorShape(
-    uint32_t outputIndex, 
-    uint32_t dimensionCount, 
+    uint32_t outputIndex,
+    uint32_t dimensionCount,
     _Out_writes_(dimensionCount) uint32_t* dimensions)
 ```
 
@@ -37,8 +35,8 @@ GetOutputTensorShape(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

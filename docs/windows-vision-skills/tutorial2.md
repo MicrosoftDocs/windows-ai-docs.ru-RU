@@ -1,5 +1,4 @@
 ---
-author: QuinnRadich
 title: Использование опыта работы с Windows из классического приложения (C++)
 description: Узнайте, как подготавливать и использовать навыки работы с Windows в настольном приложении (не UWP).
 ms.author: lobourre
@@ -7,12 +6,12 @@ ms.date: 8/26/2019
 ms.topic: article
 keywords: Windows 10, Windows AI, навыки работы с концепцией Windows, Настольный компьютер
 ms.localizationpriority: medium
-ms.openlocfilehash: a40d4ad18dda21ea73f9bf0e8e9144180fb5aee3
-ms.sourcegitcommit: 900b428a26955f6366f3c03128dc225f52ffd3bc
+ms.openlocfilehash: 0a5b8e1068bceaa805667d5d4c88495d80c290b7
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70065730"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70156170"
 ---
 # <a name="tutorial-create-a-vision-skill-desktop-application-c"></a>Учебник. Создание классического приложения для навыков работыC++с видением ()
 

@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernel.Compute
-description: Вычисляет выходные данные ядра.
-ms.author: elcowle
+title: Имлоператоркернел. COMPUTE, метод
+description: Выполняет вычисление выходных данных ядра.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинное обучение, WinML, пользовательские операторы Compute
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, вычисление
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorKernel.Compute
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: c753516f3739b75292f5d52ce805d61faf168c3f
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: d29b07d8e66e0666db29cfb66adde15191393eb4
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181146"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157585"
 ---
-# <a name="imloperatorkernelcompute-method"></a>Метод IMLOperatorKernel.Compute
+# <a name="imloperatorkernelcompute-method"></a>Имлоператоркернел. COMPUTE, метод
 
-Вычисляет выходные данные ядра. Реализация этого метода должны быть потокобезопасными. Один и тот же экземпляр ядра могут вычисляться одновременно в разных потоках.
+Выполняет вычисление выходных данных ядра. Реализация этого метода должна быть потокобезопасной. Один и тот же экземпляр ядра может вычисляться одновременно в разных потоках.
 
 ```cpp
 void Compute(
@@ -35,8 +33,8 @@ void Compute(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

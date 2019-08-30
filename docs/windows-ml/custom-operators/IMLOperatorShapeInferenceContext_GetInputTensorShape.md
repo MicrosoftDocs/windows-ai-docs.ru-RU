@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorShapeInferenceContext.GetInputTensorShape
-description: Возвращает размеры измерений из входного тензорные оператора.
-ms.author: elcowle
+title: Имлоператоршапеинференцеконтекст. Жетинпуттенсоршапе, метод
+description: Возвращает размеры измерений входного тензорные оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetInputTensorShape
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетинпуттенсоршапе
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorShapeInferenceContext.GetInputTensorShape
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: fec4996bcc8f7b4272334bd9a5c57a38f205dc17
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: e8ca3e5c74d0471948d0a3ad7b2fe7f7715c373d
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181006"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157633"
 ---
-# <a name="imloperatorshapeinferencecontextgetinputtensorshape-method"></a>Метод IMLOperatorShapeInferenceContext.GetInputTensorShape
+# <a name="imloperatorshapeinferencecontextgetinputtensorshape-method"></a>Имлоператоршапеинференцеконтекст. Жетинпуттенсоршапе, метод
 
-Возвращает размеры измерений из входного тензорные оператора. Возвращает ошибку, если входные данные по указанному индексу не тензорные.
+Возвращает размеры измерений входного тензорные оператора. Возвращает ошибку, если входные данные по указанному индексу не являются тензорные.
 
 ```cpp
 void GetInputTensorShape(
@@ -37,8 +35,8 @@ void GetInputTensorShape(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

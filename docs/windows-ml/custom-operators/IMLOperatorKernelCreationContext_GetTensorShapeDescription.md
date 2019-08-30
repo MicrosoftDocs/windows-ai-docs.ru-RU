@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorKernelCreationContext.GetTensorShapeDescription
-description: Получает описание фигуры ввода-вывода по краям оператор.
-ms.author: elcowle
+title: Имлоператоркернелкреатионконтекст. Жеттенсоршапедескриптион, метод
+description: Возвращает описание входных и выходных фигур, подключенных к краям операторов.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetTensorShapeDescription
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жеттенсоршапедескриптион
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorKernelCreationContext.GetTensorShapeDescription
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 215dc45fd4ed2d7cb3a7ddd38af13a2e86bc3d5f
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: fc2b411d69da09e9b136b647e6ab7f27b7b4620c
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66181726"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157334"
 ---
-# <a name="imloperatorkernelcreationcontextgettensorshapedescription-method"></a>Метод IMLOperatorKernelCreationContext.GetTensorShapeDescription
+# <a name="imloperatorkernelcreationcontextgettensorshapedescription-method"></a>Имлоператоркернелкреатионконтекст. Жеттенсоршапедескриптион, метод
 
-Получает описание фигуры ввода-вывода по краям оператор.
+Возвращает описание входных и выходных фигур, подключенных к краям операторов.
 
 ```cpp
 void GetTensorShapeDescription(
@@ -35,8 +33,8 @@ void GetTensorShapeDescription(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

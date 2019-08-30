@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Перечисление MLOperatorAttributeType
-description: Указывает тип атрибута. Каждый тип атрибута соответствует числовом виде соответствующего типа ONNX.
-ms.author: elcowle
+title: Перечисление Млоператораттрибутетипе
+description: Указывает тип атрибута. Каждый тип атрибута в числовом соответствии с соответствующим типом ONNX.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, MLOperatorAttributeType
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Млоператораттрибутетипе
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,35 +13,35 @@ api_name:
 - MLOperatorAttributeType
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 09e847c7ebfce894249ef06b778cdb5ec3039a79
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 7c5a1c8cf538de134e8fecb336b7aee301a17565
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182056"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157549"
 ---
-# <a name="mloperatorattributetype-enum"></a>Перечисление MLOperatorAttributeType
+# <a name="mloperatorattributetype-enum"></a>Перечисление Млоператораттрибутетипе
 
-Указывает тип атрибута. Каждый тип атрибута соответствует числовом виде соответствующего типа ONNX.
+Указывает тип атрибута. Каждый тип атрибута в числовом соответствии с соответствующим типом ONNX.
 
 ## <a name="fields"></a>Поля
 
 | Имя        | Значение | Описание                            |
 |-------------|-------|----------------------------------------|
-| Не определено   | 0     | Не определено (неиспользуемого).                    |
-| Плавающий       | 2     | 32-разрядное число с плавающей запятой.                 |
+| Не определено   | 0     | Не определено (не используется).                    |
+| Плавающий       | 2     | 32-разрядная с плавающей запятой.                 |
 | int         | 3     | 64-разрядное целое число.                        |
 | Строка      | 4     | Строковое значение.                          |
-| FloatArray  | 7     | Массив 32-разрядных значений с плавающей запятой. |
-| IntArray    | 8     | Массив 64-разрядных целых значений.        |
-| StringArray | 9     | Массив строковых значений.                |
+| флоатаррай  | 7     | Массив из 32-разрядных значений с плавающей запятой. |
+| интаррай    | 8     | Массив из 64-разрядных целочисленных значений.        |
+| стрингаррай | 9     | Массив строковых значений.                |
 
 ## <a name="requirements"></a>Требования
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]

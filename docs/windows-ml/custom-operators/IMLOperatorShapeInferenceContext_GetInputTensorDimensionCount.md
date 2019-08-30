@@ -1,11 +1,9 @@
 ---
-author: eliotcowley
-title: Метод IMLOperatorShapeInferenceContext.GetInputTensorDimensionCount
-description: Получает размерность вывода тензорные оператора.
-ms.author: elcowle
+title: Имлоператоршапеинференцеконтекст. Жетинпуттенсордименсионкаунт, метод
+description: Возвращает число измерений тензорные выходных данных оператора.
 ms.date: 4/1/2019
 ms.topic: article
-keywords: Windows 10, windows машинного обучения, WinML, настраиваемые операторы, GetInputTensorDimensionCount
+keywords: Windows 10, машинное обучение Windows, WinML, пользовательские операторы, Жетинпуттенсордименсионкаунт
 ms.localizationpriority: medium
 topic_type:
 - APIRef
@@ -15,16 +13,16 @@ api_name:
 - IMLOperatorShapeInferenceContext.GetInputTensorDimensionCount
 api_location:
 - MLOperatorAuthor.h
-ms.openlocfilehash: 7d9b2f19f59b56131f3e8cd00b893c576e815546
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.openlocfilehash: 8d191d379045918422c62c80eeac2d8573931860
+ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66180426"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70157742"
 ---
-# <a name="imloperatorshapeinferencecontextgetinputtensordimensioncount-method"></a>Метод IMLOperatorShapeInferenceContext.GetInputTensorDimensionCount
+# <a name="imloperatorshapeinferencecontextgetinputtensordimensioncount-method"></a>Имлоператоршапеинференцеконтекст. Жетинпуттенсордименсионкаунт, метод
 
-Получает размерность вывода тензорные оператора.
+Возвращает число измерений тензорные выходных данных оператора.
 
 ```cpp
 void GetInputTensorDimensionCount(
@@ -36,8 +34,8 @@ void GetInputTensorDimensionCount(
 
 | | |
 |-|-|
-| **Минимальный поддерживаемый клиент** | Windows 10, сборки 17763 |
+| **Минимальный поддерживаемый клиент** | Windows 10, сборка 17763 |
 | **Минимальный поддерживаемый сервер** | Windows Server 2019 с возможностями рабочего стола |
-| **Заголовок** | MLOperatorAuthor.h |
+| **Заголовок** | Млоператораусор. h |
 
 [!INCLUDE [help](../../includes/get-help.md)]
