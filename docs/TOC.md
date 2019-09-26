@@ -1,4 +1,5 @@
-# [Средства ИИ Windows](index.md)
+# [Средства ИИ Windows](index.yml)
+## [Сравнение решений искусственного интеллекта](./windows-ai-comparison.md)
 ## [Машинное обучение Windows](windows-ml/index.md)
 ### Учебники
 #### [Создание классического приложения WinML (C++)](windows-ml/get-started-desktop.md)

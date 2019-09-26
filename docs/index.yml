@@ -1,0 +1,114 @@
+### YamlMime:Landing
+title: ИИ Windows
+summary: Преобразуйте свое приложение Windows с помощью возможностей искусственного интеллекта. Средства ИИ Windows позволят вам и вашей компании достичь высоких результатов с помощью интеллектуальных решений для выполнения сложных задач.
+metadata:
+  author: mattwojo
+  description: Преобразуйте свое приложение Windows с помощью возможностей ИИ.
+  manager: jken
+  ms.author: mattwoj
+  ms.date: 09/18/2019
+  ms.prod: machine-learning
+  ms.topic: landing-page
+  ms.openlocfilehash: 56f5ba27a5e1ebbe789986a7b4193e5fdf721239
+  ms.sourcegitcommit: 478efb930668f2d16dfa18c9b52853f7e2e6dcd8
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71278483"
+landingContent:
+- title: Windows Machine Learning (WinML)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор Windows Machine Learning
+      url: windows-ml/index.md
+  - linkListType: concept
+    links:
+    - text: Что собой представляет модель машинного обучения
+      url: windows-ml/what-is-a-machine-learning-model.md
+    - text: Работа с моделями ONNX
+      url: windows-ml/get-onnx-model.md
+    - text: Использование вычислительной мощности и памяти для Windows ML
+      url: windows-ml/performance-memory.md
+    - text: Выполнение нескольких моделей машинного обучения в цепочке
+      url: windows-ml/chaining.md
+  - linkListType: tutorial
+    links:
+    - text: Создание приложения UWP WinML (C#)
+      url: windows-ml/get-started-uwp.md
+    - text: Создание приложения UWP WinML (C++)
+      url: windows-ml/get-started-desktop.md
+    - text: Создание приложения UWP WinML (Python)
+      url: windows-ml/get-started-python.md
+    - text: Обучение модели с использованием CNTK
+      url: windows-ml/train-model-vs-tools-ai.md
+    - text: Обучение модели с использованием PyTorch
+      url: windows-ml/train-model-pytorch.md
+    - text: Преобразование обученных моделей в ONNX
+      url: windows-ml/convert-model-winmltools.md
+  - linkListType: reference
+    links:
+    - text: Справочник по API
+      url: windows-ml/api-reference.md
+    - text: Основные интерфейсы API (пространство имен Windows.AI.MachineLearning)
+      url: https://docs.microsoft.com/uwp/api/windows.ai.machinelearning
+    - text: Пользовательские операторы
+      url: https://docs.microsoft.com/en-us/windows/ai/windows-ml/custom-operator
+    - text: Собственные интерфейсы API WinML
+      url: https://docs.microsoft.com/en-us/windows/ai/windows-ml/native-apis
+    - text: Инструменты и примеры
+      url: windows-ml/tools-and-samples.md
+    - text: Заметки о выпуске
+      url: windows-ml/release-notes.md
+    - text: Вопросы и ответы
+      url: windows-ml/faq.md
+- title: Навыки компьютерного зрения Windows
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор навыков компьютерного зрения Windows
+      url: windows-vision-skills/index.md
+  - linkListType: concept
+    links:
+    - text: Важные понятия об API
+      url: windows-vision-skills/important-api-concepts.md
+  - linkListType: tutorial
+    links:
+    - text: Создание собственного навыка компьютерного зрения (C#)
+      url: windows-vision-skills/tutorial.md
+    - text: Создание приложения UWP, использующего навыки компьютерного зрения (C#)
+      url: windows-vision-skills/tutorial1.md
+    - text: Создание классического приложения, использующего навыки компьютерного зрения (C++)
+      url: windows-vision-skills/tutorial2.md
+  - linkListType: reference
+    links:
+    - text: Справочник по API
+      url: https://docs.microsoft.com/dotnet/api/microsoft.ai.skills.skillinterfacepreview
+    - text: Примеры
+      url: windows-vision-skills/samples.md
+- title: Direct Machine Learning (DirectML)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор DirectML
+      url: https://docs.microsoft.com/windows/desktop/direct3d12/dml
+  - linkListType: concept
+    links:
+    - text: Привязывание в DirectML
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-binding
+    - text: Барьеры UAV и состояния барьеров ресурсов
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-barriers
+    - text: Использование шагов для выражения заполнения, структура памяти
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-strides
+    - text: Время существования и синхронизация ресурсов
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-resource-lifetime
+    - text: Использование слоя отладки
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-debug-layer
+    - text: Обработка ошибок и удаления устройства
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-errors
+    - text: Вспомогательные функции
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-helper-functions
+  - linkListType: reference
+    links:
+    - text: Примеры приложений
+      url: https://docs.microsoft.com/windows/win32/direct3d12/dml-min-app
