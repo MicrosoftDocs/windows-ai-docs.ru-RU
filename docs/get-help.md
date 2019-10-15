@@ -1,18 +1,18 @@
 ---
-author: eliotcowley
+author: QuinnRadich
 title: Получение справки по машинному обучению в Windows
 description: Ознакомьтесь с этими материалами, чтобы получить справку по приложениям WinML.
-ms.author: elcowle
-ms.date: 06/11/2019
+ms.author: quradic
+ms.date: 10/14/2019
 ms.topic: article
 keywords: windows 10, uwp, Windows machine learning, winml
 ms.localizationpriority: medium
-ms.openlocfilehash: 6abd221bf10d2ee65720fff8c66534814447c6ce
-ms.sourcegitcommit: 88c4ba40260771589c84409e11c9bb19528ebbaf
+ms.openlocfilehash: bd9d87abaf87bdef0f4b15e2c9bf959bb79839db
+ms.sourcegitcommit: 399d0f17b12894033a2ee74d51c8c1f01781c2fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "66836458"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310380"
 ---
 # <a name="get-help-with-windows-machine-learning"></a>Получение справки по машинному обучению в Windows
 
