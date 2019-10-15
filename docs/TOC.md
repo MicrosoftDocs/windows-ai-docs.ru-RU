@@ -144,3 +144,8 @@
 ### [Важные понятия, касающиеся API](windows-vision-skills/important-api-concepts.md)
 ### [Примеры](windows-vision-skills/Samples.md)
 ### [Справочник по API](https://docs.microsoft.com/dotnet/api/microsoft.ai.skills.skillinterfacepreview)
+## Контейнер Windows ML (ознакомительная версия для участников программы предварительной оценки Windows)
+### [Обзор](windows-ml-container/index.md)
+### [Начало работы](windows-ml-container/getting-started.md)
+### [Среда выполнения Azure IoT Edge](windows-ml-container/iot-edge-runtime.md)
+### [Список API](windows-ml-container/api-list.md)
