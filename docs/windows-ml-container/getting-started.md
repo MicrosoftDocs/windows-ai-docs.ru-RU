@@ -5,12 +5,12 @@ ms.date: 10/14/2019
 ms.topic: article
 keywords: Windows 10, контейнер Windows ml, ML, AI, контейнер, IOT, ребро
 ms.localizationpriority: medium
-ms.openlocfilehash: 4a1708824090bade3ab05773063198b482b0b30e
-ms.sourcegitcommit: f5945af6d1f534b490eea7860f72804dc1c9fea8
+ms.openlocfilehash: 729d348a5606b97fd493382609919dac730edc76
+ms.sourcegitcommit: e08b8ae92e48c1b82bb6f94fefcb32cd817453d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72315528"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443018"
 ---
 # <a name="getting-started"></a>Начало работы
 
@@ -127,18 +127,18 @@ dism /online /Enable-Feature /FeatureName:Containers
 3.  Загрузите ночные сборки для версий DOCKER. exe и dockerd. exe.
 
 ```console
-C:\Windows\system32>curl.exe -o %windir%\system32\dockerd.exe https://master.dockerproject.org/windows/x86_64/dockerd.exe
+curl.exe -o %windir%\system32\dockerd.exe https://master.dockerproject.org/windows/x86_64/dockerd.exe
 ```
 ```console
-C:\Windows\system32>curl.exe -o %windir%\system32\docker.exe https://master.dockerproject.org/windows/x86_64/docker.exe
+curl.exe -o %windir%\system32\docker.exe https://master.dockerproject.org/windows/x86_64/docker.exe
 ```
 
 Зарегистрируйте и запустите службу DOCKER.
 
 ```console
-C:\Windows\system32>dockerd.exe --register-service
+dockerd.exe --register-service
 
-C:\Windows\system32>net start docker
+net start docker
 ```
 
 Должно отобразиться следующее выходное сообщение.
@@ -151,7 +151,7 @@ The Docker Engine service was started successfully.
 4.  Вы можете убедиться, что DOCKER правильно работает, выполнив следующую команду.
 
 ```console
-C:\Windows\system32>docker version
+docker version
 ```
 
 Это должно привести к появлению следующего выходного сообщения.
@@ -204,7 +204,7 @@ windowsml           latest              a9d5d08d079f        25 seconds ago      
 7.  Скачайте Винмлруннер v 1.2.1.1 из https://github.com/microsoft/Windows-Machine-Learning/releases/tag/1.2.1.1 с помощью следующей команды.
 
 ```console
-C:\tgz>curl -o WinMLRunner.zip -L https://github.com/microsoft/Windows-Machine-Learning/releases/download/1.2.1.1/WinMLRunner.v1.2.1.1.zip
+curl -o WinMLRunner.zip -L https://github.com/microsoft/Windows-Machine-Learning/releases/download/1.2.1.1/WinMLRunner.v1.2.1.1.zip
 ```
 
 Затем распакуйте ZIP-файл в текущую папку.
@@ -212,7 +212,7 @@ C:\tgz>curl -o WinMLRunner.zip -L https://github.com/microsoft/Windows-Machine-L
 8.  Скачайте пример Скуизенет. onnx из https://github.com/microsoft/Windows-Machine-Learning/tree/1.2.1.1/SharedContent/models с помощью следующей команды.
 
 ```console
-C:\tgz>curl -o SqueezeNet.onnx -L https://github.com/microsoft/Windows-Machine-Learning/raw/1.2.1.1/SharedContent/models/SqueezeNet.onnx
+curl -o SqueezeNet.onnx -L https://github.com/microsoft/Windows-Machine-Learning/raw/1.2.1.1/SharedContent/models/SqueezeNet.onnx
 ```
 
 9.  Создайте Dockerfile, чтобы скопировать необходимые файлы в импортированный образ контейнера машинного обучения Windows.
@@ -224,7 +224,9 @@ echo FROM windowsml:latest               >  Dockerfile
 echo WORKDIR C:/App                      >> Dockerfile
 echo COPY ./x64/WinMLRunner.exe C:/App/  >> Dockerfile
 echo COPY ./SqueezeNet.onnx C:/App/      >> Dockerfile
+```
 
+```console
 C:\tgz>type Dockerfile
 FROM windowsml:latest
 WORKDIR C:/App
@@ -282,7 +284,7 @@ docker run -it --isolation process --device class/5B45201D-F2F2-4F3B-85BB-30FF1F
 12. В командной строке контейнера запустите Винмлруннер с помощью ЦП.
 
 ```console
-C:\App>WinMLRunner.exe -model C:/App/SqueezeNet.onnx -cpu
+WinMLRunner.exe -model C:/App/SqueezeNet.onnx -cpu
 ```
 
 Выходные данные должны выглядеть следующим образом.
@@ -319,7 +321,7 @@ Evaluating (device = CPU, iteration = 1, inputBinding = CPU, inputDataType = Ten
 13. Вы также можете запустить Винмлруннер с помощью GPU. Укажите один из процессоров AMD Radeon, NVIDIA или Intel с помощью аргумента командной строки `-GPUAdapterName`.
 
 ```console
-C:\App>WinMLRunner.exe -model C:/App/SqueezeNet.onnx -GPUAdapterName [radeon/nvidia/intel]
+WinMLRunner.exe -model C:/App/SqueezeNet.onnx -GPUAdapterName [radeon/nvidia/intel]
 ```
 
 ## <a name="build-apps-the-for-windows-ml-container"></a>Создание приложений для контейнера машинного обучения Windows
@@ -368,7 +370,7 @@ Install-Package Microsoft.Windows.CppWinRT -Version 2.0.190730.2
     1. Щелкните проект правой кнопкой мыши.
     1. Выбор свойств
     1. В диалоговом окне выберите компоновщик — > входные данные.
-    1. Обновите дополнительные зависимости, чтобы включить `windowscoreheadless.lib`. Пример:
+    1. Обновите дополнительные зависимости, чтобы включить `windowscoreheadless.lib`. Пример
         1. `windowscoreheadless.lib;%(...AdditionalDependencies...)`
-        
+
 ![vsproj3](./images/vs_project3.png)

@@ -3,14 +3,14 @@ title: Список API
 description: Изучите API-интерфейсы список разрешений для использования в контейнере Windows ML
 ms.date: 10/14/2019
 ms.topic: article
-keywords: Windows 10, контейнер Windows ml, контейнер, IOT, ребро
+keywords: windows 10, контейнер Windows ML, контейнер, Интернет вещей, Edge
 ms.localizationpriority: medium
-ms.openlocfilehash: c2f8c7dda49dfd035d00ff51f30056bd6a88973f
-ms.sourcegitcommit: f5945af6d1f534b490eea7860f72804dc1c9fea8
+ms.openlocfilehash: 6567256c71feb0f110cfac71ed239efac3037add
+ms.sourcegitcommit: e08b8ae92e48c1b82bb6f94fefcb32cd817453d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72315548"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443014"
 ---
 # <a name="api-list"></a>Список API
 
@@ -23,10 +23,6 @@ API-интерфейсы, экспортированные [библиотеко
 ### <a name="windowsaimachinelearninghttpsdocsmicrosoftcomuwpapiwindowsaimachinelearning"></a>[Windows.AI.MachineLearning](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning)
 
 ILearningModelFeatureDescriptor </br> ILearningModelFeatureValue </br> ILearningModelOperatorProvider </br> ITensor </br> ImageFeatureDescriptor </br> ImageFeatureValue </br> LearningModel </br> LearningModelBinding </br> LearningModelDevice </br> LearningModelDeviceKind </br> LearningModelEvaluationResult </br> LearningModelFeatureKind </br> LearningModelSession </br> LearningModelSessionOptions </br> мачинелеарнингконтракт </br> MapFeatureDescriptor </br> SequenceFeatureDescriptor </br> TensorBoolean </br> TensorDouble </br> TensorFeatureDescriptor </br> TensorFloat </br> TensorFloat16Bit </br> TensorInt16Bit </br> TensorInt32Bit </br> TensorInt64Bit </br> TensorInt8Bit </br> TensorKind </br> TensorString </br> TensorUInt16Bit </br> TensorUInt32Bit </br> TensorUInt64Bit </br> TensorUInt8Bit
-
-### <a name="windowsaimachinelearningpreviewhttpsdocsmicrosoftcomuwpapiwindowsaimachinelearningpreview"></a>[Windows. AI. MachineLearning. Preview](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.preview)
-
-феатурилементкиндпревиев </br> илеарнингмоделвариабледескрипторпревиев </br> имажевариабледескрипторпревиев </br> инференЦингоптионспревиев </br> леарнингмоделбиндингпревиев </br> леарнингмоделдескриптионпревиев </br> леарнингмоделдевицекиндпревиев </br> леарнингмоделевалуатионресултпревиев </br> леарнингмоделфеатурекиндпревиев </br> леарнингмоделпревиев </br> леарнингмоделвариабледескрипторпревиев </br> мачинелеарнингпревиевконтракт </br> мапвариабледескрипторпревиев </br> секуенцевариабледескрипторпревиев </br> тенсорвариабледескрипторпревиев
 
 ## <a name="windowsapplicationmodel"></a>Windows.ApplicationModel
 
@@ -128,7 +124,7 @@ II2cControllerProvider </br> II2cDeviceProvider </br> II2cProvider </br> Provide
 
 ### <a name="windowsdevicespowerhttpsdocsmicrosoftcomuwpapiwindowsdevicespower"></a>[Windows. Devices. Power](https://docs.microsoft.com/uwp/api/Windows.Devices.Power)
 
-Аккумулятор </br> баттерирепорт
+"Батарея" </br> баттерирепорт
 
 ### <a name="windowsdevicespwmhttpsdocsmicrosoftcomuwpapiwindowsdevicespwm"></a>[Windows. Devices. модулятор](https://docs.microsoft.com/uwp/api/Windows.Devices.Pwm)
 
@@ -174,7 +170,7 @@ Accelerometer (акселерометр) </br> акцелерометердат�
 
 ### <a name="windowsfoundationhttpsdocsmicrosoftcomuwpapiwindowsfoundation"></a>[Windows.Foundation](https://docs.microsoft.com/uwp/api/Windows.Foundation)
 
-асинкактионкомплетедхандлер </br> асинкактионпрогресшандлер </br> асинкактионвиспрогресскомплетедхандлер </br> асинкоператионкомплетедхандлер </br> асинкоператионпрогресшандлер </br> асинкоператионвиспрогресскомплетедхандлер </br> асинкстатус </br> DateTime </br> Разницы </br> деферралкомплетедхандлер </br> EventHandler </br> EventRegistrationToken </br> фаундатионконтракт </br> GuidHelper </br> HResult </br> IAsyncAction </br> IAsyncActionWithProgress </br> иасинЦинфо </br> IAsyncOperationWithProgress </br> IAsyncOperation </br> IClosable </br> ижетактиватионфактори </br> имеморибуффер </br> имеморибуфферреференце </br> IPropertyValue </br> иреференцеаррай </br> IReference </br> IStringable </br> ивввформурлдекодерентри </br> Параметр memorybuffer </br> отчетов </br> PropertyType </br> PropertyValue </br> Rect </br> Size </br> TimeSpan </br> TypedEventHandler </br> универсалапиконтракт </br> Uri </br> вввформурлдекодер </br> вввформурлдекодерентри
+асинкактионкомплетедхандлер </br> асинкактионпрогресшандлер </br> асинкактионвиспрогресскомплетедхандлер </br> асинкоператионкомплетедхандлер </br> асинкоператионпрогресшандлер </br> асинкоператионвиспрогресскомплетедхандлер </br> асинкстатус </br> DateTime </br> Разницы </br> деферралкомплетедхандлер </br> EventHandler </br> EventRegistrationToken </br> фаундатионконтракт </br> GuidHelper </br> HResult </br> IAsyncAction </br> IAsyncActionWithProgress </br> иасинЦинфо </br> IAsyncOperationWithProgress </br> IAsyncOperation </br> IClosable </br> ижетактиватионфактори </br> имеморибуффер </br> имеморибуфферреференце </br> IPropertyValue </br> иреференцеаррай </br> IReference </br> IStringable </br> ивввформурлдекодерентри </br> Параметр memorybuffer </br> отчетов </br> PropertyType </br> PropertyValue </br> Rect </br> Size (Размер) </br> TimeSpan </br> TypedEventHandler </br> универсалапиконтракт </br> Универсальный код ресурса (URI) </br> вввформурлдекодер </br> вввформурлдекодерентри
 
 ### <a name="windowsfoundationcollectionshttpsdocsmicrosoftcomuwpapiwindowsfoundationcollections"></a>[Windows. Foundation. Collections](https://docs.microsoft.com/uwp/api/Windows.Foundation.Collections)
 
@@ -190,13 +186,13 @@ Accelerometer (акселерометр) </br> акцелерометердат�
 
 ### <a name="windowsfoundationnumericshttpsdocsmicrosoftcomuwpapiwindowsfoundationnumerics"></a>[Windows. Foundation. Numerics](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics)
 
-Matrix3x2 </br> Matrix4x4 </br> Плоскости </br> Quaternion </br> Основной </br> Vector2 </br> Vector3 (Вектор 3) </br> Vector4
+Matrix3x2 </br> Matrix4x4 </br> Плоскости </br> Quaternion </br> Основной </br> Vector2 </br> Vector3 </br> Vector4
 
 ## <a name="windowsglobalization"></a>Windows.Globalization
 
 ### <a name="windowsglobalizationhttpsdocsmicrosoftcomuwpapiwindowsglobalization"></a>[Windows.Globalization](https://docs.microsoft.com/uwp/api/Windows.Globalization)
 
-аппликатионлангуажес </br> Календарь </br> календаридентифиерс </br> клоккидентифиерс </br> CurrencyAmount </br> курренциидентифиерс </br> DayOfWeek </br> GeographicRegion </br> Язык </br> лангуажелайаутдиректион </br> нумералсистемидентифиерс
+аппликатионлангуажес </br> Calendar </br> календаридентифиерс </br> клоккидентифиерс </br> CurrencyAmount </br> курренциидентифиерс </br> DayOfWeek </br> GeographicRegion </br> "Язык" </br> лангуажелайаутдиректион </br> нумералсистемидентифиерс
 
 ### <a name="windowsglobalizationcollationhttpsdocsmicrosoftcomuwpapiwindowsglobalizationcollation"></a>[Windows. Globalization. Collation](https://docs.microsoft.com/uwp/api/Windows.Globalization.Collation)
 
@@ -379,7 +375,7 @@ DisplayRequest
 
 ### <a name="windowssystemuserhttpsdocsmicrosoftcomuwpapiwindowssystemuser"></a>[Windows. System. пользователь](https://docs.microsoft.com/uwp/api/Windows.System.User)
 
-Пользовательская </br> усераусентикатионстатус </br> усераусентикатионстатусчанжедеферрал </br> усераусентикатионстатусчангинжевентаргс </br> усерчанжедевентаргс </br> Сущность userdeviceassociation </br> усердевицеассоЦиатиончанжедевентаргс </br> усерпиккер </br> усерпиктуресизе </br> userType </br> усерватчер </br> усерватчерстатус </br> усерватчерупдатекинд </br> виртуалкэй </br> виртуалкэймодифиерс
+Пользователь </br> усераусентикатионстатус </br> усераусентикатионстатусчанжедеферрал </br> усераусентикатионстатусчангинжевентаргс </br> усерчанжедевентаргс </br> Сущность userdeviceassociation </br> усердевицеассоЦиатиончанжедевентаргс </br> усерпиккер </br> усерпиктуресизе </br> userType </br> усерватчер </br> усерватчерстатус </br> усерватчерупдатекинд </br> виртуалкэй </br> виртуалкэймодифиерс
 
 ## <a name="windowsui"></a>Windows.UI
 
