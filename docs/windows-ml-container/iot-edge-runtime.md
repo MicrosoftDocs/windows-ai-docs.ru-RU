@@ -3,7 +3,7 @@ title: Среда выполнения Azure IoT Edge
 description: Узнайте, как добавить контейнер Windows ML на устройство с помощью Azure IoT Edge
 ms.date: 10/14/2019
 ms.topic: article
-keywords: Windows 10, контейнер Windows ml, контейнер, IOT, ребро
+keywords: windows 10, контейнер Windows ML, контейнер, Интернет вещей, Edge
 ms.localizationpriority: medium
 ms.openlocfilehash: 4c8f327505216321a0ff5a1939e25d4fba6a8cf2
 ms.sourcegitcommit: f5945af6d1f534b490eea7860f72804dc1c9fea8
@@ -50,7 +50,7 @@ ms.locfileid: "72315408"
 - `dotnet publish -r win-x64`
 - `cd bin\Debug\netcoreapp2.1\win-x64\`
 
-- Создайте Dockerfile с содержимым, как показано ниже, и сохраните его в `c:\iotedge\edge-hub\src\Microsoft.Azure.Devices.Edge.Hub.Service\bin\Debug\netcoreapp2.1\win-x64`:
+- Создайте Dockerfile с содержимым, как показано ниже, и сохраните его на `c:\iotedge\edge-hub\src\Microsoft.Azure.Devices.Edge.Hub.Service\bin\Debug\netcoreapp2.1\win-x64`:
 
     ```console
     FROM windowsml:latest
@@ -98,19 +98,19 @@ ms.locfileid: "72315408"
 ## <a name="configure-iot-edge-in-the-azure-iot-hub-portal"></a>Настройка IoT Edge на портале Центра Интернета вещей Azure
 
 - Создание устройства IoT Edge в центре Интернета вещей Azure.
-    ![iotedge01 @ no__t-1
+    ![iotedge01](./images/iotedge01.png)
 
 - Назовите устройство **тестдевице** и выберите симметричный ключ.
-    ![iotedge02 @ no__t-1
+    ![iotedge02](./images/iotedge02.png)
 
 - Выберите **задать модули**.
-    ![iotedge03 @ no__t-1
+    ![iotedge03](./images/iotedge03.png)
 
 - Укажите сведения о реестре контейнеров, в которые были помещены закрытые модули.
-    ![iotedge04 @ no__t-1
+    ![iotedge04](./images/iotedge04.png)
 
 - На странице Set modules (Настройка модулей) нажмите кнопку **настроить дополнительные параметры среды выполнения ребра** , а затем задайте для концентратора ребра и агента ребра, где вы опубликовали закрытые контейнеры.
-    ![iotedge05 @ no__t-1
+    ![iotedge05](./images/iotedge05.png)
 
 - Нажмите кнопку **сохранить** .
 - Не забудьте выбрать **Next-> следующий-Submit** .
@@ -133,7 +133,7 @@ ms.locfileid: "72315408"
 curl -o c:\IotEdgeSecurityDaemon.ps1 -L  https://raw.githubusercontent.com/Azure/iotedge/1.0.8/scripts/windows/setup/IotEdgeSecurityDaemon.ps1
 ```
 
-- Измените `IoTEdgeSecurityDaemon.ps1`, чтобы отключить ограничения версии сборки
+- Изменение `IoTEdgeSecurityDaemon.ps1` для отключения ограничений версии сборки
 -   В функции `Initialize-IoTedge` закомментируйте следующую строку.
 
 ```console

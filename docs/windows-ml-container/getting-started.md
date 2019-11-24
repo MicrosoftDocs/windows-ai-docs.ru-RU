@@ -24,7 +24,7 @@ ms.locfileid: "72443018"
 
 ![winver](./images/winver.png)
 
-В приведенном выше примере версия узла имеет значение `18999.1`.
+В приведенном выше примере используется версия узла `18999.1`.
 
 ### <a name="host-os-and-container-version-matching-requirements"></a>Требования соответствия для ОС узла и версии контейнера
 
@@ -110,7 +110,7 @@ docker pull mcr.microsoft.com/windows/ml/insider:10.0.18999.1
 
 ![устранить неполадки](./images/troubleshoot.png)
 
-Если не удается загрузить графический драйвер с помощью Центр обновления Windows, который соответствует минимальным требованиям к версии, отправьте сообщение электронной почты winmlc-questions@microsoft.com с присоединенными сведениями о DxDiag. Инструкции по запуску и сохранению сведений DxDiag [см. на этой странице поддержки](https://support.microsoft.com/help/4028644/windows-open-and-run-dxdiagexe).
+Если не удается загрузить графический драйвер с помощью Центр обновления Windows, который соответствует минимальным требованиям к версии, отправьте сообщение по электронной почте winmlc-questions@microsoft.com с присоединенными сведениями о DxDiag вашей системы. Инструкции по запуску и сохранению сведений DxDiag [см. на этой странице поддержки](https://support.microsoft.com/help/4028644/windows-open-and-run-dxdiagexe).
 
 ## <a name="set-up-and-test-a-basic-environment"></a>Настройка и тестирование базовой среды
 
@@ -276,7 +276,7 @@ docker run -it --isolation process --device class/5B45201D-F2F2-4F3B-85BB-30FF1F
 - `-it`  
     Используется, чтобы разрешить компонентам интерактивной оболочки пересылать `stdin` и использовать `tty`. Если опустить этот аргумент, интерфейс командной строки будет работать неправильно.
 - `--isolation process` указывает тип контейнера в качестве контейнера, изолированного от процесса.
-- `--device class/5B45201D-F2F2-4F3B-85BB-30FF1F953599` указывает идентификатор GUID класса для устройства, которое должно быть предоставлено в контейнер. `class/5B45201D-F2F2-4F3B-85BB-30FF1F953599` относится к `GUID_DEVINTERFACE_DISPLAY_ADAPTER`, что позволяет создавать графические процессоры DirectX.
+- `--device class/5B45201D-F2F2-4F3B-85BB-30FF1F953599` указывает идентификатор GUID класса для устройства, которое должно быть предоставлено в контейнер. `class/5B45201D-F2F2-4F3B-85BB-30FF1F953599` относится к `GUID_DEVINTERFACE_DISPLAY_ADAPTER`, который включает DirectX GPU.
 - `winmlrunner:latest` указывает образ для выполнения, созданный на предыдущих шагах. Это может быть имя репозитория и тег, указанные во время выполнения команды `docker tag`, или идентификатор или хэш образа. Если в качестве имени тега использовался **последний** , его можно опустить.
 - `cmd /k`  
     Это команда, которую DOCKER будет выполнять в контейнере.
@@ -331,7 +331,7 @@ WinMLRunner.exe -model C:/App/SqueezeNet.onnx -GPUAdapterName [radeon/nvidia/int
 Чтобы приступить к работе, убедитесь, что Visual Studio 2019 настроена и настраивается в соответствии с приведенными выше инструкциями. Затем попробуйте выполнить следующие примеры:
 
 - [Кустомвисион](https://github.com/imingc/Windows-Machine-Learning/tree/winml_container/Samples/CustomVision). В этом примере используется модель, обученная [Пользовательская служба визуального распознавания Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home). Обученная модель [экспортируется как файл ONNX](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/custom-vision-onnx-windows-ml) и входит в состав примера приложения, выполняемого внутри контейнера.
-- [Скуизенетобжектдетектион](https://github.com/microsoft/Windows-Machine-Learning/tree/master/Samples/SqueezeNetObjectDetection). Это приложение (только cpp и c @ no__t-0) использует модель Скуизенет для обнаружения основного объекта в изображении.
+- [Скуизенетобжектдетектион](https://github.com/microsoft/Windows-Machine-Learning/tree/master/Samples/SqueezeNetObjectDetection). Это приложение (только для\# cpp и c) использует модель Скуизенет для обнаружения основного объекта в изображении.
 
 ### <a name="create-a-visual-studio-2019-c-project-from-scratch"></a>Создание проекта Visual Studio 2019 C# с нуля
 
@@ -339,7 +339,7 @@ WinMLRunner.exe -model C:/App/SqueezeNet.onnx -GPUAdapterName [radeon/nvidia/int
 
 Чтобы использовать неавтономный контракт API WinRT:
 
-1. В Visual Studio 2019 создайте новый проект **консольного приложения C @ no__t-1 (.NET Core)** .
+1. В Visual Studio 2019 создайте новый проект **консольного приложения C\# (.NET Core)** .
 
 ![вспрож](./images/vs_project1.png)
 
@@ -370,7 +370,7 @@ Install-Package Microsoft.Windows.CppWinRT -Version 2.0.190730.2
     1. Щелкните проект правой кнопкой мыши.
     1. Выбор свойств
     1. В диалоговом окне выберите компоновщик — > входные данные.
-    1. Обновите дополнительные зависимости, чтобы включить `windowscoreheadless.lib`. Пример
+    1. Обновите дополнительные зависимости, чтобы включить `windowscoreheadless.lib`. Например:
         1. `windowscoreheadless.lib;%(...AdditionalDependencies...)`
 
 ![vsproj3](./images/vs_project3.png)
