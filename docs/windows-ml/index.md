@@ -1,6 +1,6 @@
 ---
 author: rosanevallim
-title: Машинное обучение Windows
+title: Сведения о машинном обучении Windows
 description: Windows ML позволяет использовать обученные модели машинного обучения в приложениях Windows.
 ms.author: rovalli
 ms.date: 6/5/2019
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.custom: RS5
-ms.openlocfilehash: 489dea907eba3d7b8eb9722f6a7934d31228206a
-ms.sourcegitcommit: 88c4ba40260771589c84409e11c9bb19528ebbaf
+ms.openlocfilehash: 4837648d23a21ea15ea27493ccba5307f81af0a0
+ms.sourcegitcommit: 6eabf4acc3c42064054131ac6b76ffc87d31ac55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033870"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74782631"
 ---
 # <a name="windows-machine-learning"></a>Машинное обучение Windows
 
@@ -38,7 +38,7 @@ ms.locfileid: "67033870"
     При запуске приложения среда выполнения Windows ML (которая содержит подсистему зависимостей модели ONNX) оценивает обученную модель на устройстве с Windows 10 (или Windows Server 2019, если код предназначен для развертывания сервера). Windows ML абстрагирует оборудование, что позволяет разработчикам использовать множество процессоров &mdash; ЦП, GPU и, в будущем, ускорители ИИ. Аппаратное ускорение Windows ML основано на [DirectML](https://docs.microsoft.com/windows/desktop/direct3d12/dml), высокопроизводительном низкоуровневом API из семейства DirectX, предназначенном для выполнения зависимостей машинного обучения.
     :::column-end:::
     :::column:::
-        ![windows ml layers](../images/overview-diagram.svg)
+        ![Уровни машинного обучения Windows](../images/overview-diagram.svg)
     :::column-end:::
 :::row-end:::
 
