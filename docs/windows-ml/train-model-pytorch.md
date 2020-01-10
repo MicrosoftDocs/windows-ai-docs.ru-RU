@@ -5,20 +5,20 @@ ms.date: 7/10/2019
 ms.topic: article
 keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, pytorch
 ms.localizationpriority: medium
-ms.openlocfilehash: d2d20b20ab790247ad7746d0cf8f221f9276e823
-ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
+ms.openlocfilehash: 7aa1091cf3622f532c6601a040fad5c80746d6b3
+ms.sourcegitcommit: ecd33843dd548e443a1292d6a22e1a4029298944
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70156327"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75737407"
 ---
 # <a name="train-a-model-with-pytorch-and-export-to-onnx"></a>Обучение модели с помощью PyTorch и экспорт в ONNX
 
-С помощью [PyTorch](https://pytorch.org/) Framework и [службы машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/)можно обучить модель в облаке и загрузить ее в виде файла ONNX для локального запуска с Windows машинное обучение.
+[PyTorch](https://pytorch.org/) framework и [машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/), вы можете обучить модель в облаке и загрузить ее как файл ONNX для локального запуска с Windows машинное обучение.
 
-## <a name="train-the-model"></a>Обучение модели
+## <a name="train-the-model"></a>обучение модели;
 
-С помощью машинного обучения Azure вы можете обучить модель PyTorch в облаке, получить преимущества быстрого масштабирования, развертывания и многого другого. Дополнительные сведения см. в статьях [обучение и регистрация моделей PyTorch в масштабе с помощью службы машинное обучение Azure](https://docs.microsoft.com/azure/machine-learning/service/how-to-train-pytorch) .
+С помощью машинного обучения Azure вы можете обучить модель PyTorch в облаке, получить преимущества быстрого масштабирования, развертывания и многого другого. Дополнительные сведения см. в статьях [обучение и регистрация моделей PyTorch в масштабе с помощью машинное обучение Azure](https://docs.microsoft.com/azure/machine-learning/service/how-to-train-pytorch) .
 
 ## <a name="export-to-onnx"></a>Экспорт в ONNX
 
@@ -29,10 +29,10 @@ ms.locfileid: "70156327"
 
 После экспорта модели в ONNX вы можете интегрировать ее в приложение машинного обучения Windows. Windows ML доступна на нескольких разных языках программирования, поэтому ознакомьтесь с руководством на языке, с которым вам удобнее работать.
 
-* **C#:** [Создание приложения Windows Машинное обучение UWP (C#)](https://docs.microsoft.com/windows/ai/windows-ml/get-started-uwp)
+* : Создание [приложения Windows машинное обучение UWPC#()](https://docs.microsoft.com/windows/ai/windows-ml/get-started-uwp)  **C#**
 
-* **Языке** [Создание приложения Машинное обучение Windows с помощью Python](https://github.com/Microsoft/xlang/tree/master/samples/python/winml_tutorial)
+* **Python:** [создание приложения Windows машинное обучение с помощью Python](https://github.com/Microsoft/xlang/tree/master/samples/python/winml_tutorial)
 
-* **C++:** [Создание классического приложения Windows Машинное обучение (C++)](https://docs.microsoft.com/windows/ai/windows-ml/get-started-desktop)
+* : Создание [классического приложения Windows машинное обучение (C++)](https://docs.microsoft.com/windows/ai/windows-ml/get-started-desktop)  **C++**
 
 [!INCLUDE [help](../includes/get-help.md)]
