@@ -1,34 +1,34 @@
 ---
-title: ONNX версии и сборки Windows
-description: Проверьте, какие версии ONNX поддерживаются каждой сборкой Windows 10.
+title: Версии ONNX и сборки Windows
+description: Проверьте, какие версии ONNX поддерживаются для каждой сборки Windows 10.
 ms.date: 7/2/2019
 ms.topic: article
-keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, onnx
+keywords: windows 10, windows ai, windows ml, winml, windows machine learning, onnx
 ms.localizationpriority: medium
 ms.openlocfilehash: 0124f1a5d66a2b8801aaab10237ed731faddf44f
 ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/29/2019
 ms.locfileid: "70156366"
 ---
-# <a name="onnx-versions-and-windows-builds"></a>ONNX версии и сборки Windows
+# <a name="onnx-versions-and-windows-builds"></a>Версии ONNX и сборки Windows
 
-Windows Машинное обучение поддерживает определенные версии формата ONNX в выпущенных сборках Windows. Чтобы ваша модель работала с Windows ML, необходимо убедиться, что версия модели ONNX поддерживается для выпуска Windows, предназначенного для вашего приложения.
+Windows Machine Learning поддерживает определенные версии формата ONNX в выпущенных сборках Windows. Чтобы ваша модель работала с Windows ML, следите за тем, чтобы версия модели ONNX поддерживалась в выпуске Windows, для которого предназначено ваше приложение.
 
-В таблице ниже приведены все выпущенные в настоящее время версии Windows ML и соответствующие поддерживаемые версии ONNX.
+В таблице ниже перечислены все выпущенные в настоящее время версии Windows ML и поддерживаемые в них версии ONNX.
 
-| Выпуск Windows | Поддерживаемые версии ONNX | ONNX опсетс поддерживается |
+| Выпуск Windows | Поддерживаемые версии ONNX | Поддерживаемые наборы операций ONNX |
 |-----------------|-------------------------|-----------------------|
-| Windows 10, версия 1903 (сборка 18362) | 1.2.2 и 1,3 | 7 и 8 |
-| Windows 10, версия 1809 (сборка 17763) | 1.2.2 | 7 |
+| Windows 10, версия 1903 (сборка 18362) | 1.2.2 и 1.3 | 7 и 8 |
+| Windows 10, версия 1809 (сборка 17763) | 1.2.2 | 7 |
 
-Если вы разрабатываете с помощью сборок Insider Preview для Windows, просмотрите [заметки](release-notes.md) о выпуске для минимальной и максимальной поддерживаемой версии ONNX в РЕЙСАХ пакета SDK для Windows 10.
+Если вы ведете разработку в тестовых сборках по программе предварительной оценки Windows, ознакомьтесь с [заметками о выпуске](release-notes.md), где указаны минимальная и максимальная поддерживаемые версии ONNX для тестовых сборок пакета SDK для Windows 10.
 
-## <a name="onnx-opset-converter"></a>Преобразователь ONNX опсет
+## <a name="onnx-opset-converter"></a>Преобразователь наборов операций ONNX
 
-API ONNX предоставляет библиотеку для преобразования моделей ONNX между различными версиями опсет. Это позволяет разработчикам и специалистам по обработке и анализу данных либо обновить существующую модель ONNX до более новой версии, либо понизить модель до более старой версии спецификации ONNX.
+API ONNX содержит библиотеку для преобразования версий наборов операций для моделей ONNX. Это позволяет разработчикам, а также специалистам по обработке и анализу данных обновить существующую модель ONNX до более новой версии либо понизить модель до более ранней версии спецификации ONNX.
 
-[Преобразователь версий](https://github.com/onnx/onnx/blob/master/docs/VersionConverter.md) можно вызвать с помощью C++ API-интерфейсов или из Python. Кроме того, в этом [руководстве](https://github.com/onnx/tutorials/blob/master/tutorials/ExportModelFromPyTorchToDifferentONNXOpsetVersions.md) представлено несколько примеров того, как обновить и понизить модель ONNX до новой целевой опсет.
+[Преобразователь версий](https://github.com/onnx/onnx/blob/master/docs/VersionConverter.md) можно вызывать через API-интерфейсы для C++ или Python. Существует также [руководство](https://github.com/onnx/tutorials/blob/master/tutorials/ExportModelFromPyTorchToDifferentONNXOpsetVersions.md) с примерами обновления модели ONNX до более новой версии или перехода на более раннюю версию набора операций.
 
 [!INCLUDE [help](../includes/get-help.md)]

@@ -1,38 +1,38 @@
 ---
-title: Обучение модели с помощью PyTorch и экспорт в ONNX
-description: Узнайте, как обучить модель ONNX с помощью PyTorch.
+title: Обучение модели с помощью PyTorch и экспорт в формат ONNX
+description: Сведения о том, как обучить модель ONNX с помощью PyTorch.
 ms.date: 7/10/2019
 ms.topic: article
-keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, pytorch
+keywords: windows 10, windows ai, windows ml, winml, windows machine learning, pytorch
 ms.localizationpriority: medium
 ms.openlocfilehash: 7aa1091cf3622f532c6601a040fad5c80746d6b3
 ms.sourcegitcommit: ecd33843dd548e443a1292d6a22e1a4029298944
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/08/2020
 ms.locfileid: "75737407"
 ---
-# <a name="train-a-model-with-pytorch-and-export-to-onnx"></a>Обучение модели с помощью PyTorch и экспорт в ONNX
+# <a name="train-a-model-with-pytorch-and-export-to-onnx"></a>Обучение модели с помощью PyTorch и экспорт в формат ONNX
 
-[PyTorch](https://pytorch.org/) framework и [машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/), вы можете обучить модель в облаке и загрузить ее как файл ONNX для локального запуска с Windows машинное обучение.
+Используя платформу [PyTorch](https://pytorch.org/) и [Машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/), можно обучить модель в облаке и скачать ее в формате ONNX-файла для локального выполнения в Windows Machine Learning.
 
-## <a name="train-the-model"></a>обучение модели;
+## <a name="train-the-model"></a>Обучение модели
 
-С помощью машинного обучения Azure вы можете обучить модель PyTorch в облаке, получить преимущества быстрого масштабирования, развертывания и многого другого. Дополнительные сведения см. в статьях [обучение и регистрация моделей PyTorch в масштабе с помощью машинное обучение Azure](https://docs.microsoft.com/azure/machine-learning/service/how-to-train-pytorch) .
+С помощью Машинного обучения Azure вы можете обучить модель PyTorch в облаке, используя все преимущества быстрого масштабирования, развертывания и т. п. Дополнительные сведения см. в статье [об обучении и регистрации моделей PyTorch в большом масштабе с помощью Машинного обучения Azure](https://docs.microsoft.com/azure/machine-learning/service/how-to-train-pytorch).
 
-## <a name="export-to-onnx"></a>Экспорт в ONNX
+## <a name="export-to-onnx"></a>Экспорт в формат ONNX
 
-После обучения модели ее можно экспортировать в виде файла ONNX, чтобы его можно было запускать локально с помощью машинного обучения Windows. Инструкции по экспорту из PyTorch в собственном формате см. в разделе [Export PyTorch models for Windows ML](https://github.com/onnx/tutorials/blob/master/tutorials/ExportModelFromPyTorchForWinML.md) .
+Выполнив обучение модели, вы можете экспортировать ее в ONNX-файл, чтобы выполнять локально в Windows ML. Инструкции по экспорту моделей из PyTorch в формате, пригодном для Windows ML, см. в [этой статье](https://github.com/onnx/tutorials/blob/master/tutorials/ExportModelFromPyTorchForWinML.md).
 
 
 ## <a name="integrate-with-windows-ml"></a>Интеграция с Windows ML
 
-После экспорта модели в ONNX вы можете интегрировать ее в приложение машинного обучения Windows. Windows ML доступна на нескольких разных языках программирования, поэтому ознакомьтесь с руководством на языке, с которым вам удобнее работать.
+Когда вы выполните экспорт модели в формат ONNX, ее можно будет интегрировать в приложение Windows ML. Решение Windows ML доступно для нескольких языков программирования, и вы можете выбрать руководство для того языка, с которым вам удобнее работать.
 
-* : Создание [приложения Windows машинное обучение UWPC#()](https://docs.microsoft.com/windows/ai/windows-ml/get-started-uwp)  **C#**
+* **C#:** [Создание приложения UWP (C#) для Windows Machine Learning](https://docs.microsoft.com/windows/ai/windows-ml/get-started-uwp).
 
-* **Python:** [создание приложения Windows машинное обучение с помощью Python](https://github.com/Microsoft/xlang/tree/master/samples/python/winml_tutorial)
+* **Python:** [Создание приложения UWP на Python для Windows Machine Learning](https://github.com/Microsoft/xlang/tree/master/samples/python/winml_tutorial).
 
-* : Создание [классического приложения Windows машинное обучение (C++)](https://docs.microsoft.com/windows/ai/windows-ml/get-started-desktop)  **C++**
+* **C++:** [Создание классического приложения (C++) для Windows Machine Learning](https://docs.microsoft.com/windows/ai/windows-ml/get-started-desktop).
 
 [!INCLUDE [help](../includes/get-help.md)]

@@ -1,35 +1,35 @@
 ---
 author: rosanevallim
 title: Модели ONNX
-description: Windows ML оценивает модели в формате ONNX, позволяя использовать модели для обмена моделями между различными платформами и инструментами машинного обучения.
+description: Windows ML оценивает модели в формате ONNX, что позволяет перемещать модели между разными платформами и инструментами машинного обучения.
 ms.author: rovalli
 ms.date: 6/5/2019
 ms.topic: article
-keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, onnx
+keywords: windows 10, windows ai, windows ml, winml, windows machine learning, onnx
 ms.localizationpriority: medium
 ms.openlocfilehash: d1b43ca0f0ea47b81ff29e3e196fc77c5319c647
 ms.sourcegitcommit: ecd33843dd548e443a1292d6a22e1a4029298944
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/08/2020
 ms.locfileid: "75737417"
 ---
 # <a name="onnx-models"></a>Модели ONNX
 
-Windows Машинное обучение поддерживает модели в формате [открытого нейронного сетевого обмена (ONNX)](https://onnx.ai/) . ONNX — это открытый формат для моделей машинного обучения, позволяющий выполнять обмен моделями между различными [платформами и инструментами машинного обучения](https://onnx.ai/supported-tools).
+Windows Machine Learning поддерживает модели в формате [ONNX (Open Neural Network Exchange)](https://onnx.ai/). Открытый формат моделей машинного обучения ONNX позволяет перемещать модели между разными [платформами и инструментами машинного обучения](https://onnx.ai/supported-tools).
 
-Существует несколько способов получить модель в формате ONNX, включая:
+Есть несколько способов получить модель в формате ONNX, часть из которых перечислена далее.
 
-- [ONNX Model Zoo](https://github.com/onnx/models): содержит несколько предварительно обученных моделей ONNX для различных типов задач. Скачайте версию, поддерживаемую Windows ML, и все готово к работе.
+- [ONNX Model Zoo](https://github.com/onnx/models). Содержит несколько предварительно обученных моделей ONNX для разных типов задач. Скачайте версию, поддерживаемую Машинным обучением Windows, и можно сразу приступать к работе.
 
-- [Собственный экспорт из платформ обучения ML](https://onnx.ai/supported-tools). несколько платформ обучения поддерживают собственные функции экспорта в ONNX, такие как chaining, Caffee2 и PyTorch, что позволяет сохранить обученную модель в определенных версиях формата ONNX. Кроме того, такие службы, как [машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/) и [Azure пользовательское визуальное распознавание](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) , также предоставляют собственный экспорт ONNX.
-    - Сведения о том, как обучать и экспортировать модель ONNX в облаке с помощью Пользовательское визуальное распознавание, см. в [руководстве по использованию модели ONNX из пользовательское визуальное распознавание с помощью Windows ml (Предварительная версия)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/custom-vision-onnx-windows-ml).
+- [Встроенные функции экспорта из платформ обучения для машинного обучения](https://onnx.ai/supported-tools). Некоторые платформы обучения, например Chainer, Caffee2 и PyTorch, имеют собственные компоненты экспорта в ONNX, что позволяет сохранять обученную модель в определенных версиях формата ONNX. Кроме того, встроенная поддержка ONNX реализована в таких службах, как [Машинное обучение Azure](https://azure.microsoft.com/services/machine-learning-service/) и [Пользовательское визуальное распознавание Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier).
+    - Сведения о том, как обучать и экспортировать модель ONNX в облаке с помощью службы "Пользовательское визуальное распознавание", вы найдете в [руководстве по использованию модели ONNX из службы "Пользовательское визуальное распознавание" в Windows ML (предварительная версия)](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/custom-vision-onnx-windows-ml).
 
-- [Преобразование существующих моделей с помощью винмлтулс](https://docs.microsoft.com/windows/ai/windows-ml/convert-model-winmltools). Этот пакет Python позволяет преобразовывать модели из нескольких форматов инфраструктуры обучения в ONNX. Разработчик может указать, в какую версию ONNX вы хотите преобразовать модель, в зависимости от того, какие сборки Windows предназначены для приложения. Если вы не знакомы с Python, вы можете использовать [панель мониторинга на основе пользовательского интерфейса машинного обучения Windows](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLDashboard) для простого преобразования моделей всего за несколько щелчков мышью.
+- [Преобразование существующих моделей с помощью WinMLTools](https://docs.microsoft.com/windows/ai/windows-ml/convert-model-winmltools). Этот пакет Python позволяет преобразовывать в ONNX модели нескольких форматов разных платформ обучения. Разработчик может указать, в какую версию ONNX нужно преобразовать модель, с учетом целевой сборки Windows для вашего приложения. Если вы не знакомы с Python, попробуйте применить [панели мониторинга на основе пользовательского интерфейса Машинного обучения Windows](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLDashboard), чтобы несколькими щелчками мыши преобразовать существующие модели.
 
 > [!IMPORTANT]
-> Не все версии ONNX поддерживаются в Windows ML. Чтобы узнать, какие версии ONNX официально поддерживаются в версиях Windows, предназначенных для вашего приложения, проверьте [версии ONNX и сборки Windows](onnx-versions.md).
+> Не все версии ONNX поддерживаются в Windows ML. Чтобы узнать, какие версии ONNX официально поддерживаются теми версиями Windows, для которых предназначено ваше приложение, просмотрите [этот список](onnx-versions.md).
 
-После создания модели ONNX вы [интегрируете модель](https://docs.microsoft.com/windows/ai/windows-ml/integrate-model) в код приложения, а затем сможете использовать машинное обучение в приложениях и устройствах Windows!
+После создания модели ONNX ее можно [интегрировать](https://docs.microsoft.com/windows/ai/windows-ml/integrate-model) в код приложения, после чего вы сможете использовать машинное обучение в приложениях и на устройствах Windows.
 
 [!INCLUDE [help](../includes/get-help.md)]

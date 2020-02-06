@@ -1,20 +1,20 @@
 ---
 title: Выбор решения Windows AI
-description: Получите справку по выбору решения искусственного интеллекта Microsoft для вашего приложения.
+description: Получите помощь при выбору подходящего решения ИИ от Майкрософт для своего приложения.
 author: mattwojo
 ms.author: mattwoj
 ms.date: 09/18/2019
 ms.topic: article
-keywords: Windows 10, Windows AI, Windows ml, winml, машинное обучение Windows, Microsoft AI, сравнение, сравнение, навыки работы с Windows, Direct ML
+keywords: windows 10, windows ai, windows ml, winml, windows machine learning, ии майкрософт, сравнение, сравнительная характеристика, windows vision skills, DirectML
 ms.localizationpriority: medium
 ms.openlocfilehash: f78772f11bbe0697acc7c62b91df06b69b2c7312
 ms.sourcegitcommit: 6eabf4acc3c42064054131ac6b76ffc87d31ac55
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74782640"
 ---
-# <a name="which-ai-solution-is-right-for-me"></a>Какое решение искусственного интеллекта подходит мне?
+# <a name="which-ai-solution-is-right-for-me"></a>Как найти подходящее решение ИИ?
 
 Корпорация Майкрософт предлагает несколько решений ИИ. Это означает, что вы не ограничены одним вариантом. Но как выбрать подходящий для приложения? Давайте разберемся.
 

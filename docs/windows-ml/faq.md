@@ -1,7 +1,7 @@
 ---
 author: rosanevallim
-title: Часто задаваемые вопросы (часто задаваемые вопросы)
-description: Эта страница содержит ответы на самые популярные вопросы от сообщества.
+title: Часто задаваемые вопросы
+description: На этой странице собраны ответы на самые популярные вопросы сообщества.
 ms.author: rovalli
 ms.date: 7/2/2019
 ms.topic: article
@@ -9,58 +9,58 @@ keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.openlocfilehash: 0067de7380560337feb06186ff28ba431b167c93
 ms.sourcegitcommit: 24d50c2813c16d5632c52c9dc6799afc6e52f8ac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/02/2019
 ms.locfileid: "67523621"
 ---
-# <a name="faq-frequently-asked-questions"></a>Часто задаваемые вопросы (часто задаваемые вопросы)
+# <a name="faq-frequently-asked-questions"></a>Часто задаваемые вопросы
 
-Эта страница содержит ответы на самые популярные вопросы от сообщества.
+На этой странице собраны ответы на самые популярные вопросы сообщества.
 
-## <a name="how-do-i-know-if-the-onnx-model-i-have-will-run-with-windows-ml"></a>Как узнать, если модели ONNX, у меня будет выполняться с помощью машинного Обучения Windows?
+## <a name="how-do-i-know-if-the-onnx-model-i-have-will-run-with-windows-ml"></a>Как узнать, будет ли моя модель ONNX работать с Windows ML?
 
-Самый простой способ проверить, если ваша модель будет выполняться с помощью машинного Обучения Windows при помощи [инструментов WinML модели Runner](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLRunner). Кроме того, вы можете проверить [ONNX версии и Windows создает](onnx-versions.md) Дополнительные сведения о всех поддерживаемых версий ONNX для определенного выпуска Windows.
+Чтобы проверить, будет ли модель запускаться в Windows ML, проще всего воспользоваться средством [WinML Model Runner](https://github.com/Microsoft/Windows-Machine-Learning/tree/master/Tools/WinMLRunner). Также вы можете изучить статью [Версии ONNX и сборки Windows](onnx-versions.md), где собраны сведения обо всех поддерживаемых версиях ONNX для конкретных выпусков Windows.
 
-## <a name="how-do-i-convert-a-model-of-a-different-format-to-onnx"></a>Как преобразовать модель другой формат ONNX?
+## <a name="how-do-i-convert-a-model-of-a-different-format-to-onnx"></a>Как преобразовать модель другого формата в ONNX?
 
-Можно использовать [WinMLTools](convert-model-winmltools.md) для преобразования моделей из нескольких различных форматов, таких как Apple CoreML и scikit-научитесь ONNX.
+Для преобразования моделей некоторых популярных форматов, например Apple CoreML и scikit-learn, в формат ONNX, можно использовать [WinMLTools](convert-model-winmltools.md).
 
-## <a name="i-am-getting-errors-when-trying-to-export-andor-convert-my-model-to-onnx-that-say-my-model-has-unsupported-operators-what-should-i-do"></a>Возникли ошибки при попытке экспортировать и/или преобразовать моей модели ONNX, понятие "модель" Мои имеет «неподдерживаемые операторы.» Что мне делать?
+## <a name="i-am-getting-errors-when-trying-to-export-andor-convert-my-model-to-onnx-that-say-my-model-has-unsupported-operators-what-should-i-do"></a>При попытке экспорта и (или) преобразования модели в ONNX возникают ошибки с сообщением о том, что модель содержит "неподдерживаемые операторы". Что с этим делать?
 
-Некоторые операторы в платформе машинного обучения может быть сейчас не поддерживается с помощью версии ONNX. Во-первых, рекомендуется проверить поддерживаемые [ONNX версий поставленной цели построения Windows](onnx-versions.md)и пытаться выполнить преобразование модели max поддерживаемую версию. Более поздних версиях ONNX включают поддержку большего набора операторов, по сравнению с предыдущими версиями.
+Некоторые операторы исходных платформ машинного обучения не поддерживаются некоторыми версиями ONNX. Мы рекомендуем вам прежде всего проверить [поддерживаемые версии ONNX для целевой сборки Windows](onnx-versions.md) и, если это возможно, преобразовать модель в максимальную поддерживаемую версию. Более поздние версии ONNX поддерживают более широкий набор операторов по сравнению с предыдущими версиями.
 
-Если возникнут проблемы, мы рекомендуем работу со службой поддержки обработки и анализа данных, чтобы не следует неподдерживаемых операторов. Один из подходов, которые мы рекомендуем является изменение архитектуры модели в структуре источника и попытаться преобразовать и экспорта модели до целевой версии ONNX. Обратите внимание, что не нужно переобучить модель еще&mdash;можно попытаться преобразовать архитектуры, и в случае успешного выполнения затем вы сможете работать с полной повторного обучения модели.
+Если проблемы сохранятся, попробуйте связаться со специалистами по обработке и анализу данных, чтобы совместно с ними избавиться от неподдерживаемых операторов. Для достижения этого мы рекомендуем изменить архитектуру модели на исходной платформе и повторно конвертировать или экспортировать модель в целевую версию ONNX. Обратите внимание, что повторно обучать модель пока не нужно. Сначала попробуйте преобразовать архитектуру, а к обучению можно перейти уже после успешной конвертации.
 
 ## <a name="why-cant-i-load-a-model"></a>Почему не удается загрузить модель?
 
-Существует несколько причин, почему могут возникнуть проблемы при загрузке модели, но одна из самых распространенных рисков при разработке для универсальной платформы Windows — из-за ограничений доступа к файлам. По умолчанию приложения универсальной платформы Windows можно только некоторые части файловой системы и требует наличия разрешения пользователя или дополнительные возможности для доступа к другим расположениям. См. в разделе [разрешения доступа](https://docs.microsoft.com/windows/uwp/files/file-access-permissions) Дополнительные сведения.
+Проблемы с загрузкой модели могут возникать по нескольким причинам, из которых при разработке на платформе UWP чаще всего встречается ограничение на доступ к файлам. По умолчанию приложения UWP могут обращаться только к определенным частям файловой системы, а для доступа к другим расположениям им нужны разрешения пользователя или дополнительные компоненты. Дополнительные сведения см. в статье [Разрешения на доступ к файлам](https://docs.microsoft.com/windows/uwp/files/file-access-permissions).
 
-## <a name="which-version-of-winmltools-should-i-use"></a>Какая версия WinMLTools следует использовать?
+## <a name="which-version-of-winmltools-should-i-use"></a>Какую версию WinMLTools нужно использовать?
 
-Мы всегда рекомендуем вам загрузить и установить последнюю версию **winmltools** пакета. Это гарантирует, что можно создавать модели ONNX, предназначенных для последних версий Windows.
+Мы всегда рекомендуем скачивать и устанавливать последнюю версию пакета **winmltools**. Так вы сможете создавать модели ONNX, предназначенные для последних версий Windows.
 
 ## <a name="can-i-use-onnxmltools-instead-of-winmltools"></a>Можно ли использовать onnxmltools вместо winmltools?
 
-Да, вы можете, но необходимо будет установить правильную версию [onnxmltools](https://github.com/onnx/onnxmltools) для работы с v1.2.2 ONNX, который является минимальной версией ONNX, поддерживаемых Windows машинного Обучения. Если вы не уверены, какая версия для установки, рекомендуется установить последнюю версию **winmltools** вместо этого. Это позволит гарантировать, что вы сможете ориентированы на версию ONNX, поддерживаемых Windows.
+Да, можно, но нужно убедиться в наличии правильной версии [onnxmltools](https://github.com/onnx/onnxmltools), которая позволяет нацеливаться на ONNX версии 1.2.2. Это минимальная версия ONNX, поддерживаемая в Windows ML. Если вы не уверены в выборе версии для установки, лучше используйте последнюю версию **winmltools**. Это гарантирует возможность нацеливания на поддерживаемую в Windows версию ONNX.
 
-## <a name="which-version-of-visual-studio-should-i-use-in-order-to-get-automatic-code-generation-mlgen"></a>Какие версии Visual Studio следует использовать для получения автоматическое создание кода (mlgen)?
+## <a name="which-version-of-visual-studio-should-i-use-in-order-to-get-automatic-code-generation-mlgen"></a>Какую версию Visual Studio следует использовать для автоматического создания кода (mlgen)?
 
-Минимальный рекомендуемый версии [Visual Studio](https://visualstudio.microsoft.com/vs/) с поддержкой [mlgen](mlgen.md) является 15.8.7. В Windows 10, версия 1903 и более поздние версии, **mlgen** больше не входит в пакет SDK, поэтому вам потребуется загрузить и установить расширение. Имеется один для [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) и один для [Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WinML.mlgenv2).
+Минимальная рекомендуемая версия [Visual Studio](https://visualstudio.microsoft.com/vs/) с поддержкой [mlgen](mlgen.md) — это версия 15.8.7. В Windows 10 версии 1903 и более поздних средство **mlgen** уже не входит в состав пакета SDK, поэтому вам придется отдельно скачать и установить его в качестве расширения. Существуют отдельные версии для [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=WinML.mlgen) и [Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WinML.mlgenv2).
 
-## <a name="i-get-an-error-message-when-trying-to-run-mlgen-and-no-code-is-generated-what-could-possibly-be-happening"></a>Получено сообщение об ошибке при попытке запуска mlgen и код не создается. Что бы возможно это значило?
+## <a name="i-get-an-error-message-when-trying-to-run-mlgen-and-no-code-is-generated-what-could-possibly-be-happening"></a>При попытке запустить mlgen появляется сообщение об ошибке, и код не создается. С чем это может быть связано?
 
-Ниже приведены две наиболее распространенные ошибки при попытке выполнения mlgen.
+Вот две наиболее распространенные ошибки, которые возникают при попытке выполнить mlgen.
 
-* **Отсутствует необходимый атрибут «consumed_inputs»** : При возникновении это сообщение об ошибке, затем скорее вы пытаетесь запустить модель v1.2 ONNX с версией пакета SDK Windows 10 старше 17763; Мы рекомендуем проверить установленную версию пакета SDK и обновить его до версии 17763 или более поздней версии.
-* **Ошибка типа: Тип (map(string,tensor(float))) из выходных данных arg (потеря) узла (ZipMap) не соответствует ожидаемому типу...** : При возникновении этой ошибки, скорее всего модели ONNX, то более старой версии, чем принимаемое WinML, начиная со сборки 17763. Мы рекомендуем обновить преобразователь пакет до последней доступной версии и выполните повторное преобразование модели до версии 1.2 ONNX.
+* **Required attribute 'consumed_inputs' is missing** (Отсутствует необходимый атрибут "consumed_inputs"). Если вы увидите такое сообщение об ошибке, вы скорее всего пытаетесь выполнить модель ONNX версии 1.2 с пакетом SDK для Windows 10 версии старше, чем 17763. Мы рекомендуем проверить версию пакета SDK и обновить его до версии 17763 или более поздней.
+* **Type Error: Type (map(string,tensor(float))) of output arg (loss) of node (ZipMap) does not match the expected type...** (Ошибка типа. Тип (map(string,tensor(float))) выходного аргумента (loss) узла (ZipMap) не соответствует ожидаемому...). Если вы увидите такую ошибку, ваша модель ONNX скорее всего имеет более старую версию, чем поддерживаемая в WinML сборки 17763 и более поздних. Мы рекомендуем обновить пакет преобразователя до последней доступной версии и повторно преобразовать модель в ONNX версии 1.2.
 
-## <a name="what-does-winml-run-on-by-default"></a>Что WinML запускать на по умолчанию?
+## <a name="what-does-winml-run-on-by-default"></a>Где выполняется WinML по умолчанию?
 
-Если не указать устройство под управлением с [LearningModelDeviceKind](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodeldevicekind), или если вы используете **LearningModelDeviceKind.Default**, система определит, какие устройства будет оценивать модели. Обычно это ЦП. Для запуска WinML на GPU, укажите одно из следующих значений при создании [LearningModelDevice](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodeldevice):
+Если вы не укажете устройство для выполнения с помощью параметра [LearningModelDeviceKind](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodeldevicekind) или указали в нем значение **LearningModelDeviceKind.Default**, устройство для оценки модели будет автоматически выбрано системой. Чаще всего используется устройство ЦП. Чтобы выполнить WinML на GPU, укажите при создании [LearningModelDevice](https://docs.microsoft.com/uwp/api/windows.ai.machinelearning.learningmodeldevice) одно из следующих значений:
 
-* **LearningModelDeviceKind.DirectX**
-* **LearningModelDeviceKind.DirectXHighPerformance**
-* **LearningModelDeviceKind.DirectXMinPower**
+* **LearningModelDeviceKind.DirectX**;
+* **LearningModelDeviceKind.DirectXHighPerformance**;
+* **LearningModelDeviceKind.DirectXMinPower**.
 
 [!INCLUDE [help](../includes/get-help.md)]
