@@ -9,12 +9,12 @@ metadata:
   ms.date: 09/18/2019
   ms.prod: machine-learning
   ms.topic: landing-page
-  ms.openlocfilehash: 56f5ba27a5e1ebbe789986a7b4193e5fdf721239
-  ms.sourcegitcommit: 478efb930668f2d16dfa18c9b52853f7e2e6dcd8
+  ms.openlocfilehash: 448af0b6a4709ca352192934b23622defcbb3c6f
+  ms.sourcegitcommit: 841189060a505c15cf6b1d7d20419648afc20b9c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71278483"
+  ms.lasthandoff: 03/24/2020
+  ms.locfileid: "80159930"
 landingContent:
 - title: Windows Machine Learning (WinML)
   linkLists:
@@ -53,7 +53,7 @@ landingContent:
     - text: Основные интерфейсы API (пространство имен Windows.AI.MachineLearning)
       url: https://docs.microsoft.com/uwp/api/windows.ai.machinelearning
     - text: Пользовательские операторы
-      url: https://docs.microsoft.com/en-us/windows/ai/windows-ml/custom-operator
+      url: https://docs.microsoft.com/en-us/windows/ai/windows-ml/custom-operators
     - text: Собственные интерфейсы API WinML
       url: https://docs.microsoft.com/en-us/windows/ai/windows-ml/native-apis
     - text: Инструменты и примеры
@@ -84,7 +84,7 @@ landingContent:
     links:
     - text: Справочник по API
       url: https://docs.microsoft.com/dotnet/api/microsoft.ai.skills.skillinterfacepreview
-    - text: Примеры
+    - text: примеры
       url: windows-vision-skills/samples.md
 - title: Direct Machine Learning (DirectML)
   linkLists:
