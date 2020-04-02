@@ -5,12 +5,12 @@ ms.date: 4/1/2019
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: feb1dd5e2837039ea573361ea338cbd8c387ebab
-ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
+ms.openlocfilehash: c4b2e330efce5b0d5b7a2f5729adc94a97fb604e
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70156054"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80231596"
 ---
 # <a name="create-a-session"></a>Создание сеанса
 
@@ -38,6 +38,13 @@ ms.locfileid: "70156054"
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/NM5CYUMMp-w]
+
+## <a name="advanced-device-creation"></a>Расширенное создание устройств
+
+Средства ИИ Windows позволяют использовать устройство, созданное вызывающим объектом.  Это можно сделать разными способами:
+
+* [CreateFromDirect3D11Device.](https://docs.microsoft.com/en-us/uwp/api/windows.ai.machinelearning.learningmodeldevice.createfromdirect3d11device)  Этот вариант подходит, если у вас уже есть IDirect3DDevice.  Средства ИИ Windows будут использовать тот же адаптер для создания устройства d3d12 для рабочих нагрузок Машинного обучения.  Это полезно, если у вас есть камера, использующая устройство d3d11 для VideoFrame, и вы хотите использовать это устройство для LearningModelSession.  Во многих случаях это позволяет избежать копирования в память.  Примечание. Преобразование в тензор VideoFrame — это единственная рабочая нагрузка d3d11, которая есть в средства ИИ Windows.  Если вы не используете эту функцию, совместное использование или создание устройства d3d11 не связано с каким-либо преимуществами.
+* [CreateFromD3D12CommandQueue (собственное решение).](https://docs.microsoft.com/en-us/windows/ai/windows-ml/native-apis/ilearningmodeldevicefactorynative_createfromd3d12commandqueue)  Используйте этот вариант при наличии устройства d3d12, которое вы хотите повторно использовать.  Средства ИИ Windows будут использовать эту очередь команд для своих рабочих нагрузок Машинного обучения.   Также будет создано устройство d3d11 с помощью D3D11On12CreateDevice.  Это делается только при необходимости и будет использоваться для всех рабочих нагрузок d3d11, таких как преобразование в тензор VideoFrame.  Доступ к этому новому устройству можно получить с помощью свойства LearningModelDevice.Direct3D11Device.
 
 ## <a name="example"></a>Пример
 
