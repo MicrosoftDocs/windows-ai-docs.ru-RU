@@ -6,10 +6,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning, onnx
 ms.localizationpriority: medium
 ms.openlocfilehash: 0788674e75a4a77948444f7bcedd47cfa9a30db4
-ms.sourcegitcommit: 8b8998d09c3e35d5ac077137691cb4d3436d8928
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "78935235"
 ---
 # <a name="onnx-versions-and-windows-builds"></a>Версии ONNX и сборки Windows

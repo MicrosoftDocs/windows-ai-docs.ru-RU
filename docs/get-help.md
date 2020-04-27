@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, uwp, Windows machine learning, winml
 ms.localizationpriority: medium
 ms.openlocfilehash: bd9d87abaf87bdef0f4b15e2c9bf959bb79839db
-ms.sourcegitcommit: 399d0f17b12894033a2ee74d51c8c1f01781c2fb
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72310380"
 ---
 # <a name="get-help-with-windows-machine-learning"></a>Получение справки по машинному обучению в Windows

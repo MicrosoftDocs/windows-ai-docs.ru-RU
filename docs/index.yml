@@ -10,10 +10,10 @@ metadata:
   ms.prod: machine-learning
   ms.topic: landing-page
   ms.openlocfilehash: 448af0b6a4709ca352192934b23622defcbb3c6f
-  ms.sourcegitcommit: 841189060a505c15cf6b1d7d20419648afc20b9c
+  ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/24/2020
+  ms.lasthandoff: 04/24/2020
   ms.locfileid: "80159930"
 landingContent:
 - title: Windows Machine Learning (WinML)

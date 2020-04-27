@@ -6,10 +6,10 @@ ms.topic: article
 keywords: windows 10, контейнер Windows ML, контейнер, Интернет вещей, Edge
 ms.localizationpriority: medium
 ms.openlocfilehash: aee749d7aa77a48a6559d5dcd183926dfa86cd3c
-ms.sourcegitcommit: f5945af6d1f534b490eea7860f72804dc1c9fea8
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72315378"
 ---
 # <a name="windows-ml-container-insider-preview"></a>Ознакомительная версия контейнера Windows ML для участников программы предварительной оценки Windows
@@ -32,7 +32,7 @@ ms.locfileid: "72315378"
 
 Подробный список поддерживаемых API и контрактов приведен в разделе [Список API](api-list.md).
 
-## <a name="feedback"></a>Отзыв
+## <a name="feedback"></a>Отзывы
 
 Мы хотим узнать ваше мнение.
 
