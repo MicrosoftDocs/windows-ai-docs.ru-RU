@@ -6,10 +6,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.openlocfilehash: a2f83c0b3eedc64019e6c60fbc3d14cdb573a524
-ms.sourcegitcommit: 81bd558d96d56735d49d522883957ce4b09f00cc
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75216967"
 ---
 # <a name="bind-a-model"></a>Привязка модели

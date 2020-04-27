@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.openlocfilehash: 826489a52c79b9cbcd841e7834d9bbddc664e3e6
-ms.sourcegitcommit: 841189060a505c15cf6b1d7d20419648afc20b9c
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80159920"
 ---
 # <a name="windows-ml-performance-and-memory"></a>Использование вычислительной мощности и памяти для Windows ML

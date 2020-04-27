@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.openlocfilehash: 0067de7380560337feb06186ff28ba431b167c93
-ms.sourcegitcommit: 24d50c2813c16d5632c52c9dc6799afc6e52f8ac
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "67523621"
 ---
 # <a name="faq-frequently-asked-questions"></a>Часто задаваемые вопросы

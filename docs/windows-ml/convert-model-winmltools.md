@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, windows machine learning, WinML, WinMLTools, ONNX, ONNXMLTools, scikit-learn, Core ML, Keras
 ms.localizationpriority: medium
 ms.openlocfilehash: 76d3436cf52a8e658881e7b8cbdd437a53a00bb1
-ms.sourcegitcommit: 841189060a505c15cf6b1d7d20419648afc20b9c
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "80195957"
 ---
 # <a name="convert-ml-models-to-onnx-with-winmltools"></a>Преобразование моделей машинного обучения в формат ONNX с помощью WinMLTools

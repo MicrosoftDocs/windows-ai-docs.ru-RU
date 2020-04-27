@@ -7,10 +7,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows vision skills, desktop
 ms.localizationpriority: medium
 ms.openlocfilehash: 0a5b8e1068bceaa805667d5d4c88495d80c290b7
-ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "70156170"
 ---
 # <a name="tutorial-create-a-vision-skill-desktop-application-c"></a>Руководство: Создание классического приложения с навыком компьютерного зрения (C++)
@@ -30,7 +30,7 @@ ms.locfileid: "70156170"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (или Visual Studio 2017 версии 15.7.4 и выше).
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (или Visual Studio 2017 версии 15.7.4 и выше);
 - Windows 10 версии 1809 или более поздней.
 - [пакет SDK для Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) версии 1809 и выше.
 

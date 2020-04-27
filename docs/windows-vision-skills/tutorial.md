@@ -7,10 +7,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows vision skills
 ms.localizationpriority: medium
 ms.openlocfilehash: 0b61a7261b04d8e01a3ca8ce5e9acd8a770f1cdf
-ms.sourcegitcommit: 577942041c1ff4da60d22af96543c11f5d5fe401
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "70156213"
 ---
 # <a name="tutorial-create-your-own-windows-vision-skill-c"></a>Руководство: Создание навыка компьютерного зрения Windows (C#)
@@ -54,7 +54,7 @@ ms.locfileid: "70156213"
 - [пакет SDK для Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) версии 1809 и выше;
 - пакет NuGet [Microsoft.AI.Skills.SkillInterfacePreview](https://www.nuget.org/packages/Microsoft.AI.Skills.SkillInterfacePreview/).
 
-## 1. Создание и реализация основных классов навыка <a name="CreateMainClasses"></a>
+## <a name="1-create-and-implement-the-main-skill-classes"></a>1. Создание и реализация основных классов навыка <a name="CreateMainClasses"></a>
 
 Для начала нам нужно реализовать основные классы навыка (см. [важные понятия, связанные с API](important-api-concepts.md)):
 
@@ -64,7 +64,7 @@ ms.locfileid: "70156213"
 
 Откройте пользовательское решение компьютерного зрения в Visual Studio.
 
-### a. ISkillDescriptor <a name="ISkillDescriptor"></a>
+### <a name="a-iskilldescriptor"></a>a. ISkillDescriptor <a name="ISkillDescriptor"></a>
 
 Создайте и реализуйте класс с дескриптором навыка, наследуемый от [ISkillDescriptor][ISkillDescriptor]. Этот класс предоставляет сведения о навыке, список поддерживаемых устройств для выполнения (ЦП, GPU и т. д.) и выполняет роль объекта фабрики для навыка.
 
@@ -216,7 +216,7 @@ ms.locfileid: "70156213"
         }
         ```
 
-### b. **ISkillBinding** <a name="ISkillBinding"></a>
+### <a name="b-iskillbinding"></a>b. **ISkillBinding** <a name="ISkillBinding"></a>
 
 Создайте и реализуйте класс привязки навыков, наследуемый от интерфейса [ISkillBinding][ISkillBinding]. Он содержит входные и выходные переменные, используемые и создаваемые этим навыком.
 
@@ -366,7 +366,7 @@ ms.locfileid: "70156213"
     }
     ```
 
-### c. **ISkill** <a name="ISkill"></a>
+### <a name="c-iskill"></a>c. **ISkill** <a name="ISkill"></a>
 
 Создайте и реализуйте класс навыка, наследуемый от интерфейса [ISkill][ISkill], который выполняет логику навыка и создает выходные данные на основе полученного набора входных данных. Он также выполняет роль объекта фабрики для дочерних классов ISkillBinding.
 
@@ -559,7 +559,7 @@ ms.locfileid: "70156213"
     }
     ```
 
-## 2. Упаковка навыка в пакет NuGet <a name="CreateNuspec"></a>
+## <a name="2-package-your-skill-to-nuget"></a>2. Упаковка навыка в пакет NuGet <a name="CreateNuspec"></a>
 
 Теперь вам нужно скомпилировать навык и создать на его основе пакет NuGet, чтобы приложение могло его обрабатывать.
 
@@ -615,7 +615,7 @@ ms.locfileid: "70156213"
 
 Поздравляем, вы создали свой первый навык компьютерного зрения Windows! Готовый пакет навыка можно передать на сайт [NuGet.org](https://www.nuget.org/).
 
-## 3. И последнее: маскировка и демаскировка файлов для скрытия скрыть интеллектуальной собственности<a name="Obfuscation"></a>
+## <a name="3-one-more-thing-obfuscating-and-deobfuscating-asset-files-to-conceal-your-intellectual-property"></a>3. И последнее: маскировка и демаскировка файлов для скрытия скрыть интеллектуальной собственности<a name="Obfuscation"></a>
 
 Чтобы предотвратить несанкционированное изменение активов навыка (файлов моделей, изображений и т. д.) или получение доступа к ним, вы можете дополнительно замаскировать файлы перед сборкой, а затем демаскировать их во время выполнения. Наш [пример на сайте GitHub](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/FaceSentimentAnalyzer) содержит реализацию вспомогательных классов, которые с помощью [Windows.Security.Cryptography](https://docs.microsoft.com/uwp/api/Windows.Security.Cryptography) [маскируют](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/Obfuscator) файлы во время компиляции и [демаскируют](https://github.com/microsoft/WindowsVisionSkillsPreview/tree/master/samples/SentimentAnalyzerCustomSkill/cpp/Skill/Deobfuscator) их во время выполнения. Обратите внимание, что эта часть представлена только в версии навыка для C++/WinRT, чтобы упростить реализацию для C#.  
 

@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning, onnx
 ms.localizationpriority: medium
 ms.openlocfilehash: d1b43ca0f0ea47b81ff29e3e196fc77c5319c647
-ms.sourcegitcommit: ecd33843dd548e443a1292d6a22e1a4029298944
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "75737417"
 ---
 # <a name="onnx-models"></a>Модели ONNX

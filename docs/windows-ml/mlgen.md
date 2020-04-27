@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
 ms.openlocfilehash: 7658b35a6bb19133380cf021a47d9c35ffc62a3b
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "66181896"
 ---
 # <a name="automatic-code-generation-with-mlgen"></a>Автоматическое создание кода с помощью mlgen
