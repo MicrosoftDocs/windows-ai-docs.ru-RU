@@ -8,10 +8,10 @@ ms.topic: article
 keywords: windows 10, uwp, Windows machine learning, visual studio
 ms.localizationpriority: medium
 ms.openlocfilehash: 27c2fb2cdce9d19c6219c40f885ad9d720029f12
-ms.sourcegitcommit: 6948f383d671a042290d4ef83e360fa43292eef2
+ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "66179966"
 ---
 # <a name="train-a-model-with-cntk"></a>Обучение модели с использованием CNTK
@@ -30,7 +30,7 @@ ms.locfileid: "66179966"
 3. Нажмите кнопку **Скачать**. 
 4. После установки перезапустите Visual Studio. 
 
-Это расширение станет активным после перезагрузки Visual Studio. Если возникают проблемы, ознакомьтесь с разделом [Поиск расширений Visual Studio](h https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions).
+Это расширение станет активным после перезагрузки Visual Studio. Если возникают проблемы, ознакомьтесь с разделом [Поиск расширений Visual Studio](hhttps://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions).
 
 ### <a name="download-sample-code"></a>Скачивание примера кода
 Скачайте репозиторий [с примерами для ИИ](https://github.com/Microsoft/samples-for-ai) с сайта GitHub. В этих примерах показано, как начать работу с глубоким обучением на таких платформах, как TensorFlow, CNTK, Theano и др.
