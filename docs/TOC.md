@@ -5,6 +5,7 @@
 #### [Создание классического приложения WinML (C++)](windows-ml/get-started-desktop.md)
 #### [Создание классического приложения WinML (Python)](windows-ml/get-started-python.md)
 #### [Создание приложения UWP WinML (C#)](windows-ml/get-started-uwp.md)
+#### [Перенос существующего приложения WinML в пакет NuGet (C++)](windows-ml/port-app-to-nuget.md)
 ### [Что собой представляет модель машинного обучения](windows-ml/what-is-a-machine-learning-model.md)
 ### [Модели ONNX](windows-ml/get-onnx-model.md)
 #### [Версии ONNX и сборки Windows](windows-ml/onnx-versions.md)
