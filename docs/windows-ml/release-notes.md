@@ -3,20 +3,29 @@ author: rosanevallim
 title: Заметки о выпуске
 description: Последние обновления платформы Windows AI.
 ms.author: rovalli
-ms.date: 5/13/2020
+ms.date: 5/19/2020
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: e449007895188eb643545ace68b2cdd1c4b12c0c
-ms.sourcegitcommit: 6a206c0965789ef4d2e1f8dfdd501971c108032a
+ms.openlocfilehash: 86ce0f25fcac48a8f1e9983fc986f3db61f93be4
+ms.sourcegitcommit: f41fad7e6b6280bbbaf4157703f03fb7f23de676
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83383634"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631819"
 ---
 # <a name="release-notes"></a>Заметки о выпуске
 
 На этой странице представлена история обновлений Windows ML в последних сборках пакета SDK для Windows 10.
+
+
+## <a name="windows-ml-nuget-package---may-2020-version"></a>Пакет NuGet для Windows ML — версия за май 2020 г. 
+
+- [Создан на основе ONNX Runtime версии 1.3](https://github.com/microsoft/onnxruntime/blob/master/docs/HighLevelDesign.md#the-onnx-runtime-and-windows-os-integration)
+- Соответствует требованиям MachineLearningContract версии 3 
+- Поддержка ONNX 1.6 и набора операций версии 11 
+- Выполнение на ЦП поддерживается для Windows 8.1. Выполнение на GPU поддерживается для Windows 10 версии 1709 
+- Сертифицированные проверенные пути ведут к классическим приложениям на C++. Приложения из Store и комплект сертификации приложений для Windows пока что не поддерживаются. 
 
 ## <a name="build-19041-windows-10-version-2004"></a>Сборка 19041 (Windows 10, версия 2004)
 
@@ -29,7 +38,6 @@ ms.locfileid: "83383634"
 
 * Преобразователи WinMLTools поддерживают новые версии ONNX и набор операций.  
 * Оптимизации для WinMLRunner, в рамках которых предоставляются новые метрики производительности. 
-
 
 ## <a name="build-18362-windows-10-version-1903"></a>Сборка 18362 (Windows 10, версия 1903)
 

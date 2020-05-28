@@ -3,16 +3,16 @@ author: walrusmcd
 title: Интеграция модели в приложение
 description: Сведения о том, как интегрировать обученные модели машинного обучения в приложения Windows с помощью Windows ML.
 ms.author: paulm
-ms.date: 5/10/2019
+ms.date: 5/19/2020
 ms.topic: article
 keywords: windows 10, windows ai, windows ml, winml, windows machine learning
 ms.localizationpriority: medium
-ms.openlocfilehash: af2af3fd6af4353171def886625271df97a55f35
-ms.sourcegitcommit: 2139506ff12b7205283288c4bbac866ddfa812f3
+ms.openlocfilehash: 956e6bdb39d82712b7ed7c6a761639a4ab8578bc
+ms.sourcegitcommit: f41fad7e6b6280bbbaf4157703f03fb7f23de676
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "66181936"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631830"
 ---
 # <a name="integrate-a-model-into-your-app-with-windows-ml"></a>Интеграция модели в приложения с использованием Windows ML
 
@@ -41,6 +41,7 @@ ms.locfileid: "66181936"
 
 Хотя API-интерфейсы WinML доступны для C++/CX и C++/WinRT мы рекомендуем использовать версию для C++/WinRT, так как она поддерживает более естественную разработку кода на C++ и позволяет более спокойно двигаться вперед. Приведенные ниже инструкции подходят под конкретные ситуации применения API-интерфейсов C++/WinRT.
 
+* Если вы используете Windows 1803 или более ранней версии, см. [руководство по переносу существующего приложения WinML в пакет NuGet](port-app-to-nuget.md)
 * Если вы создаете новое приложение C++, см. руководство [ Создание классического приложения (C++) для Windows ML](https://docs.microsoft.com/windows/ai/get-started-desktop) и выполните из него шаги по **загрузке модели**.
 * Если у вас есть приложение C++ (которое еще не настроено для C++/WinRT), выполните следующие действия по настройке приложения для C++/WinRT.
     1. Убедитесь, что у вас установлена последняя версия [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) (любого выпуска).
